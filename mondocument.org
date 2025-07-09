@@ -1,0 +1,22 @@
+#+TITLE: Exercices de Probabilités Géométriques
+#+AUTHOR: Auteur Inconnu
+#+OPTIONS: ^:{}
+#+MACRO: couleur @@html:<font color="$1">$2</font>@@
+
+* Introduction
+
+On considère que les joueurs atteignent toujours la cible,
+c'est-à-dire le cercle <<jaune1>>{{{couleur(yellow, jaune)}}}
+{{{couleur(yellow, (CE))}}}<<CE1jaune>>.
+
++ G1) Quelle est la probabilité que le joueur atteigne l'intérieur
+du cercle <<rouge1>>{{{couleur(red, rouge)}}}
+{{{couleur(red, (CA))}}}<<CA1rouge>> ?
+
++ G2) Quelle est la probabilité que le joueur atteigne la couronne
+entre les cercles {{{couleur(#ccff00, citron)}}} (CB) et
+{{{couleur(navy, marine)}}} (CC) ?
+
++ G3) Quelle est la probabilité que le joueur atteigne la couronne
+entre les cercles {{{couleur(orange, orange)}}} (CD) et
+{{{couleur(yellow, jaune)}}} ?

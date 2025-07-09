@@ -1,0 +1,2077 @@
+* Sommaire
+:PROPERTIES:
+:CUSTOM_ID: sommaire
+:CLASS: unnumbered
+:END:
+- *Un peu de culture historique*
+
+- *Niveau primaire*
+
+- *Niveau secondaire : collège*
+
+- *Niveau secondaire : lycée*
+
+- *Solutions des exercices*
+
+- *Et maintenant ?*
+
+* Un peu de culture historique
+:PROPERTIES:
+:CUSTOM_ID: un-peu-de-culture-historique
+:END:
+** Introduction
+:PROPERTIES:
+:CUSTOM_ID: introduction
+:END:
+Ce livre a pour but de vous faire faire des mathématiques.
+
+On commence par du calcul mental afin d'échauffer l'esprit. Oui, même au
+XXI siècle, alors que nous avons des calculatrices, des ordinateurs, des
+téléphones et même des intelligences artificielles, il est encore utile
+d'exercer son cerveau sur ce genre de tâches. Loin de moi l'idée de vous
+prendre pour des calculateurs, ni d'essayer de vous entraîner à le
+devenir : je n'en suis pas un, et j'aurais du mal à vous entraîner pour
+ce genre de compétitions. Mais, de la même façon que les humains n'ont
+pas cessé de marcher et de courir après l'invention de la voiture, de
+l'ascenseur et des autres moyens de transport, il en va de même pour
+l'exercice cérébral. Sans être médecin, il me semble que le bon sens
+nous dicte que, si l'on reste assis sur le canapé à manger de la
+malbouffe sans faire de sport, il y a de gros risques de rencontrer des
+problèmes de surpoids et de santé en général. L'exercice cérébral est
+une gymnastique de l'esprit : c'est une hygiène mentale.
+
+Néanmoins, il serait vain --- et surtout ennuyeux --- de se cantonner
+aux calculs. L'activité mathématique est bien plus riche que cela. Il ne
+s'agit pas de comptabilité. Même si l'arithmétique et le calcul
+algébrique restent des outils cruciaux dans l'architecture des
+mathématiques, les maths ne se résument pas à des calculs. D'un autre
+côté, oublier cet aspect serait une carence aussi flagrante que celle
+d'un sportif de haut niveau (footballeur, nageur, judoka... choisissez
+votre sport favori) qui ne ferait pas de musculation. Les sportifs font
+de la musculation parce que leurs muscles sont leurs outils pour
+accomplir leur art. En mathématiques, c'est pareil : les calculs et la
+capacité à les conduire sont utiles pour résoudre des problèmes
+mathématiques.
+
+Ce livre s'articule en trois parties principales, en plus de cette
+introduction.
+
+La première partie doit être faite par tous les lecteurs en guise
+d'échauffement. Il s'agit de calculs , de niveau primaire. En effet,
+l'école primaire a pour but de faire acquérir la maîtrise des quatre
+opérations de l'arithmétique de base, à savoir : addition, soustraction,
+multiplication et division. Cela peut paraître simple, mais derrière ces
+opérations se cachent les structures algébriques que nous aborderons
+dans un prochain ouvrage consacré à l'enseignement supérieur.
+
+Dans la seconde partie, on passe au niveau collège, en ajoutant des
+calculs de carrés, des programmes de calculs, le calcul littéral, les
+liens entre géométrie et calcul, et des probabilités de base en termes
+de rapports d'aires de figures élémentaires.
+
+Enfin, dans la troisième partie, on passe au niveau lycée :
+configurations de nombres, vecteurs, statistiques et situations
+concrètes.
+
+Le souhait de cet ouvrage est de fournir des exercices faisables
+directement, sans avoir à /réviser le cours/. Trop souvent aujourd'hui,
+les élèves sont traumatisés par la crainte de ne pas connaître , comme
+s'il s'agissait d'une incantation magique. Aucun cours de mathématiques
+n'est tombé du ciel, telles les tables de la Loi. L'activité
+mathématique s'est développée au cours des siècles à travers des
+problèmes qui, une fois résolus, ont donné lieu à des généralisations,
+lesquelles sont ensuite devenues des cours. Alors bien sûr, on ne peut
+pas se permettre le luxe de tout redémontrer à partir de zéro, sinon
+chaque génération aurait à refaire tout ce qu'a fait la précédente.
+Néanmoins, il me semble beaucoup plus intéressant, et surtout utile et
+efficace, de s'exercer d'abord ; et, à force de pratique, le cours
+pourra alors être vu comme quelque chose d'intéressant... un nouveau
+genre d'exercice.
+
+Ma critique première est que les enseignements primaires et secondaires
+(surtout primaire et collège) manquent cruellement de démonstrations
+(alors que des démonstrations géométriques de base sont accessibles très
+tôt), au profit d'un apprentissage par cœur dénué de raisonnement et de
+réflexion, destiné à créer des . À l'époque de l'intelligence
+artificielle, il me semble d'autant plus absurde de vouloir former des
+générations d'automates, déjà dépassés par les véritables automates.
+Nous, humains, faisons des erreurs et avons la capacité d'apprendre de
+nos erreurs. C'est précisément pour cette raison qu'il faut cultiver
+l'art de se tromper intelligemment.
+
+L'art de se tromper intelligemment signifie prendre le risque de pousser
+un raisonnement jusqu'à son terme, pour se rendre compte s'il fonctionne
+ou non. Comprendre signifie prendre un risque : sans prise de risque,
+vous ne pourrez jamais comprendre ; sans erreur, vous ne pourrez jamais
+comprendre.
+
+Ici, tous les exercices sont corrigés, donc vous pouvez les faire en
+toute honnêteté, en prenant véritablement le risque de vous tromper. De
+plus, pour la plupart des exercices (en dehors de ceux de calculs purs),
+il y a souvent plusieurs façons de les résoudre. Il ne faut donc pas
+chercher à mémoriser les corrections.
+
+Les exercices sont presque tous originaux ou des adaptations de
+classiques.
+
+Pour toutes remarques, suggestions, ou demandes d'aide personnelles
+merci de remplir [[https://forms.gle/x7fAce7GqiJAGbsC7][ce formulaire]]
+: [[https://forms.gle/x7fAce7GqiJAGbsC7]]
+
+*** Origine étymologique du mot calcul
+:PROPERTIES:
+:CUSTOM_ID: origine-étymologique-du-mot-calcul
+:END:
+
+l0.4 [[file:Cailloux.jpeg]]
+
+Le mot vient du latin */calculus/*, qui signifiait littéralement . Ce
+terme dérive de */calx/*, */calcis/* (chaux, pierre calcaire). Les
+Romains utilisaient effectivement de petits cailloux ou jetons pour
+effectuer leurs opérations arithmétiques sur l'abaque, d'où cette
+étymologie concrète qui reflète une pratique réelle.
+
+*** Premières traces de calculs
+:PROPERTIES:
+:CUSTOM_ID: premières-traces-de-calculs
+:END:
+Les plus anciennes traces de calculs remontent à la préhistoire :
+
+Os d'Ishango (République démocratique du Congo,  20 000 ans) :
+
+l0.22 [[file:Os-Ishango.jpeg]]
+
+Les os d'Ishango, également appelés bâtons d'Ishango, sont considérés
+comme le plus ancien outil de calcul jamais mis au jour. Ils ont été
+découverts au sein de vestiges archéologiques découverts dans l'ancien
+Congo belge. Le site est daté de plus de 20 000 ans. Selon certains
+auteurs, il pourrait s'agir de la plus ancienne attestation de la
+pratique de l'arithmétique dans l'histoire de l'humanité. Ils ont été
+considérés, dans un premier temps, comme des bâtons de comptage.
+
+Jetons d'argile mésopotamiens ( 8000-3000 av. J.-C.) :
+
+l0.25 [[file:collier7800.jpg]]
+
+Ces petits objets en forme de cônes, sphères ou disques servaient à
+compter les biens (bétail, céréales) avant l'invention de l'écriture.
+Les jetons d'argile mésopotamiens ont joué un rôle important dans le
+développement des systèmes de comptabilité et de commerce dès 8000 avant
+J.-C. Ces objets, dont la forme variait en fonction de l'objet qu'ils
+représentaient, étaient utilisés pour désigner et quantifier des
+marchandises.
+
+Tablettes cunéiformes babyloniennes ( 3000 av. J.-C.) :
+
+l0.55 [[file:Proto-cuneiform_sexagesimal.pdf]]
+
+Les premières traces écrites de calculs arithmétiques, avec un système
+sexagésimal (base 60) encore utilisé aujourd'hui pour mesurer le temps
+(1 heure = 60 minutes, 1 minute = 60 secondes, ...) et les angles (60
+minutes = 1 degré).
+
+Papyrus de Rhind ( 2000 av. J.-C.):
+
+l0.5 [[file:Rhind-Papyrus.jpg]]
+
+Le papyrus Rhind, copié par Ahmès (Deuxième Période intermédiaire),
+synthétise les maths égyptiennes. Acheté par Rhind en 1858 à Louxor, il
+est au British Museum depuis 1865. Ce rouleau de 5 m (87 problèmes)
+couvre arithmétique, algèbre et géométrie, inspiré du Moyen Empire (2000
+av. J.-C.). Son écriture hiératique en fait un document unique.
+
+*** Premières techniques de calcul
+:PROPERTIES:
+:CUSTOM_ID: premières-techniques-de-calcul
+:END:
+L'abaque :
+
+l0.55 [[file:Abacus.png]]
+
+Apparu vers 2700-2300 av. J.-C. en Mésopotamie, puis perfectionné par
+les Grecs et les Romains. Il permettait d'effectuer les quatre
+opérations fondamentales en déplaçant des jetons sur des lignes ou dans
+des colonnes.
+
+Le système décimal positionnel :
+
+l0.6 [[file:Numeration.png]]
+
+Le système de numération indo-arabe est un système de numération de base
+dix employant une notation positionnelle et dix chiffres, allant de zéro
+à neuf, dont le tracé est indépendant de la valeur représentée. Dans ce
+système, la représentation d'un nombre correspond à son développement
+décimal. Le système doit son nom au fait qu'il est apparu en Inde et
+qu'il est parvenu en Europe par l'intermédiaire de mathématiciens et
+comptables de langue arabe. La variante graphique la plus répandue sont
+les chiffres utilisés en Europe, communément appelés chiffres arabes. Ce
+système tend aujourd'hui à s'imposer dans le monde.
+
+Les bâtons de Napier (1617) :
+
+l0.45 [[file:batons-napier.jpg]]
+
+Le bâton de Napier, ou réglette de Neper est un abaque facilitant le
+calcul des produits, quotients, puissances et racines, inventé par le
+mathématicien écossais John Napier (en français Neper) en 1617.
+
+L'abaque est constitué d'un plateau à rebord sur lequel peuvent être
+placées des réglettes gravées. Le bord gauche du plateau est gravé lui
+aussi, divisé en neuf cases numérotées de 1 à 9. Les dix types de
+réglettes, qui ont donné leur nom à l'ensemble du dispositif, étaient
+originellement en os, d'où le nom anglais de /Napier's bones/. Elles
+sont divisées en neuf cases. La case supérieure porte un nombre de 0
+à 9. Les huit autres cases sont divisées en deux par un trait diagonal.
+
+La pascaline (1642) :
+
+l0.4 [[file:pascaline.jpg]]
+
+La pascaline, initialement dénommée machine d'arithmétique puis roue
+pascaline, est une calculatrice mécanique inventée par Blaise Pascal et
+considérée comme la première machine à calculer.
+
+*** Les premières traces de géométrie
+:PROPERTIES:
+:CUSTOM_ID: les-premières-traces-de-géométrie
+:END:
+Bien que les Grecs soient souvent considérés comme les fondateurs de la
+géométrie en tant que science rigoureuse, des savoirs géométriques
+étaient déjà utilisés bien avant eux, notamment dans les domaines de la
+topographie, de l'architecture, de l'astronomie et de l'agriculture. Les
+premières traces attestées de connaissances géométriques remontent à
+environ 3000 av. J.-C., chez les Égyptiens, les Babyloniens et les
+civilisations de l'Inde ancienne. Certains chercheurs évoquent
+également, de manière plus controversée, l'existence de formes de
+géométrie chez les peuples mégalithiques de Grande-Bretagne et de
+Bretagne.
+
+* Niveau primaire
+:PROPERTIES:
+:CUSTOM_ID: niveau-primaire
+:END:
+** Calculs niveau primaire
+:PROPERTIES:
+:CUSTOM_ID: calculs-niveau-primaire
+:END:
+Pour les séries de calculs ci-dessous, essayez de les faire de tête. Si
+vous n'y arrivez pas alors posez-les à la main. Et si vous n'y arrivez
+toujours pas vérifiez avec une calculatrice.
+
+*** Niveau 1 (primaire) : Additions simples
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau1
+:END:
+1. 5 + 3 = ___
+
+2. 9 + 2 = ___
+
+3. 7 + 6 = ___
+
+4. 4 + 8 = ___
+
+5. 3 + 9 = ___
+
+6. 1 + 7 = ___
+
+7. 2 + 3 = ___
+
+8. 3 + 4 = ___
+
+9. 4 + 5 = ___
+
+10. 5 + 6 = ___
+
+11. 1 + 9 = ___
+
+12. 9 + 2 = ___
+
+13. 2 + 8 = ___
+
+14. 8 + 3 = ___
+
+15. 3 + 9 = ___
+
+16. 9 + 7 = ___
+
+17. 7 + 8 = ___
+
+18. 8 + 5 = ___
+
+19. 5 + 9 = ___
+
+20. 5 + 7 = ___
+
+[[#sol:niveau1][Voir solutions des additions page ]].
+
+*** Niveau 2 (primaire) : Soustractions
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau2
+:END:
+1. 15 - 7 = ___
+
+2. 18 - 9 = ___
+
+3. 12 - 4 = ___
+
+4. 20 - 11 = ___
+
+5. 17 - 8 = ___
+
+6. 30 - 15 = ___
+
+7. 49 - 26 = ___
+
+8. 58 - 37 = ___
+
+9. 67 - 48 = ___
+
+10. 76 - 59 = ___
+
+11. 51 - 17 = ___
+
+12. 81 - 29 = ___
+
+13. 21 - 14 = ___
+
+14. 30 - 11 = ___
+
+15. 47 - 18 = ___
+
+16. 50 - 15 = ___
+
+17. 94 - 62 = ___
+
+18. 85 - 73 = ___
+
+19. 76 - 48 = ___
+
+20. 67 - 59 = ___
+
+[[#sol:niveau2][Voir solutions des soustractions page ]].
+
+*** Niveau 3 (primaire) : Multiplications à 1 chiffre
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau3
+:END:
+1. \(3\times 4 = \_\_\_\)
+
+2. \(6\times 7 = \_\_\_\)
+
+3. \(8\times 5 = \_\_\_\)
+
+4. \(9\times 3 = \_\_\_\)
+
+5. \(2\times 6 = \_\_\_\)
+
+6. \(6\times 5 = \_\_\_\)
+
+7. \(7\times 6 = \_\_\_\)
+
+8. \(8\times 9 = \_\_\_\)
+
+9. \(2\times 8 = \_\_\_\)
+
+10. \(7\times 3 = \_\_\_\)
+
+11. \(2\times 2 = \_\_\_\)
+
+12. \(3\times 3 = \_\_\_\)
+
+13. \(4\times 4 = \_\_\_\)
+
+14. \(5\times 5 = \_\_\_\)
+
+15. \(6\times 6 = \_\_\_\)
+
+16. \(7\times 7 = \_\_\_\)
+
+17. \(8\times 8 = \_\_\_\)
+
+18. \(9\times 9 = \_\_\_\)
+
+19. \(5\times 7 = \_\_\_\)
+
+20. \(7\times 8 = \_\_\_\)
+
+[[#sol:niveau3][Voir solutions des multiplications à 1 chiffre page ]].
+
+*** Niveau 4 (primaire) : Multiplications à 2 chiffres par 11
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau4
+:END:
+1. \(11\times 12 = \_\_\_\)
+
+2. \(11\times 23 = \_\_\_\)
+
+3. \(11\times 34 = \_\_\_\)
+
+4. \(11\times 45 = \_\_\_\)
+
+5. \(11\times 56 = \_\_\_\)
+
+6. \(11\times 67 = \_\_\_\)
+
+7. \(11\times 78 = \_\_\_\)
+
+8. \(11\times 89 = \_\_\_\)
+
+9. \(11\times 13 = \_\_\_\)
+
+10. \(11\times 24 = \_\_\_\)
+
+11. \(99\times 11 = \_\_\_\)
+
+12. \(89\times 11 = \_\_\_\)
+
+13. \(78\times 11 = \_\_\_\)
+
+14. \(65\times 11 = \_\_\_\)
+
+15. \(54\times 11 = \_\_\_\)
+
+16. \(46\times 11 = \_\_\_\)
+
+17. \(37\times 11 = \_\_\_\)
+
+18. \(29\times 11 = \_\_\_\)
+
+19. \(19\times 11 = \_\_\_\)
+
+20. \(91\times 11 = \_\_\_\)
+
+[[#sol:niveau4][Voir solutions des multiplications à 2 chiffres par 11
+page ]].
+
+*** Niveau 5 (primaire) : Divisions à 1 chiffre
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau5
+:END:
+1. \(9 \div 3 =  \_\_\_\)
+
+2. \(8 \div 2 = \_\_\_\)
+
+3. \(6 \div 3 = \_\_\_\)
+
+4. \(4 \div 2 = \_\_\_\)
+
+5. \(6 \div 2 = \_\_\_\)
+
+6. \(8 \div 4 = \_\_\_\)
+
+7. \(9 \div 9 = \_\_\_\)
+
+8. \(8 \div 1 = \_\_\_\)
+
+9. \(5 \div 5 = \_\_\_\)
+
+10. \(7 \div 7 = \_\_\_\)
+
+11. \(18 \div 9 =  \_\_\_\)
+
+12. \(18 \div 6 = \_\_\_\)
+
+13. \(18 \div 3 = \_\_\_\)
+
+14. \(16 \div 2 = \_\_\_\)
+
+15. \(16 \div 4 = \_\_\_\)
+
+16. \(16 \div 8 = \_\_\_\)
+
+17. \(12 \div 2 = \_\_\_\)
+
+18. \(12 \div 3 = \_\_\_\)
+
+19. \(12 \div 4 = \_\_\_\)
+
+20. \(12 \div 6 = \_\_\_\)
+
+[[#sol:niveau5][Voir solutions des divisions à 1 chiffre page ]].
+
+*** Niveau 6 (primaire) : Divisions à 2 chiffres
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau6
+:END:
+1. \(99 \div 11 =  \_\_\_\)
+
+2. \(84 \div 12 = \_\_\_\)
+
+3. \(72 \div 18 = \_\_\_\)
+
+4. \(64 \div 16 = \_\_\_\)
+
+5. \(56 \div 28 = \_\_\_\)
+
+6. \(42 \div 14 = \_\_\_\)
+
+7. \(36 \div 12 = \_\_\_\)
+
+8. \(24 \div 12 = \_\_\_\)
+
+9. \(39 \div 13 = \_\_\_\)
+
+10. \(45 \div 15 = \_\_\_\)
+
+11. \(54 \div 27 =  \_\_\_\)
+
+12. \(63 \div 21 = \_\_\_\)
+
+13. \(74 \div 37 = \_\_\_\)
+
+14. \(82 \div 41 = \_\_\_\)
+
+15. \(98 \div 49 = \_\_\_\)
+
+16. \(80 \div 20 = \_\_\_\)
+
+17. \(92 \div 23 = \_\_\_\)
+
+18. \(93 \div 31 = \_\_\_\)
+
+19. \(69 \div 23 = \_\_\_\)
+
+20. \(55 \div 11 = \_\_\_\)
+
+[[#sol:niveau6][Voir solutions des divisions à 2 chiffres page ]].
+
+* Niveau secondaire : collège
+:PROPERTIES:
+:CUSTOM_ID: niveau-secondaire-collège
+:END:
+** Calculs niveau collège
+:PROPERTIES:
+:CUSTOM_ID: calculs-niveau-collège
+:END:
+Pour les séries de calculs ci-dessous, essayez de les faire de tête. Si
+vous n'y arrivez pas alors posez-les à la main. Et si vous n'y arrivez
+toujours pas vérifiez avec une calculatrice.
+
+*** Niveau 7 (secondaire : collège) : carrés
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau7
+:END:
+1. \(11^2 = 11 \times 11 =  \_\_\_\)
+
+2. \(12^2 = 12 \times 12 = \_\_\_\)
+
+3. \(13^2 = 13 \times 13 = \_\_\_\)
+
+4. \(14^2 = 14 \times 14 = \_\_\_\)
+
+5. \(15^2 = 15 \times 15 = \_\_\_\)
+
+6. \(16^2 = 16 \times 16 = \_\_\_\)
+
+7. \(17^2 = 17 \times 17 = \_\_\_\)
+
+8. \(18^2 = 18 \times 18 = \_\_\_\)
+
+9. \(19^2 = 19 \times 19 = \_\_\_\)
+
+10. \(20^2 = 20 \times 20 = \_\_\_\)
+
+11. \(25^2 = 25 \times 25 =  \_\_\_\)
+
+12. \(35^2 = 35 \times 35 = \_\_\_\)
+
+13. \(45^2 = 45 \times 45 = \_\_\_\)
+
+14. \(55^2 = 55 \times 55 = \_\_\_\)
+
+15. \(65^2 = 65 \times 65 = \_\_\_\)
+
+16. \(75^2 = 75 \times 75 = \_\_\_\)
+
+17. \(85^2 = 85 \times 85 = \_\_\_\)
+
+18. \(95^2 = 95 \times 95 = \_\_\_\)
+
+19. \(111^2 = 111 \times 111 = \_\_\_\)
+
+20. \(1111^2 = 1111 \times 1111 = \_\_\_\)
+
+[[#sol:niveau7][Voir solutions des calculs de carrés page ]].
+
+*** Niveau 8 (secondaire : collège) : carrés avec des 1 et une calculatrice
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau8
+:END:
+1. \(1^2 = 1 \times 1 =  \_\_\_\)
+
+2. \(11^2 = 11 \times 11 = \_\_\_\)
+
+3. \(111^2 = 111 \times 111 = \_\_\_\)
+
+4. \(1111^2 = 1111 \times 1111 = \_\_\_\)
+
+5. \(11111^2 = 11111 \times 11111 = \_\_\_\)
+
+6. \(111111^2 = 111111 \times 111111 = \_\_\_\)
+
+7. \(1111111^2 = 1111111 \times 1111111 = \_\_\_\)
+
+8. \(11111111^2 = 11111111 \times 11111111 = \_\_\_\)
+
+9. \(111111111^2 = 111111111 \times 111111111 = \_\_\_\)
+
+10. \(1111111111^2 = 1111111111 \times 1111111111 = \_\_\_\)
+
+[[#sol:niveau8][Voir solutions des calculs de carrés page ]].
+
+*** Niveau 9 (secondaire : collège) : Un programme de calcul particulier
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau9
+:END:
+Considérons le programme de calcul suivant :
+
+1. Choisir un nombre entier strictement supérieur à 1 (\(m > 1\) par
+   exemple 2, 3, 4...)
+
+2. Choisir un autre nombre entier strictement positif \(n\) strictement
+   inférieur à \(m\quad n < m\)
+
+3. Calculer le nombre \(a\) comme la différence du carré de \(m\) avec
+   le carré de \(n\), concrètement \(a = m^2 - n^2\)
+
+4. Calculer le nombre \(b\) comme le double du produit de \(m\) et de
+   \(n\), concrètement \(b = 2mn\)
+
+5. Calculer le nombre \(c\) comme la somme du carré de \(m\) avec le
+   carré de \(n\), concrètement \(c = m^2 + n^2\)
+
+6. Calculer le carré de \(a\)
+
+7. Calculer le carré de \(b\)
+
+8. Calculer le carré de \(c\)
+
+9. Calculer la somme du carré de \(a\) et celui de \(b\)
+
+10. Comparer cette somme avec le carré de \(c\)
+
+Appliquons le programme de calcul ci-dessus avec les nombres \(m = 2\)
+et \(n = 1\) :
+
+1. \(m^2 = 2 \times 2 =  \_\_\_\)
+
+2. \(n^2 = 1 \times 1 = \_\_\_\)
+
+3. \(a = m^2 - n^2 = \_\_\_\)
+
+4. \(b = 2 \times m \times n = \_\_\_\)
+
+5. \(c = m^2 + n^2 = \_\_\_\)
+
+6. \(a^2 =  \_\_\_\)
+
+7. \(b^2 =  \_\_\_\)
+
+8. \(c^2 =  \_\_\_\)
+
+9. Vérifiez que \(a^2 + b^2 = c^2\)
+
+10. Est-ce valable pour n'importe quelles valeurs de \(m\) et \(n\) ?
+
+[[#sol:niveau9][Voir solutions des calculs du programme page ]].
+
+*** Niveau 10 (secondaire : collège) : Un programme de construction géométrique, Pythagore
+:PROPERTIES:
+:CUSTOM_ID: geom:niveau10
+:END:
+1. Dans un repère orthonormé placer le point \(A\) de coordonnées
+   \((-1 ; -2)\) c'est-à-dire d'abscisse \(x_A = -1\) et d'ordonnée
+   \(y_A = -2\)
+
+2. Placer le point \(B\) de coordonnées \((2 ; -2)\) c'est-à-dire
+   d'abscisse \(x_B = 2\) et d'ordonnée \(y_B = -2\)
+
+3. Placer le point \(C\) de coordonnées \((2 ; 2)\) c'est-à-dire
+   d'abscisse \(x_C = 2\) et d'ordonnée \(y_C = 2\)
+
+4. En utilisant le théorème de Pythagore vérifier que le carré ABC est
+   rectangle en B.
+
+[[#sol:niveau10][Voir solution du programme de construction géométrique
+page ]].
+
+*** Niveau 11 (secondaire : collège) : Un cible circulaire, probabilités
+:PROPERTIES:
+:CUSTOM_ID: proba:niveau11
+:END:
+Considérons la cible définie par les cercles concentriques sur le schéma
+ci-dessous :
+
+On considère que les joueurs atteignent toujours la cible c'est-à-dire
+le cercle \(\textcolor{yellow}{(\mathcal{C}_e)}\).
+
+1. Quelle est la probabilité que le joueur atteigne l'intérieur du
+   cercle \(\textcolor{red}{(\mathcal{C}_a)}\) ?
+
+2. Quelle est la probabilité que le joueur atteigne la couronne entre
+   les cercles \(\textcolor{red}{(\mathcal{C}_a)}\) et
+   \(\textcolor{lime}{(\mathcal{C}_b)}\) ?
+
+3. Quelle est la probabilité que le joueur atteigne la couronne entre
+   les cercles \(\textcolor{lime}{(\mathcal{C}_b)}\) et
+   \(\textcolor{navy}{(\mathcal{C}_c)}\) ?
+
+4. Quelle est la probabilité que le joueur atteigne la couronne entre
+   les cercles \(\textcolor{navy}{(\mathcal{C}_c)}\) et
+   \(\textcolor{orange}{(\mathcal{C}_d)}\) ?
+
+5. Quelle est la probabilité que le joueur atteigne la couronne entre
+   les cercles \(\textcolor{orange}{(\mathcal{C}_d)}\) et
+   \(\textcolor{yellow}{(\mathcal{C}_e)}\) ?
+
+[[#sol:niveau11][Voir solutions page ]].
+
+*** Niveau 12 (secondaire : collège) : carrés de Fibonacci
+:PROPERTIES:
+:CUSTOM_ID: geom:niveau12
+:END:
+1. Dans un repère orthonormé construire le carré passant par les points
+   O(0; 0) , A(1 ; 0) , B(1 ; 1) , C(0 ; 1). Quelle est la longueur du
+   côté de carré ?
+
+2. Placer les points D(2 ; 0) et E(2 ; 1) et tracer le carré ADEB.
+   Quelle est la longueur du côté de carré ?
+
+3. Construire le carré passant par F(2 ; 3) , G(0 ; 3) , C(0 ; 1), E(2 ;
+   1). Quelle est la longueur du côté de carré ?
+
+4. Placer les points H\((-3 ; 3)\), I\((-3 ; 0)\) et tracer le carré
+   GHIO. Quelle est la longueur du côté de carré ?
+
+5. Construire le carré passant par J\((-3 ; -5)\), K\((2 ; -5)\),
+   D\((2 ; 0)\), I\((-3 ; 0)\). Quelle est la longueur du côté de carré
+   ?
+
+6. Placer les points L\((10 ; -5)\), M\((10 ; 3)\) et tracer le carré
+   KLMF. Quelle est la longueur du côté de carré ?
+
+7. Construire le carré passant par N\((10 ; 16)\), P\((-3 ; 16)\) et
+   tracer le carré MNPH. Quelle est la longueur du côté de carré ?
+
+8. Placer les points Q\((-24 ; 16)\), R\((-24 ; -5)\) et tracer le carré
+   PQRJ. Quelle est la longueur du côté de carré ?
+
+[[#sol:niveau12][Voir solutions page ]].
+
+*** Niveau 13 (secondaire : collège) : aire des carrés de Fibonacci
+:PROPERTIES:
+:CUSTOM_ID: geom:niveau13
+:END:
+Dans cet exercice on reprend la figure des carrés de Fibonacci voir
+page .
+
+1. Quelle est l'aire du carré OABC ?
+
+2. Quelle est l'aire du carré ADEB ?
+
+3. Quelle est l'aire du carré FGCE ?
+
+4. Quelle est l'aire du carré GHIO ?
+
+5. Quelle est l'aire du carré IJKD ?
+
+6. Quelle est l'aire du carré KLMF ?
+
+7. Quelle est l'aire du carré MNPH ?
+
+8. Quelle est l'aire du carré PQRJ ?
+
+[[#sol:niveau13][Voir solutions page ]].
+
+*** Niveau 14 (secondaire : collège) : une cible avec des carrés de Fibonacci
+:PROPERTIES:
+:CUSTOM_ID: proba:niveau14
+:END:
+Dans cet exercice on continue avec la figure des carrés de Fibonacci
+voir page . On la considère comme une cible particulière et on admet que
+le joueur atteint forcément le grand rectangle.
+
+1. Quelle est la probabilité que le joueur atteigne le carré OABC ?
+
+2. Quelle est la probabilité que le joueur atteigne le carré FGCE ?
+
+3. Quelle est la probabilité que le joueur atteigne le carré GHIO ?
+
+4. Quelle est la probabilité que le joueur atteigne le carré IJKD ?
+
+5. Quelle est la probabilité que le joueur atteigne le carré KLMF ?
+
+6. Quelle est la probabilité que le joueur atteigne le carré MNPH ?
+
+7. Quelle est la probabilité que le joueur atteigne le carré PQRJ ?
+
+[[#sol:niveau14][Voir solutions page ]].
+
+* Niveau secondaire : lycée
+:PROPERTIES:
+:CUSTOM_ID: niveau-secondaire-lycée
+:END:
+** Calculs niveau lycée
+:PROPERTIES:
+:CUSTOM_ID: calculs-niveau-lycée
+:END:
+Désormais il faudrait raisonner et alterner les registres. Tantôt vous
+utiliserez le langage symbolique avec les formules et le calcul
+littéral, tantôt vous utiliserez le langage verbal qui est votre langage
+naturel et tantôt vous utiliserez le langage visuel. Faire des
+mathématiques consiste principalement à passer d'un registre à un autre
+afin de s'assurer que l'on comprenne et maîtrise tous les aspects d'un
+problème. Parfois les choses sembleront abstraites mais il y aura
+toujours des applications concrètes.
+
+Courage, la bravoure est une qualité nécessaire pour faire des
+mathématiques.
+
+*** Niveau 15 (secondaire : lycée) : nombres triangulaires
+:PROPERTIES:
+:CUSTOM_ID: geom:niveau15
+:END:
+On considère un repère orthonormé :
+
+1. Construire le triangle passant par les points O(0; 0) , A(1 ; 0) ,
+   B(0 ; 1). Quelle est la nature de ce triangle ? Quelle est l'aire de
+   ce triangle ?
+
+2. Construire le triangle passant par les points O(0; 0) , C(2 ; 0) ,
+   E(0 ; 2). Quelle est la nature de ce triangle ? Quelle est l'aire de
+   ce triangle ? Le point D(1 ; 1) est-il sur le segment [CE] ?
+
+3. Construire le triangle passant par les points O(0; 0) , F(3 ; 0) ,
+   I(0 ; 3). Quelle est la nature de ce triangle ? Quelle est l'aire de
+   ce triangle ? Les points G(2 ; 1) et H(1 ; 2) sont-ils sur le segment
+   [FI] ?
+
+4. Construire le triangle passant par les points O(0; 0) , J(4 ; 0) ,
+   N(0 ; 4). Quelle est la nature de ce triangle ? Quelle est l'aire de
+   ce triangle ? Les points K(3 ; 1), L(2 ; 2) et M(1 ; 3) sont-ils sur
+   le segment [JN] ?
+
+5. Combien faudra-t-il ajouter de points pour la prochaine étape si on
+   suit ce même schéma ? Quelle sera la nature de ce nouveau triangle ?
+   Quelle sera son aire ? Les points entre les axes du repère seront-ils
+   alignés ?
+
+[[#sol:niveau15][Voir solutions page ]].
+
+*** Niveau 16 (secondaire : lycée) : divisions par 7
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau16
+:END:
+1. Effectuer la division décimale de 1 par 7. Combien de décimales
+   avez-vous besoin de calculer pour approcher la fraction
+   \(\dfrac{1}{7}\) de la façon la plus juste qui soit ?
+
+2. Même question avec la fraction \(\dfrac{2}{7}\).
+
+3. Même question avec la fraction \(\dfrac{3}{7}\).
+
+4. Même question avec la fraction \(\dfrac{4}{7}\).
+
+5. Même question avec la fraction \(\dfrac{5}{7}\).
+
+6. Même question avec la fraction \(\dfrac{6}{7}\).
+
+[[#sol:niveau16][Voir solutions page ]].
+
+*** Niveau 17 (secondaire : lycée) : comment choisir le milieu d'une série statistique ?
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau17
+:END:
+On considère la série statistique \(S_0 = \{1 ; 1 ; 1 ; 1 ; 10\}\)
+
+1. Quelle est la médiane de la série \(S_0\) ?
+
+2. Quel est le mode de la série \(S_0\) ?
+
+3. Quelle est la moyenne de la série \(S_0\) ?
+
+4. Reprendre les 3 questions initiales avec la nouvelle série
+   \(S_1 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10\}\).
+
+5. Reprendre les 3 questions initiales avec la nouvelle série
+   \(S_2 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11\}\).
+
+6. Reprendre les 3 questions initiales avec la nouvelle série
+   \(S_3 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15\}\).
+
+7. Reprendre les 3 questions initiales avec la nouvelle série
+   \(S_4 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18\}\).
+
+8. Peut-on ajouter 1 valeur à la série \(S_4\) de sorte que la médiane
+   augmente et la moyenne diminue ? Expliquez la démarche.
+
+9. Peut-on ajouter 1 valeur à la série \(S_5\) de sorte que la médiane
+   diminue et la moyenne augmente ? Expliquez la démarche.
+
+10. Peut-on ajouter 1 valeur à la série \(S_6\) de sorte que la médiane
+    égale le mode ? Que se passerait-il pour la moyenne ? Expliquez la
+    démarche.
+
+[[#sol:niveau17][Voir solutions page ]].
+
+*** Niveau 18 (secondaire : lycée) : comment contribuer efficacement à un projet collaboratif ?
+:PROPERTIES:
+:CUSTOM_ID: calc:niveau18
+:END:
+Considérons deux contributeurs de Wikipédia : Alice et Bob. La semaine
+1, Alice modifie 60% des articles qu'elle consulte alors que Bob modifie
+90% des articles qu'il lit. La semaine 2, Alice ne modifie que 10% des
+articles lus et Bob 30%.
+
+1. Qui a le taux de modifications le plus élevé de la semaine 1 ?
+
+2. Qui a le taux de modifications le plus élevé de la semaine 2 ?
+
+3. La semaine 1, Alice lit 100 articles et en modifie 60. Pendant ce
+   temps, Bob modifie 9 des 10 articles qu'il consulte. La semaine 2,
+   Alice modifie 1 article sur les 10 lus et Bob 30 sur 100.
+
+   Sur les deux semaines qui a modifié le plus d'articles ?
+
+4. Ranger les informations dans un tableau avec 3 colonnes : semaine 1,
+   semaine 2, total et deux lignes : Alice, Bob.
+
+5. On appelle \(S_A(1)\) le taux de modification d'Alice la semaine 1 et
+   \(S_A(2)\) son taux de modification la semaine 2. On fait de même
+   pour Bob avec les notations \(S_B(1)\) et \(S_B(2)\). Vérifier que
+   \(S_A(1) < S_B(1)\) et que \(S_A(2) < S_B(2)\).
+
+6. On note les taux sur les deux semaines de la façon suivante :
+   \[\begin{aligned}
+   			S_A &= \dfrac{100}{110}S_A(1) + \dfrac{10}{110}S_A(2) \\
+   			S_B &= \dfrac{10}{110}S_B(1) + \dfrac{100}{110}S_B(2)
+   		
+   \end{aligned}\] Justifiez les valeurs des fractions utilisées.
+
+[[#sol:niveau18][Voir solutions page ]].
+
+*** Niveau 19 (secondaire : lycée) : une interprétation géométrique du paradoxe de Simpson
+:PROPERTIES:
+:CUSTOM_ID: geom:niveau19
+:END:
+1. Placer les points O(0 ; 0) et A(1 ; 0) et tracer en bleu le vecteur
+   \[\textcolor{blue}{\vec{u}_1 = \overrightarrow{OA}}\]
+
+2. Placer le point B(3 ; 1) et tracer en rouge le vecteur
+   \[\textcolor{red}{\vec{v}_1 = \overrightarrow{OB}}\]
+
+3. Placer les points C(0 ; 3) et D(2 ; 7) et tracer en bleu le vecteur
+   \[\textcolor{blue}{\vec{u}_2 = \overrightarrow{CD}}\]
+
+4. Placer le point E(0 ; 4) et tracer en rouge le vecteur
+   \[\textcolor{red}{\vec{v}_2 = \overrightarrow{CE}}\]
+
+5. Vérifier que le pente de \(\vec{u}_1\) est supérieure à celle de
+   \(\vec{v}_1\).
+
+6. Vérifier que le pente de \(\vec{u}_2\) est supérieure à celle de
+   \(\vec{v}_2\).
+
+7. Placer les points F(4 ; 2) et G(7 ; 4) et tracer en rouge le vecteur
+   \[\textcolor{red}{\vec{v} = \vec{v}_1 + \vec{v}_2 = \overrightarrow{FG}}\]
+
+8. Placer le point H(7 ; 6) et tracer en bleu le vecteur
+   \[\textcolor{blue}{\vec{u} = \vec{u}_1 + \vec{u}_2  = \overrightarrow{FH}}\]
+
+9. Comparer les pentes des vecteurs \(\vec{u}\) et \(\vec{v}\). Que
+   remarquez-vous ?
+
+[[#sol:niveau19][Voir solutions page ]].
+
+*** Niveau 20 (secondaire : lycée) : constructions et comparaisons de moyennes
+:PROPERTIES:
+:CUSTOM_ID: geom:niveau20
+:END:
+1. Placer les points O(0 ; 0), A(4 ; 0) et B(-4 ; 0) puis tracer le
+   demi-cercle de centre O passant par A et B.
+
+2. Placer le point C(2 ; 0) puis le point D d'abscisse 2 sur le
+   demi-cercle. Tracer le segment [CD].
+
+3. On pose \(a = BC\) et \(b = CA\). Ainsi le demi-cercle a pour
+   diamètre \(a + b\). Placer le point E(0 ; 4). Montrer que
+   \[OE = \dfrac{a + b}{2}\]
+
+4. Montrer que le triangle ADB est rectangle en D.
+
+5. Exprimer AD en fonction CD et b.
+
+6. Exprimer BD en fonction de CD et a.
+
+7. En déduire une expression de CD en fonction de a et b.
+
+8. On appelle moyenne géométrique de a et b le nombre \(\sqrt{ab}\) et
+   moyenne arithmétique le nombre \(\dfrac{a + b}{2}\). Utilisez ce qui
+   précède pour démontrer qu'on a : \[\dfrac{a+b}{2} \geq \sqrt{ab}\]
+
+9. Tracer OD puis la hauteur issue de C qui coupe (OD) en F.
+
+10. Exprimer OC en fonction de a et b.
+
+11. Calculer l'aire du triangle DOC de deux façons différentes. D'une
+    part en utilisant OC comme base et CD comme hauteur, d'autre part en
+    utilisant OD comme base et FC comme hauteur. En déduire une
+    expression de FC en fonction de a et b.
+
+12. Montrer \[FD = \dfrac{2ab}{a + b}\] c'est ce qu'on appelle la
+    moyenne harmonique de a et b.
+
+13. Tracer EC et calculer sa longueur. Montrer que
+    \[EC = \sqrt{\dfrac{a^2 + b^2}{2}}\] On l'appelle moyenne
+    quadratique de a et b.
+
+14. Classer les différentes moyennes dans l'ordre croissant en utilisant
+    uniquement la géométrie.
+
+15. Faire de même en utilisant uniquement les calculs algébriques.
+
+[[#sol:niveau20][Voir solutions page ]].
+
+* Solutions des exercices
+:PROPERTIES:
+:CUSTOM_ID: solutions-des-exercices
+:END:
+** Solutions niveau primaire
+:PROPERTIES:
+:CUSTOM_ID: solutions-niveau-primaire
+:END:
+*** Niveau 1 (primaire) : Additions
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau1
+:END:
+1. \(5 + 3 = 8\)
+
+2. \(9 + 2 = 11\)
+
+3. \(7 + 6 = 13\)
+
+4. \(4 + 8 = 12\)
+
+5. \(3 + 9 = 12\)
+
+6. \(1 + 7 = 8\)
+
+7. \(2 + 3 = 5\)
+
+8. \(3 + 4 = 7\)
+
+9. \(4 + 5 = 9\)
+
+10. \(5 + 6 = 11\)
+
+11. \(1 + 9 = 10\)
+
+12. \(9 + 2 = 11\)
+
+13. \(2 + 8 = 10\)
+
+14. \(8 + 3 = 11\)
+
+15. \(3 + 9 = 12\)
+
+16. \(9 + 7 = 16\)
+
+17. \(7 + 8 = 15\)
+
+18. \(8 + 5 = 13\)
+
+19. \(5 + 9 = 14\)
+
+20. \(5 + 7 = 12\)
+
+[[#calc:niveau1][Calculs d'additions page ]].
+
+*** Niveau 2 (primaire) : Soustractions
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau2
+:END:
+1. \(15 - 7 = 8\)
+
+2. \(18 - 9 = 9\)
+
+3. \(12 - 4 = 8\)
+
+4. \(20 - 11 = 9\)
+
+5. \(17 - 8 = 9\)
+
+6. \(30 - 15 = 15\)
+
+7. \(49 - 26 = 23\)
+
+8. \(58 - 37 = 21\)
+
+9. \(67 - 48 = 19\)
+
+10. \(76 - 59 = 17\)
+
+11. \(51 - 17 = 34\)
+
+12. \(81 - 29 = 22\)
+
+13. \(21 - 14 = 7\)
+
+14. \(30 - 11 = 19\)
+
+15. \(47 - 18 = 29\)
+
+16. \(50 - 15 = 35\)
+
+17. \(94 - 62 = 32\)
+
+18. \(85 - 73 = 12\)
+
+19. \(76 - 48 = 28\)
+
+20. \(67 - 59 = 8\)
+
+[[#calc:niveau2][Calculs des soustractions page ]].
+
+*** Niveau 3 (primaire) : Multiplications à 1 chiffre
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau3
+:END:
+1. \(3\times 4 = 12\)
+
+2. \(6\times 7 = 42\)
+
+3. \(8\times 5 = 40\)
+
+4. \(9\times 3 = 27\)
+
+5. \(2\times 6 = 12\)
+
+6. \(6\times 5 = 30\)
+
+7. \(7\times 6 = 42\)
+
+8. \(8\times 9 = 72\)
+
+9. \(2\times 8 = 16\)
+
+10. \(7\times 3 = 21\)
+
+11. \(2\times 2 = 4\)
+
+12. \(3\times 3 = 9\)
+
+13. \(4\times 4 = 16\)
+
+14. \(5\times 5 = 25\)
+
+15. \(6\times 6 = 36\)
+
+16. \(7\times 7 = 49\)
+
+17. \(8\times 8 = 64\)
+
+18. \(9\times 9 = 81\)
+
+19. \(5\times 7 = 35\)
+
+20. \(7\times 8 = 56\)
+
+[[#calc:niveau3][Calculs des multiplications à 1 chiffre page ]].
+
+*** Niveau 4 (primaire) : Multiplications à 2 chiffres par 11
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau4
+:END:
+1. \(11\times 12 =  132\)
+
+2. \(11\times 23 = 253\)
+
+3. \(11\times 34 = 374\)
+
+4. \(11\times 45 = 495\)
+
+5. \(11\times 56 = 616\)
+
+6. \(11\times 67 = 737\)
+
+7. \(11\times 78 =  858\)
+
+8. \(11\times 89 = 979\)
+
+9. \(11\times 13 = 143\)
+
+10. \(11\times 24 = 264\)
+
+11. \(99\times 11 = 1089\)
+
+12. \(89\times 11 = 979\)
+
+13. \(78\times 11 = 858\)
+
+14. \(65\times 11 = 715\)
+
+15. \(54\times 11 = 594\)
+
+16. \(46\times 11 = 506\)
+
+17. \(37\times 11 = 407\)
+
+18. \(29\times 11 = 319\)
+
+19. \(19\times 11 = 209\)
+
+20. \(91\times 11 = 1001\)
+
+[[#calc:niveau4][Calculs des multiplications à 2 chiffres page ]].
+
+*** Niveau 5 (primaire) : Divisions à 1 chiffre
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau5
+:END:
+1. \(9 \div 3 =  3\)
+
+2. \(8 \div 2 = 4\)
+
+3. \(6 \div 3 = 2\)
+
+4. \(4 \div 2 = 2\)
+
+5. \(6 \div 2 = 3\)
+
+6. \(8 \div 4 = 2\)
+
+7. \(9 \div 9 = 1\)
+
+8. \(8 \div 1 = 8\)
+
+9. \(5 \div 5 = 1\)
+
+10. \(7 \div 7 = 1\)
+
+11. \(18 \div 9 =  2\)
+
+12. \(18 \div 6 = 3\)
+
+13. \(18 \div 3 = 6\)
+
+14. \(16 \div 2 = 8\)
+
+15. \(16 \div 4 = 4\)
+
+16. \(16 \div 8 = 2\)
+
+17. \(12 \div 2 = 6\)
+
+18. \(12 \div 3 = 4\)
+
+19. \(12 \div 4 = 3\)
+
+20. \(12 \div 6 = 2\)
+
+[[#calc:niveau5][Calculs des divisions à 1 chiffre page ]].
+
+*** Niveau 6 (primaire) : Divisions à 2 chiffres
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau6
+:END:
+1. \(99 \div 11 =  9\)
+
+2. \(84 \div 12 = 7\)
+
+3. \(72 \div 18 = 4\)
+
+4. \(64 \div 16 = 4\)
+
+5. \(56 \div 28 = 2\)
+
+6. \(42 \div 14 = 3\)
+
+7. \(36 \div 12 = 3\)
+
+8. \(24 \div 12 = 2\)
+
+9. \(39 \div 13 = 3\)
+
+10. \(45 \div 15 = 3\)
+
+11. \(54 \div 27 =  2\)
+
+12. \(63 \div 21 = 3\)
+
+13. \(74 \div 37 = 2\)
+
+14. \(82 \div 41 = 2\)
+
+15. \(98 \div 49 = 2\)
+
+16. \(80 \div 20 = 4\)
+
+17. \(92 \div 23 = 4\)
+
+18. \(93 \div 31 = 3\)
+
+19. \(69 \div 23 = 3\)
+
+20. \(55 \div 11 = 5\)
+
+[[#calc:niveau6][Calculs des divisions à 2 chiffres page ]].
+
+** Solutions niveau secondaire : collège
+:PROPERTIES:
+:CUSTOM_ID: solutions-niveau-secondaire-collège
+:END:
+*** Niveau 7 (secondaire : collège) : carrés
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau7
+:END:
+1. \(11^2 = 11 \times 11 = 121\)
+
+2. \(12^2 = 12 \times 12 = 144\)
+
+3. \(13^2 = 13 \times 13 = 169\)
+
+4. \(14^2 = 14 \times 14 = 196\)
+
+5. \(15^2 = 15 \times 15 = 225\)
+
+6. \(16^2 = 16 \times 16 = 256\)
+
+7. \(17^2 = 17 \times 17 = 289\)
+
+8. \(18^2 = 18 \times 18 = 324\)
+
+9. \(19^2 = 19 \times 19 = 361\)
+
+10. \(20^2 = 20 \times 20 = 400\)
+
+11. \(25^2 = 25 \times 25 =  625\)
+
+12. \(35^2 = 35 \times 35 = 1225\)
+
+13. \(45^2 = 45 \times 45 = 2025\)
+
+14. \(55^2 = 55 \times 55 = 3025\)
+
+15. \(65^2 = 65 \times 65 = 4225\)
+
+16. \(75^2 = 75 \times 75 = 5625\)
+
+17. \(85^2 = 85 \times 85 = 7225\)
+
+18. \(95^2 = 95 \times 95 = 9025\)
+
+19. \(111^2 = 111 \times 111 = 12321\)
+
+20. \(1111^2 = 1111 \times 1111 = 1234321\)
+
+[[#calc:niveau7][Calculs des carrés page ]].
+
+*** Niveau 8 (secondaire : collège) : carrés avec des 1 et une calculatrice
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau8
+:END:
+1. \(1 \times 1 =  1\)
+
+2. \(11 \times 11 = 121\)
+
+3. \(111 \times 111 = 12321\)
+
+4. \(1111 \times 1111 = 1234321\)
+
+5. \(11111 \times 11111 = 123454321\)
+
+6. \(111111 \times 111111 = 12345654321\)
+
+7. \(1111111 \times 1111111 = 1234567654321\)
+
+8. \(11111111 \times 11111111 = 123456787654321\)
+
+9. \(111111111 \times 111111111 = 12345678987654321\)
+
+10. \(1111111111 \times 1111111111 = 12345678900987654321\)
+
+[[#calc:niveau8][Calculs avec des 1 page ]].
+
+*** Niveau 9 (secondaire : collège) : Un programme de calcul particulier
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau9
+:END:
+1. \(m^2 = 2^2 =  4\)
+
+2. \(n^2 = 1^2 = 1\)
+
+3. \(a = m^2 - n^2 = 4 - 1 = 3\)
+
+4. \(b = 2 \times m \times n = 2\times 2\times 1 = 4\)
+
+5. \(c = m^2 + n^2 = 4 + 1 = 5\)
+
+6. \(a^2 = 3^2 = 9\)
+
+7. \(b^2 = 4^2 = 16\)
+
+8. \(c^2 = 5^2 = 25\)
+
+9. Vérifiez que \(a^2 + b^2 = c^2 = 9 + 16 = 25\)
+
+10. Est-ce valable pour n'importe quelles valeurs de \(m\) et \(n\) ?
+    Oui car \[\begin{aligned}
+        	a^2 &= (m^2 - n^2)^2 = (m^2)^2 - 2\times (m^2)\times (n^2) + (n^2)^2 \\
+    	a^2 &= m^4 - 2m^2n^2 + n^4 \\
+    	b^2 &= (2mn)^2 = 2^2m^2n^2 = 4m^2n^2 \\
+    	c^2 &= (m^2 - n^2)^2 = m^4 + 2m^2n^2 + n^4 \\
+    	a^2 + b^2 &= m^4 - 2m^2n^2 + n^4 + 4m^2n^2 \\
+    	a^2 + b^2 &= m^4 + 2m^2n^2 + n^4\\
+    	&\boxed{a^2 + b^2 = c^2}
+        
+    \end{aligned}\]
+
+[[#calc:niveau9][Calculs avec le programme page ]].
+
+*** Niveau 10 (secondaire : collège) : Un programme de construction géométrique, Pythagore
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau10
+:END:
+
+[[#geom:niveau10][Voir le programme de construction géométrique page ]]
+
+*** Niveau 11 (secondaire : collège) : Un cible circulaire, probabilités
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau11
+:END:
+On considère que les joueurs atteignent toujours la cible c'est-à-dire
+le cercle \(\textcolor{yellow}{(\mathcal{C}_e)}\).
+
+1. L'aire de l'intérieur du cercle \(\textcolor{red}{(\mathcal{C}_a)}\)
+   est celle du disque de centre O et de rayon 1 soit
+   \(\pi\times 1^2 = \pi\) ainsi
+   \[\textcolor{red}{\mathcal{D}_a = \pi}\] L'aire de l'intérieur du
+   cercle \(\textcolor{yellow}{(\mathcal{C}_e)}\) est celle du disque de
+   centre O et de rayon 5 soit \(\pi\times 5^2 = 25\pi\) ainsi
+   \[\textcolor{yellow}{\mathcal{D}_e = 25\pi}\] Par conséquent la
+   probabilité recherchée est
+   \[P = \dfrac{ \textcolor{red}{\mathcal{D}_a}}{\textcolor{yellow}{\mathcal{D}_e}} = \dfrac{\pi}{25\pi} = \dfrac{1}{25} = 4\%\]
+
+2. Pour calculer la probabilité que le joueur atteigne la couronne entre
+   les cercles \(\textcolor{red}{(\mathcal{C}_a)}\) et
+   \(\textcolor{lime}{(\mathcal{C}_b)}\) il faut calculer l'aire de la
+   couronne c'est-à-dire la différence entre l'aire du disque de centre
+   O de rayon 2, \(\textcolor{lime}{\mathcal{D}_b = 4\pi}\) et du disque
+   \(\textcolor{red}{\mathcal{D}_a = \pi}\) soit
+   \(\textcolor{lime}{4\pi} - \textcolor{red}{\pi} = 3\pi\). Ensuite on
+   calcule le rapport d'aires :
+   \[P = \dfrac{3\pi}{25\pi} = \dfrac{3}{25} = 12\%\]
+
+3. Pour calculer la probabilité que le joueur atteigne la couronne entre
+   les cercles \(\textcolor{lime}{(\mathcal{C}_b)}\) et
+   \(\textcolor{navy}{(\mathcal{C}_c)}\) il faut calculer l'aire de la
+   couronne c'est-à-dire la différence entre l'aire du disque de centre
+   O de rayon 3, \(\textcolor{navy}{\mathcal{D}_c = 9\pi}\) et du disque
+   \(\textcolor{lime}{\mathcal{D}_b = 4\pi}\) soit
+   \(\textcolor{navy}{9\pi} - \textcolor{lime}{4\pi} = 5\pi\). Ensuite
+   on calcule le rapport d'aires :
+   \[P = \dfrac{5\pi}{25\pi} = \dfrac{1}{5} = 20\%\]
+
+4. Pour calculer la probabilité que le joueur atteigne la couronne entre
+   les cercles \(\textcolor{navy}{(\mathcal{C}_c)}\) et
+   \(\textcolor{orange}{(\mathcal{C}_d)}\) il faut calculer l'aire de la
+   couronne c'est-à-dire la différence entre l'aire du disque de centre
+   O de rayon 4, \(\textcolor{orange}{\mathcal{D}_d = 16\pi}\) et du
+   disque \(\textcolor{navy}{\mathcal{D}_c = 9\pi}\) soit
+   \(\textcolor{orange}{16\pi} - \textcolor{navy}{9\pi} = 7\pi\).
+   Ensuite on calcule le rapport d'aires :
+   \[P = \dfrac{7\pi}{25\pi} = \dfrac{7}{25} = 28\%\]
+
+5. Pour calculer la probabilité que le joueur atteigne la couronne entre
+   les cercles \(\textcolor{orange}{(\mathcal{C}_d)}\) et
+   \(\textcolor{yellow}{(\mathcal{C}_e)}\) il faut calculer l'aire de la
+   couronne c'est-à-dire la différence entre l'aire du disque de centre
+   O de rayon 5, \(\textcolor{yellow}{\mathcal{D}_e = 25\pi}\) et du
+   disque \(\textcolor{orange}{\mathcal{D}_d = 16\pi}\) soit
+   \(\textcolor{yellow}{25\pi} - \textcolor{orange}{16\pi} = 9\pi\).
+   Ensuite on calcule le rapport d'aires :
+   \[P = \dfrac{9\pi}{25\pi} = \dfrac{9}{25} = 45\%\]
+
+[[#proba:niveau11][Voir la figure page ]].
+
+Pour des exercices en ligne vous pouvez
+[[https://didaskalosmanthanon.github.io/qcm-proba/][essayer ce QCM sur
+les probabilités]].
+
+*** Niveau 12 (secondaire : collège) : Fibonacci
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau12
+:END:
+1. Le carré OABC a pour côté 1.
+
+2. Le carré ADEB a pour côté 1.
+
+3. Le carré FGCE a pour côté 2.
+
+4. Le carré GHIO a pour côté 3.
+
+5. Le carré IJKD a pour côté 5.
+
+6. Le carré KLMF a pour côté 8.
+
+7. Le carré MNPH a pour côté 13.
+
+8. Le carré PQRJ a pour côté 21.
+
+[[#geom:niveau12][Voir les questions page ]].
+
+*** Niveau 13 (secondaire : collège) : aire des carrés de Fibonacci
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau13
+:END:
+1. L'aire du carré OABC est \(1^2 = 1\).
+
+2. L'aire du carré ADEB est \(1^2 = 1\).
+
+3. L'aire du carré FGCE est \(2^2 = 4\).
+
+4. L'aire du carré GHIO est \(3^2 = 9\).
+
+5. L'aire du carré IJKD est \(5^2 = 25\).
+
+6. L'aire du carré KLMF est \(8^2 = 54\).
+
+7. L'aire du carré MNPH est \(13^2 = 169\).
+
+8. L'aire du carré PQRJ est \(21^2 = 441\).
+
+[[#geom:niveau13][Voir questions page ]].
+
+*** Niveau 14 (secondaire : collège) : aire des carrés de Fibonacci
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau14
+:END:
+Pour tout l'exercice il faut considérer les dimensions de la cible
+c'est-à-dire le grand rectangle LNQR de largeur 21 et longueur
+\(21 + 13 = 34\) et a donc pour aire \(21\times 34 = 714\).
+
+1. La probabilité que le joueur atteigne le carré OABC est
+   \[\dfrac{\textcolor{red}{OABC}}{LNQR} = \dfrac{1}{714} \simeq 0,14\%\]
+
+2. La probabilité que le joueur atteigne le carré FGCE est
+   \[\dfrac{\textcolor{orange}{FGCE}}{LNQR} = \dfrac{4}{714} = \dfrac{2}{357} \simeq 0,56\%\]
+
+3. La probabilité que le joueur atteigne le carré GHIO est
+   \[\dfrac{\textcolor{olive}{GHIO}}{LNQR} = \dfrac{9}{714} = \dfrac{3}{238} \simeq 1,26\%\]
+
+4. La probabilité que le joueur atteigne le carré IJKD est
+   \[\dfrac{\textcolor{navy}{IJKD}}{LNQR} = \dfrac{25}{714} =  \simeq 3,5\%\]
+
+5. La probabilité que le joueur atteigne le carré KLMF est
+   \[\dfrac{\textcolor{pink}{KLMF}}{LNQR} = \dfrac{64}{714} = \dfrac{32}{357} \simeq 8,96\%\]
+
+6. La probabilité que le joueur atteigne le carré MNPH est
+   \[\dfrac{\textcolor{lime}{MNPH}}{LNQR} = \dfrac{169}{714} \simeq 23,67\%\]
+
+7. La probabilité que le joueur atteigne le carré PQRJ est
+   \[\dfrac{\textcolor{purple}{PQRJ}}{LNQR} = \dfrac{441}{714} = \dfrac{147}{238} \simeq 61,76\%\]
+
+[[#proba:niveau14][Voir questions page ]].
+
+** Solutions niveau secondaire : lycée
+:PROPERTIES:
+:CUSTOM_ID: solutions-niveau-secondaire-lycée
+:END:
+*** Niveau 15 (secondaire : lycée) : nombres triangulaires
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau15
+:END:
+On considère le repère orthonormé de la [[#fig:nb-triangulaire][figure
+page ]].
+
+1. Le triangle passant par les points O(0; 0) , A(1 ; 0) , B(0 ; 1) est
+   isorectangle car OA = OB et \((OA)\perp (OB)\).
+
+   L'aire de ce triangle est
+   \[\dfrac{OA\times OB}{2} = \dfrac{1}{2} = 0,5\] unités d'aire.
+
+2. Le triangle passant par les points O(0; 0) , C(2 ; 0) , E(0 ; 2) est
+   isorectangle car OC = OE et \((OC)\perp (OE)\).
+
+   L'aire de ce triangle est
+   \[\dfrac{OC\times OE}{2} = \dfrac{2\times 2}{2} = 2\] unités d'aire.
+
+   Le point D(1 ; 1) est sur le segment [CE] car c'est son milieu.
+
+3. Le triangle passant par les points O(0; 0) , F(3 ; 0) , I(0 ; 3) est
+   isorectangle car OF = OI et \((OF)\perp (OI)\).
+
+   L'aire de ce triangle est
+   \[\dfrac{OF\times OI}{2} = \dfrac{3\times 3}{2} = 4,5\] unités
+   d'aire.
+
+   Les points G(2 ; 1) et H(1 ; 2) sont sur le segment [FI] car
+   \((EH)\parallel (BG)\parallel (OF)\) donc on peut utiliser Thalès
+   dans les triangles IEH et IBG puis dans les triangles IBG et IOF par
+   exemple.
+
+4. Le triangle passant par O\((0 ; 0)\), J\((4 ; 0)\) et N\((0 ; 4)\)
+   est isorectangle en O.
+
+   L'aire de ce triangle est
+   \[\dfrac{OJ\times ON}{2} = \dfrac{4\times 4}{2} = 8\] unités d'aire.
+
+   \[\begin{aligned}
+   	\overrightarrow{JK}&\begin{pmatrix}x_K - x_J\\ y_K - y_J\end{pmatrix}=\begin{pmatrix}-1\\1\end{pmatrix}\\
+   	\overrightarrow{JL}&\begin{pmatrix}x_L - x_J\\ y_L - y_J\end{pmatrix}=\begin{pmatrix}-2\\ 2\end{pmatrix} = 2\overrightarrow{JK}\\
+   	\overrightarrow{JM}&\begin{pmatrix}x_M - x_J\\ y_M - y_J\end{pmatrix}=\begin{pmatrix}-3\\ 3\end{pmatrix} = 3\overrightarrow{JK}\\
+   	\overrightarrow{JN}&\begin{pmatrix}x_N - x_J\\ y_N - y_J\end{pmatrix}=\begin{pmatrix}-4\\ 4\end{pmatrix} = 4\overrightarrow{JK}
+   	
+   \end{aligned}\] Ainsi K, L, M sont sur [JN].
+
+5. Il faudra ajouter 6 points pour la prochaine étape si on suit ce même
+   schéma. Le nouveau triangle obtenu (OPU) sera encore isorectangle en
+   O.
+
+   Son aire sera
+   \[\dfrac{OP\times OU}{2} = \dfrac{5\times 5}{2} = 12,5\] unités
+   d'aire.
+
+   Les points entre les axes du repère seront alignés. On pourra le
+   vérifier en utilisant le calcul vectoriel ou Thalès (au choix).
+
+#+caption: Nombres triangulaires
+<<fig:nb-triangulaires>>
+
+[[#geom:niveau15][Voir questions page ]].
+
+*** Niveau 16 (secondaire : lycée) : divisions par 7
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau16
+:END:
+1. On a besoin de 6 décimales pour approcher la fraction
+   \[\dfrac{1}{7} \simeq 0,142857\dots = 0,\overline{142857}\] car cette
+   suite de 6 chiffres se répètent indéfiniment, on l'appelle la période
+   du développement décimal.
+
+2. On a besoin de 6 décimales pour approcher la fraction
+   \[\dfrac{2}{7} \simeq 0,285714\dots = 0,\overline{285714}\] car cette
+   suite de 6 chiffres se répètent indéfiniment, on l'appelle la période
+   du développement décimal.
+
+3. On a besoin de 6 décimales pour approcher la fraction
+   \[\dfrac{3}{7} \simeq 0,428571\dots = 0,\overline{428571}\] car cette
+   suite de 6 chiffres se répètent indéfiniment, on l'appelle la période
+   du développement décimal.
+
+4. On a besoin de 6 décimales pour approcher la fraction
+   \[\dfrac{4}{7} \simeq 0,571428\dots = 0,\overline{571428}\] car cette
+   suite de 6 chiffres se répètent indéfiniment, on l'appelle la période
+   du développement décimal.
+
+5. On a besoin de 6 décimales pour approcher la fraction
+   \[\dfrac{5}{7} \simeq 0,714285\dots = 0,\overline{714285}\] car cette
+   suite de 6 chiffres se répètent indéfiniment, on l'appelle la période
+   du développement décimal.
+
+6. On a besoin de 6 décimales pour approcher la fraction
+   \[\dfrac{6}{7} \simeq 0,857142\dots = 0,\overline{857142}\] car cette
+   suite de 6 chiffres se répètent indéfiniment, on l'appelle la période
+   du développement décimal.
+
+[[#calc:niveau16][Voir questions page ]].
+
+*** Niveau 17 (secondaire : lycée) : comment choisir le milieu d'une série statistique ?
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau17
+:END:
+1. La médiane de la série \(S_0 = \{1 ; 1 ; 1 ; 1 ; 10\}\) est 1.
+
+2. Le mode de la série \(S_0\) est 1.
+
+3. La moyenne de la série \(S_0\) est 2,8.
+
+4. La médiane et le mode de la série
+   \(S_1 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10\}\) est toujours 1. Par contre la
+   moyenne de la série \(S_1\) est désormais 4.
+
+5. La médiane et le mode de la série
+   \(S_2 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11\}\) est toujours 1. Par contre
+   la moyenne de la série \(S_2\) est désormais 5.
+
+6. La médiane de la série
+   \(S_3 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15\}\) vaut
+   désormais 10 ; le mode vaut toujours 1 et la moyenne vaut 8.
+
+7. La série
+   \[S_4 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18\}\]
+   a désormais pour médiane 13 ; mode 15 et moyenne 11,125.
+
+8. Oui c'est possible en ajoutant 1 à la série \(S_4\) on obtient la
+   série
+   \[S_5 = \{1 ; 1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18\}\]
+   qu'on peut rendre plus compacte avec un tableau :
+
+   #+begin_center
+   #+caption: Version traitée de la série \(S_5\)
+
+   ​*7|c| \(x_i\) & 1 & 10 & 11 & 15 & 16 & 18\\
+   \(n_i\) & 5 & 2 & 1 & 5 & 2 & 2\\
+   ECC & 5 & 7 & 8 & 13 & 15 & 17\\
+   FCC & \(29\%\) & \(41\%\) & \(47\%\) & \(76\%\) & \(88\%\) &
+   \(100\%\)\\
+
+   - ECC signifie Effectifs Cumulés Croissants
+
+   - FCC signifie Fréquences Cumulées Croissants
+   #+end_center
+
+   Ainsi la médiane vaut 15, le mode est double 1 et 15 (on dit que la
+   série est bimodale) et la moyenne vaut environ \(10,53 < 11,125\).
+   Ici il suffisait d'ajouter une valeur inférieure à la moyenne pour
+   augmenter la médiane car la moyenne se trouvait entre les deux bornes
+   de la série \(S_4\) à savoir 11 et 15.
+
+9. Oui c'est possible en ajoutant 11 à la série \(S_5\) on obtient la
+   série
+   \[S_6 = \{1 ; 1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 11 ; 15 ; 15 ; 15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18\}\]
+   qu'on peut rendre plus compacte avec un tableau :
+
+   #+begin_center
+   #+caption: Version traitée de la série \(S_6\)
+
+   ​*8|c| \(x_i\) & 1 & 10 & 11 & 15 & 16 & 18\\
+   \(n_i\) & 5 & 2 & 2 & 5 & 2 & 2\\
+   ECC & 5 & 7 & 9 & 14 & 16 & 18\\
+   FCC & \(28\%\) & \(39\%\) & \(50\%\) & \(78\%\) & \(89\%\) &
+   \(100\%\)\\
+
+   - ECC signifie Effectifs Cumulés Croissants
+
+   - FCC signifie Fréquences Cumulées Croissants
+   #+end_center
+
+   Ainsi la médiane vaut \(13 < 15\), le mode est double 1 et 15 (la
+   série est encore bimodale) et la moyenne vaut environ
+   \(10,56 > 10,53\). Ici il suffisait d'ajouter une valeur supérieure à
+   la moyenne et inférieure à la médiane pour augmenter la moyenne et
+   diminuer la médiane.
+
+10. Oui c'est possible en ajoutant 15 à la série \(S_6\) on obtient la
+    série \[\begin{aligned}
+    		S_7 &= \\
+    		& \{ \\
+    		& 01 ; 01 ; 01 ; 01 ; 01 ; \\
+    		& 10 ; 10 ; \\
+    		& 11 ; 11 ; \\
+    		& 15 ; 15 ; 15 ; 15 ; 15 ; 15 ; \\
+    		& 16 ; 16 ; \\
+    		& 18 ; 18 \\
+    		&\}
+    	
+    \end{aligned}\] qu'on peut rendre plus compacte avec un tableau :
+
+    #+begin_center
+    #+caption: Version traitée de la série \(S_7\)
+
+    ​*9|c| \(x_i\) & 1 & 10 & 11 & 15 & 16 & 18\\
+    \(n_i\) & 5 & 2 & 2 & 6 & 2 & 2\\
+    ECC & 5 & 7 & 9 & 15 & 17 & 19\\
+    FCC & \(26\%\) & \(37\%\) & \(47\%\) & \(79\%\) & \(89\%\) &
+    \(100\%\)\\
+
+    - ECC signifie Effectifs Cumulés Croissants
+
+    - FCC signifie Fréquences Cumulées Croissants
+    #+end_center
+
+    Ainsi la médiane vaut \(15\), le mode vaut 15 (la série est n'est
+    plus bimodale) et la moyenne vaut environ \(10,79\). Ici il
+    suffisait d'ajouter 15 mais ça ne marchait pas avec 1 (la médiane
+    aurait été 11).
+
+[[#calc:niveau17][Voir questions page ]].
+
+*** Niveau 18 (secondaire : lycée) : comment contribuer efficacement à un projet collaboratif ?
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau18
+:END:
+1. La semaine 1, Bob a un taux de \(90\% > 60\%\) pour Alice. Donc Bob a
+   un taux supérieur.
+
+2. La semaine 2, Bob a un taux de \(30\% > 10\%\) pour Alice. Donc Bob a
+   un taux supérieur.
+
+3. Alice a modifié 60 articles la semaine 1, puis 1 la semaine 2, soit
+   un total de 61 articles alors que Bob en a modifié 9 la semaine 1,
+   puis 30 la semaine 2, soit un total de 39 articles. Ainsi Alice a
+   modifié plus d'articles que Bob sur les deux semaines.
+
+4. 
+
+   #+begin_center
+   |       | Semaine 1           | Semaine 2          | Total               |
+   |-------+---------------------+--------------------+---------------------|
+   | Alice | \(\dfrac{60}{100}\) | \(\dfrac{1}{10}\)  | \(\dfrac{61}{110}\) |
+   | Bob   | \(\dfrac{9}{10}\)   | \(\dfrac{30}{10}\) | \(\dfrac{39}{110}\) |
+   #+end_center
+
+5. \[\begin{aligned}
+   			S_A(1) &= \dfrac{60}{100} = 60\% &&<& S_B(1) = \dfrac{9}{10} = 90\% \\
+   			S_A(2) &= \dfrac{10}{10} = 10\% &&<& S_B(2) = \dfrac{30}{100} = 30\% 
+   		
+   \end{aligned}\]
+
+6. La semaine 1, Alice a consulté 100 articles sur les 110 articles
+   qu'elle a lu au total donc le poids de son taux de modifications
+   cette semaine par rapport à l'ensemble est \(\dfrac{100}{110}\).
+
+   Et pour la semaine 2, c'est \(\dfrac{10}{110}\).
+
+   Pour Bob, il a consulté 10 articles la semaine 1 donc le poids de son
+   taux de modifications cette semaine-là est \(\dfrac{10}{110}\).
+
+   Alors que pour la semaine 2, il a lu 100 articles d'où le poids
+   \(\dfrac{100}{110}\).
+
+Ce paradoxe connu sous le nom de
+[[https://fr.wikipedia.org/wiki/Paradoxe_de_Simpson][paradoxe de
+Simpson]] vient du fait que Bob a un taux de modification supérieur sur
+chaque semaine alors qu'Alice a modifié plus d'articles que lui sur les
+quinze jours. Le truc c'est que l'on ne compte pas la même chose dans
+les deux cas, pour les semaines individuelles on considère les taux de
+modifications alors que pour le calcul des deux semaines on compte le
+nombre d'articles modifiés. On pourrait à première vue se dire qu'Alice
+est plus efficace que Bob puisqu'elle a modifié plus d'articles.
+Néanmoins on pourrait affiner l'analyse en se posant la question de
+l'impact de ses modifications (corrections orthographiques ou apport sur
+le fond...). Le résultat dépend donc de ce qu'on cherche à mesurer.
+
+Cet exemple montre l'importance du contexte, de la question posée et de
+ce qu'on cherche à mesurer car les chiffres à eux seuls ne peuvent pas
+parler.
+
+[[#calc:niveau18][Voir questions page ]].
+
+*** Niveau 19 (secondaire : lycée) : une interprétation géométrique du paradoxe de Simpson
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau19
+:END:
+#+caption: Paradoxe de Simpson version géométrique
+
+On remarque que la somme des vecteurs de pentes inférieures
+(\(\textcolor{blue}{\vec{u} = \vec{u}_1 + \vec{u}_2}\)) donne un vecteur
+de pente supérieure à la somme des vecteurs de pentes supérieures
+(\(\textcolor{red}{\vec{v} = \vec{v}_1 + \vec{v}_2}\)).
+
+[[#geom:niveau19][Voir questions page ]].
+
+*** Niveau 20 (secondaire : lycée) : constructions et comparaisons de moyennes
+:PROPERTIES:
+:CUSTOM_ID: sol:niveau20
+:END:
+#+caption: Comparaison visuelle des moyennes harmonique, géométrique,
+arithmétique et quadratique
+<<fig:compare-means>>
+
+1. [[#fig:compare-means][Voir figure ci-dessus page .]]
+
+2. [[#fig:compare-means][Voir figure ci-dessus page .]]
+
+3. \[OE = \dfrac{a + b}{2}\] car O est le centre du cercle de diamètre
+   \(a + b\) et E est un point de ce cercle donc OE est un rayon (donc
+   un demi-diamètre).
+
+4. Le triangle ADB est rectangle en D car les points A, D et B sont
+   cocycliques (sur le même cercle) de centre O donc il s'agit de son
+   cercle circonscrit et O est le milieu de [AB] puisque c'est un
+   diamètre. Tout triangle inscrit dans un cercle dont l'un des côtés
+   est un diamètre est un triangle rectangle.
+
+5. Appliquons Pythagore dans le triangle ACD : \[\begin{aligned}
+   			AD^2 &= AC^2 + CD^2 \\
+   			AD^2 &= b^2 + CD^2 \\
+   			AD &= \sqrt{b^2 + CD^2}
+   		
+   \end{aligned}\]
+
+6. Appliquons Pythagore dans le triangle BCD : \[\begin{aligned}
+   			BD^2 &= BC^2 + CD^2 \\
+   			BD^2 &= a^2 + CD^2 \\
+   			BD &= \sqrt{a^2 + CD^2}
+   		
+   \end{aligned}\]
+
+7. Appliquons Pythagore dans le triangle ABD : \[\begin{aligned}
+   			AB^2 &= AD^2 + BD^2 \\
+   			AB^2 &= a^2 + b^2 + 2CD^2 \\
+   			2CD^2 &= AB^2 - (a^2 + b^2) \\
+   			2CD^2 &= (a + b)^2 - (a^2 + b^2) \\
+   			2CD^2 &= a^2 + b^2 + 2ab - a^2 - b^2\\
+   			2CD^2 &= 2ab \\
+   			&\Rightarrow \boxed{CD = \sqrt{ab}}
+   		
+   \end{aligned}\]
+
+8. Sur la figure on peut voir que \(CD = \sqrt{ab}\) est une corde donc
+   est inférieure au rayon \(OE = \dfrac{a + b}{2}\) par conséquent
+   \[\dfrac{a + b}{2}\geq \sqrt{ab}\]
+
+9. [[#fig:compare-means][Voir figure ci-dessus page .]]
+
+10. Sur la figure on peut voir : \[\begin{aligned}
+    			OC &= OA - CA\\
+    			OC &= \left( \dfrac{a + b}{2} \right) - b\\
+    			OC &= \dfrac{a + b - 2b}{2}\\
+    			OC &= \dfrac{a - b}{2}
+    		
+    \end{aligned}\]
+
+11. Calculons l'aire du triangle DOC de deux façons différentes. D'une
+    part en utilisant OC comme base et CD comme hauteur,
+    \[\begin{aligned}
+    			\mathcal{A}_{DOC} &= \dfrac{OC\times DC}{2}\\
+    			\mathcal{A}_{DOC} &= \dfrac{\left(\dfrac{a - b}{2}\right)\times \sqrt{ab}}{2} \\
+    			\mathcal{A}_{DOC} &= \dfrac{(a - b)\sqrt{ab}}{4}
+    		
+    \end{aligned}\] d'autre part en utilisant OD comme base et FC comme
+    hauteur : \[\begin{aligned}
+    			\mathcal{A}_{DOC} &= \dfrac{FC\times DO}{2}\\
+    			\mathcal{A}_{DOC} &= \dfrac{FC\times \left(\dfrac{a + b}{2}\right)}{2} \\
+    			\mathcal{A}_{DOC} &= FC\times \dfrac{(a + b)}{4}
+    		
+    \end{aligned}\]
+
+    O en déduirt une expression de FC en fonction de a et b :
+    \[\begin{aligned}
+    			FC\times \dfrac{(a + b)}{4} &= \dfrac{(a - b)\sqrt{ab}}{4}\\
+    			FC &= \sqrt{ab}\times\dfrac{a - b}{a + b}
+    		
+    \end{aligned}\]
+
+12. Appliquons Pythagore dans CDF : \[\begin{aligned}
+    			FD^2 &= CD^2 - FC^2\\
+    			FD^2 &= ab - ab \times\dfrac{(a - b)^2}{(a + b)^2} \\
+    			FD^2 &= ab\left( 1 - \dfrac{(a - b)^2}{(a + b)^2}\right) \\
+    			FD^2 &= ab\left( \dfrac{(a + b)^2 - (a - b)^2}{(a + b)^2}\right) \\
+    			FD^2 &= ab\left( \dfrac{4ab}{(a + b)^2}\right) \\
+    			FD^2 &= \left(\dfrac{2ab}{a + b}\right)^2\\
+    			 &\Rightarrow \boxed{FD = \dfrac{2ab}{a + b}}
+    		
+    \end{aligned}\]
+
+13. Appliquons Pythagore dans le triangle CEO : \[\begin{aligned}
+    			EC^2 &= OC^2 + EO^2 \\
+    			EC^2 &= \left(\dfrac{a - b}{2}\right)^2 + \left(\dfrac{a + b}{2}\right)^2 \\
+    			EC^2 &= \dfrac{2(a^2 + b^2)}{4} \\
+    			EC^2 &= \dfrac{a^2 + b^2}{2} \\
+    			&\Rightarrow \boxed{EC = \sqrt{\dfrac{a^2 + b^2}{2}}}
+    		
+    \end{aligned}\]
+
+14. Sur la figure on peut voir que \[FD < CD < OE < EC\]
+
+15. Faisons les calculs : Commençons par la gauche : \[\begin{aligned}
+    			\sqrt{ab} \geq \sqrt{\dfrac{2ab}{a + b}} &\iff ab \geq  \dfrac{2ab}{a + b} \\
+    			\sqrt{ab} \geq \sqrt{\dfrac{2ab}{a + b}} &\iff a + b \geq  2 
+    		
+    \end{aligned}\] Nous venons d'aboutir à une relation toujours vraie
+    puisque nous avons choisis a et b tels que le diamètre du cercle est
+    \(a + b = 8\) donc toujours supérieur à 2. Ainsi
+    \[\boxed{\sqrt{\dfrac{2ab}{a + b}} \leq \sqrt{ab}}\]
+
+    Poursuivons avec celle du milieu : \[\begin{aligned}
+    			\dfrac{a + b}{2} \geq \sqrt{ab} &\iff a + b \geq 2\sqrt{ab}\\
+    			\dfrac{a + b}{2} \geq \sqrt{ab} &\iff a + b - 2\sqrt{ab} \geq 0\\
+    			\dfrac{a + b}{2} \geq \sqrt{ab} &\iff (\sqrt{a} - \sqrt{b})^2 \geq 0
+    		
+    \end{aligned}\] Nous venons d'aboutir à une inégalité toujours
+    puisque le carré d'un nombre réel est toujours positif donc
+    l'inégalité initiale est toujours vraie
+    \[\boxed{\sqrt{ab} \leq \dfrac{a+b}{2}}\]
+
+    Il reste la dernière inégalité à établir : \[\begin{aligned}
+    			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{a^2+b^2}{2} \geq \left(\dfrac{a+b}{2}\right)^2 \\
+    			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{a^2+b^2}{2} \geq \dfrac{a^2+b^2 + 2ab}{4} \\
+    			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{2(a^2+b^2) - (a^2+b^2 + 2ab)}{4} \geq 0 \\
+    			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{a^2 + b^2 - 2ab}{4} \geq 0 \\
+    			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{(a - b)^2}{4} \geq 0 
+    		
+    \end{aligned}\] Nous venons d'aboutir à une inégalité toujours vraie
+    ainsi \[\boxed{\dfrac{a + b}{2}\leq \sqrt{\dfrac{a^2+b^2}{2}}}\]
+
+[[#geom:niveau20][Voir questions page ]].
+
+* Et maintenant ?
+:PROPERTIES:
+:CUSTOM_ID: et-maintenant
+:END:
+** Que faire une fois que vous avez fait tous les exercices ?
+:PROPERTIES:
+:CUSTOM_ID: que-faire-une-fois-que-vous-avez-fait-tous-les-exercices
+:END:
+*** Vous en voulez encore ?
+:PROPERTIES:
+:CUSTOM_ID: vous-en-voulez-encore
+:END:
+Voilà, c'est terminé vous avez achevé tous les exercices de cet ouvrage.
+Bravo ! Maintenant, que faire ?
+
+Vous avez plusieurs possibilités. Si vous êtes créatif et curieux vous
+pouvez commencer par modifier les exercices proposés ici. C'est un très
+bon moyen d'approfondir. Ensuite vous pouvez aller voir du côté de mes
+exercices en ligne :
+
+- [[https://didaskalosmanthanon.github.io/fct-affine/][Comprendre la
+  notion de fonction affine]]
+
+- [[https://didaskalosmanthanon.github.io/image-fonction-affine/index.html][Calcul
+  de l'image par une fonction affine]]
+
+- [[https://didaskalosmanthanon.github.io/antecedent-fonction-affine/index.html][Antécédent
+  par une fonction affine]]
+
+- [[https://didaskalosmanthanon.github.io/quizz/index.html][QCM sur
+  divers thèmes : trigonométrie, identités remarquables...]]
+
+- [[https://didaskalosmanthanon.github.io/quizz-stats-3eme/index.html][QCM
+  sur les statistiques en 3ème]]
+
+- [[https://didaskalosmanthanon.github.io/qcm-numbers/][QCM sur les
+  nombres en 3ème]]
+
+- [[https://didaskalosmanthanon.github.io/quizz-fonctions-3eme/index.html][QCM
+  sur les fonctions en classe de 3ème]]
+
+- [[https://didaskalosmanthanon.github.io/geometry/exercice1.html][Exercices
+  de géométrie niveau 3ème - 2de]]
+
+- [[https://didaskalosmanthanon.github.io/testimonial-slider/index.html][Ce
+  que mes élèves pensent de mes cours]]
+
+*** D'autres livres du même auteur
+:PROPERTIES:
+:CUSTOM_ID: dautres-livres-du-même-auteur
+:END:
+Vous pouvez également vous procurez mes autres ouvrages disponibles sur
+Amazon :
+
+- [[https://amzn.to/40n8rdI][Apprendre Python en moins de 5 heures]] un
+  livre pour vous mettre toute suite en action (évidemment que vous ne
+  maîtriserez pas le langage en seulement 5 heures)
+
+- [[https://amzn.to/3THL1Mq][Comment devenir autonome en anglais en 3
+  mois]] aujourd'hui l'anglais est un outil indispensable que ça soit
+  pour travailler, pour les sciences, pour voyager, pour de la
+  documentation technique et même pour explorer les mathématiques de
+  façon internationale
+
+*** Pour allez plus loin
+:PROPERTIES:
+:CUSTOM_ID: pour-allez-plus-loin
+:END:
+Pour toutes remarques, suggestions, ou demandes d'aide personnelles
+merci de remplir [[https://forms.gle/x7fAce7GqiJAGbsC7][ce formulaire]]
+: [[https://forms.gle/x7fAce7GqiJAGbsC7]]
+
+En remplissant ce formulaire vous me permettrez de vous contacter pour
+vous faire part de mes actualités et de l'aide que je pourrais vous
+apportez si vous en avez besoin.
+
+À très bientôt pour de nouvelles aventures et encore merci d'avoir
+acheté ce livre et de l'avoir lu jusqu'au bout.

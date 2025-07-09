@@ -1,0 +1,75 @@
+\subsection{Exercice 11 (secondaire : collège) : Un cible circulaire, probabilités}
+
+\label{proba:niveau11}
+
+Considérons la cible définie par les cercles concentriques sur le schéma ci-dessous : 
+\definecolor{yellow}{rgb}{1,0.8,0.2}
+\definecolor{orange}{rgb}{1,0.5,0}
+\definecolor{navy}{rgb}{0,0,1}
+\definecolor{lime}{rgb}{0,1,0}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{black}{rgb}{0,0}
+
+\begin{figure}[H]
+\centering
+\caption{Cible de cercles concentriques}
+\vspace{.25cm}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+xtick={-5, -4,...,5},
+ytick={-5,-4,...,5},]
+\clip(-5.5,-5.5) rectangle (6,5.5);
+\draw [line width=2pt,color=red] (0,0) circle (1cm);
+\draw [line width=2pt,color=lime] (0,0) circle (2cm);
+\draw [line width=2pt,color=navy] (0,0) circle (3cm);
+\draw [line width=2pt,color=orange] (0,0) circle (4cm);
+\draw [line width=2pt,color=yellow] (0,0) circle (5cm);
+\begin{scriptsize}
+\draw [fill=black] (0,0) circle (2.5pt);
+\draw[color=black] (0.14280352603970045,0.37709534368070763) node {$O$};
+\draw [fill=red] (1,0) circle (2.5pt);
+\draw[color=red] (1.25,0.38) node {$A$};
+\draw[color=red] (1.05,1.05) node {$(\mathcal{C}_A)$};
+\draw [fill=lime] (2,0) circle (2.5pt);
+\draw[color=lime] (2.25,0.38) node {$B$};
+\draw[color=lime] (1.75,1.75) node {$(\mathcal{C}_B)$};
+\draw [fill=navy] (3,0) circle (2.5pt);
+\draw[color=navy] (3.25,0.378) node {$C$};
+\draw[color=navy] (2.5,2.5) node {$(\mathcal{C}_C)$};
+\draw [fill=orange] (4,0) circle (2.5pt);
+\draw[color=orange] (4.25,0.378) node {$D$};
+\draw[color=orange] (3.15,3.15) node {$(\mathcal{C}_D)$};
+\draw [fill=yellow] (5,0) circle (2.5pt);
+\draw[color=yellow] (5.25,0.378) node {$E$};
+\draw[color=yellow] (3.9,3.9) node {$(\mathcal{C}_E)$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\label{fig:proba-target}
+\end{figure}
+
+\newpage
+
+\definecolor{yellow}{rgb}{1,0.8,0.2}
+\definecolor{orange}{rgb}{1,0.5,0}
+\definecolor{navy}{rgb}{0,0,1}
+\definecolor{lime}{rgb}{0,1,0}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{black}{rgb}{0,0}
+
+On considère que les joueurs atteignent toujours la cible c'est-à-dire le cercle $\textcolor{yellow}{(\mathcal{C}_E)}$.
+\begin{enumerate}[label=G\arabic*)]
+\item Quelle est la probabilité que le joueur atteigne l'intérieur du cercle $\textcolor{red}{(\mathcal{C}_A)}$ ?
+\item Quelle est la probabilité que le joueur atteigne la couronne entre les cercles $\textcolor{red}{(\mathcal{C}_A)}$ et $\textcolor{lime}{(\mathcal{C}_B)}$ ?
+\item Quelle est la probabilité que le joueur atteigne la couronne entre les cercles $\textcolor{lime}{(\mathcal{C}_B)}$ et $\textcolor{navy}{(\mathcal{C}_C)}$ ?
+\item Quelle est la probabilité que le joueur atteigne la couronne entre les cercles $\textcolor{navy}{(\mathcal{C}_C)}$ et $\textcolor{orange}{(\mathcal{C}_D)}$ ?
+\item Quelle est la probabilité que le joueur atteigne la couronne entre les cercles $\textcolor{orange}{(\mathcal{C}_D)}$ et $\textcolor{yellow}{(\mathcal{C}_E)}$ ?
+\end{enumerate}

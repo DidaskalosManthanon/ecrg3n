@@ -1,0 +1,137 @@
+
+\documentclass[12pt]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=6in, paperheight=9in, margin=0.75in]{geometry}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{float}
+\usepackage{wrapfig} % Pour enrouler le texte autour des images
+\usepackage{graphicx} % Pour inclure des images
+\usepackage{microtype} % Amélioration typographique
+\usepackage[table]{xcolor} % Pour une meilleure gestion des couleurs
+\usepackage{array}
+\usepackage{bm}
+
+\renewcommand{\arraystretch}{2.5}
+		
+%\let\cleardoublepage\clearpage
+
+
+
+\usepackage{fancyhdr}
+\usepackage[french]{babel}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+
+% Définition des couleurs
+\definecolor{myblue}{RGB}{0,0,139}
+\definecolor{mygreen}{RGB}{0,100,0}
+
+% Configuration des listes
+\setlist[enumerate]{itemsep=0.5em, topsep=0.5em}
+\setlist[itemize]{itemsep=0.5em, topsep=0.5em}
+
+% Amélioration de l'interligne
+\linespread{1.1}
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{\textcolor{myblue}{Calcul et géométrie}}
+%\lhead{\textcolor{myblue}{\sc Laurent Garnier}}
+%\rfoot{\thepage}
+
+\title{Exercices de calculs et représentations géométriques}
+\author{\textsc{Laurent Garnier}}
+\date{}
+
+\begin{document}
+\pagestyle{plain}                        % ↳ numéros en pied de page, en-têtes vides
+\maketitle
+
+% ----------------- Page de titre (exemple sobre) -----------
+%\begin{titlepage}
+%    \centering
+%    \Huge\bfseries Exercices de calculs et représentations géométriques\\[2cm]
+%    \Large Laurent Garnier\\[1cm]
+ %   \normalsize \copyright\ 2025 Laurent Garnier – Tous droits réservés
+%\end{titlepage}
+%\cleardoublepage
+
+% ============  AVANT-PROPOS éventuel  ======================
+%\frontmatter      % numérotation romaine (i, ii, …) pour les pages préliminaires
+
+% ----------------- SOMMAIRE NON DÉTAILLÉ -------------------
+\chapter*{Sommaire}
+\begin{itemize}
+  \item \textbf{Un peu de culture historique}
+  \item \textbf{Niveau primaire}
+  \item \textbf{Niveau secondaire : collège}
+  \item \textbf{Niveau secondaire : lycée}
+  \item \textbf{Solutions des exercices}
+  \item \textbf{Et maintenant ?}
+\end{itemize}
+\cleardoublepage
+
+
+% ============  CORPS DU LIVRE  =============================
+%\mainmatter       % passe en numérotation arabe (1, 2, …)
+
+\chapter{Un peu de culture historique}
+
+\input{partie1-intro-culture.tex}
+
+\chapter{Niveau primaire}
+
+\input{partie2-calculs-primaire.tex}
+
+\chapter{Niveau secondaire : collège}
+
+\input{partie3-calculs-college.tex}
+
+\chapter{Niveau secondaire : lycée}
+
+\input{partie4-calculs-lycee.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%                                   SOLUTIONS                                        %%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Solutions des exercices}
+
+\input{partie5-solutions-primaire.tex}
+
+\input{partie6-solutions-college.tex}
+
+\input{partie7-solutions-lycee.tex}
+
+\chapter{Et maintenant ?}
+
+\input{partie8-et-apres.tex}
+
+%\backmatter
+\cleardoublepage
+\setcounter{tocdepth}{2}
+\renewcommand{\contentsname}{Table des matières détaillée}
+\tableofcontents
+\cleardoublepage
+\renewcommand{\contentsname}{Table des matières}
+
+% ------------- LISTE DES FIGURES ---------------------------
+\cleardoublepage
+\renewcommand{\listfigurename}{Liste des figures}
+\listoffigures
+
+
+
+\end{document}

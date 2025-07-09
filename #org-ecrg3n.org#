@@ -1,0 +1,2018 @@
+#+TITLE: Exercices de calculs et représentations géométriques 3 niveaux
+#+AUTHOR: Laurent Garnier
+#+LANGUAGE: FR
+#+DESCRIPTION: Ce livre propose des exercices de calculs et de géométrie pour différents niveaux scolaires, du primaire au lycée.
+#+EXPORT_FILE_NAME: ecrg3n-ebook
+#+LATEX_CLASS: book
+#+LATEX_HEADER: \usepackage[paperwidth=6in,paperheight=9in,margin=1in]{geometry}
+#+BIND: org-export-allow-bind-keywords t
+#+KEYWORDS: mathématiques, exercices, calcul, géométrie, éducation, collège, lycée
+#+COPYRIGHT: © 2025 Laurent Garnier. Tous droits réservés.
+
+# --- OPTIONS D'EXPORT EPUB ---
+# num:t      -> Numérote les chapitres et sections (1, 1.1, 1.2...)
+# toc:t      -> Génère une table des matières cliquable
+# H:3        -> Profondeur des titres dans la table des matières (Chapitres, Sections, Sous-sections)
+# ^:{}       -> Permet d'utiliser des indices/exposants (ex: m^2) sans que ce soit interprété comme du formatage
+#+OPTIONS: num:t toc:t H:3 ^:{}
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+
+* Un peu de culture historique
+** Introduction
+
+Ce livre a pour but de vous faire faire des mathématiques. On commence
+par du calcul mental afin d’échauffer l’esprit. Oui, même au XXI^{e}
+siècle, alors que nous avons des calculatrices, des ordinateurs, des
+téléphones et même des intelligences artificielles, il est encore
+utile d’exercer son cerveau sur ce genre de tâches. Loin de moi l’idée
+de vous prendre pour des calculateurs prodiges, ni d’essayer de vous
+entraîner à le devenir : je n’en suis pas un, et j’aurais du mal à
+vous aider pour ce genre de compétitions. Mais, de la même façon que
+les humains n’ont pas cessé de marcher et de courir après l’invention
+de la voiture, de l’ascenseur et des autres moyens de transport, il en
+va de même pour l’exercice cérébral. Sans être médecin, il me semble
+que le bon sens nous dicte que, si l’on reste assis sur le canapé à
+manger de la malbouffe sans faire de sport, il y a de gros risques de
+rencontrer des problèmes de surpoids et de santé en
+général. L’exercice cérébral est une gymnastique de l’esprit : c'est
+une [[https://www.youtube.com/watch?v=qrA5HgFIjJE][hygiène mentale]].
+
+Néanmoins, il serait vain — et surtout ennuyeux — de se cantonner aux
+calculs. L’activité mathématique est bien plus riche que cela. Il ne
+s’agit pas de comptabilité. Même si l’arithmétique et le calcul
+algébrique restent des outils cruciaux dans l’architecture des
+mathématiques, les maths ne se résument pas à des calculs. D’un autre
+côté, oublier cet aspect serait une carence aussi flagrante que celle
+d’un sportif de haut niveau (footballeur, nageur, judoka… choisissez
+votre sport favori) qui ne ferait pas de musculation. Les sportifs
+font de la musculation parce que leurs muscles sont leurs outils pour
+accomplir leur art. En mathématiques, c’est pareil : les calculs et la
+capacité à les conduire sont utiles pour résoudre des problèmes
+mathématiques.
+
+
+Ce livre s’articule en trois parties principales, en plus de cette
+introduction.
+
+
+La première partie doit être faite par tous les lecteurs en guise
+d’échauffement. Il s’agit de calculs << /purs et durs/ >>,
+de niveau primaire. En effet, l’école primaire a pour but de faire
+acquérir la maîtrise des quatre opérations de l’arithmétique de base,
+à savoir : addition, soustraction, multiplication et division. Cela
+peut paraître simple, mais derrière ces << /simples/ >>
+opérations se cachent les structures algébriques que nous aborderons
+dans un prochain ouvrage consacré à l’enseignement supérieur.
+
+Dans la seconde partie, on passe au niveau collège, en ajoutant des
+calculs de carrés, des programmes de calculs, le calcul littéral, les
+liens entre géométrie et calcul, et des probabilités de base en termes
+de rapports d’aires de figures élémentaires.
+
+
+Enfin, dans la troisième partie, on passe au niveau lycée :
+configurations de nombres, vecteurs, statistiques et situations
+concrètes. Mais les choses sont présentées avec un vocabulaire et des
+connaissances accessibles à un collégien.
+
+
+Le souhait de cet ouvrage est de fournir des exercices faisables
+directement, sans avoir à /réviser le cours/. Trop souvent
+aujourd’hui, les élèves sont traumatisés par la crainte de ne pas
+connaître << /la phrase du cours/ >>, comme s’il s’agissait
+d’une incantation magique. Aucun cours de mathématiques n’est tombé du
+ciel, telles les tables de la Loi. L’activité mathématique s’est
+développée au cours des siècles à travers des problèmes qui, une fois
+résolus, ont donné lieu à des généralisations, lesquelles sont ensuite
+devenues des cours. Alors bien sûr, on ne peut pas se permettre le
+luxe de tout redémontrer à partir de zéro, sinon chaque génération
+aurait à refaire tout ce qu’a fait la précédente. Néanmoins, il me
+semble beaucoup plus intéressant, et surtout utile et efficace, de
+s’exercer d’abord ; et, à force de pratique, le cours pourra alors
+être vu comme quelque chose d’intéressant… un nouveau genre
+d’exercice.
+
+Ma critique première est que les enseignements primaires et
+secondaires (surtout primaire et collège) manquent cruellement de
+démonstrations (alors que des démonstrations géométriques sont
+accessibles très tôt comme par exemple la [[https://youtu.be/IL55ftyJQHI][démonstration de la 1^{ère} identité remarquable]]), au profit d’un apprentissage par cœur dénué
+de raisonnement et de réflexion, destiné à créer des
+<< /automatismes/ >>. À l’époque de l’intelligence artificielle, il me
+semble d’autant plus absurde de vouloir former des générations
+d’automates, déjà dépassés par les véritables automates. Nous,
+humains, faisons des erreurs et avons la capacité d’apprendre de nos
+erreurs. C’est précisément pour cette raison qu’il faut cultiver l’art
+de se tromper intelligemment.
+
+
+L’art de se tromper intelligemment signifie prendre le risque de
+pousser un raisonnement jusqu’à son terme, pour se rendre compte s’il
+fonctionne ou non. Comprendre signifie prendre un risque : sans prise
+de risque, vous ne pourrez jamais comprendre ; sans erreur, vous ne
+pourrez jamais comprendre.
+
+
+Ici, tous les exercices sont corrigés, donc vous pouvez les faire en
+toute honnêteté, en prenant véritablement le risque de vous
+tromper. De plus, pour la plupart des exercices (en dehors de ceux de
+calculs purs), il y a souvent plusieurs façons de les résoudre. Il ne
+faut donc pas chercher à mémoriser les corrections. Les exercices sont
+presque tous originaux ou des adaptations de classiques.
+
+Pour toutes remarques, suggestions, ou demandes d'aide personnelles
+merci de remplir ce [[https://forms.gle/x7fAce7GqiJAGbsC7][formulaire]] :
+[[https://forms.gle/x7fAce7GqiJAGbsC7][https://forms.gle/x7fAce7GqiJAGbsC7]]. 
+
+** Origine étymologique du mot calcul
+
+    #+CAPTION: Cailloux
+    #+ATTR_HTML: :width 75%
+    [[./images/Cailloux.jpeg]]
+    <<fig1:cailloux>>
+
+    Le mot << calcul >> vient du latin /calculus/,
+    qui signifiait littéralement /petit caillou/. Ce terme
+    dérive de /calx/, /calcis/ (chaux, pierre calcaire). Les Romains
+    utilisaient effectivement de petits cailloux ou jetons pour
+    effectuer leurs opérations arithmétiques sur l'abaque, d'où cette
+    étymologie concrète qui reflète une pratique réelle.
+        
+** Premières traces de calculs
+
+    Les plus anciennes traces de calculs remontent à la préhistoire :
+
+*** Os d'Ishango
+
+    République Démocratique du Congo il y a environ 20 000 ans.
+
+    #+CAPTION: Os d'Ishango
+    #+ATTR_HTML: :width 200px :height 400px
+    [[./images/Os-Ishango.jpeg]]
+    <<fig2:Ishango>>
+
+    Les os d'Ishango, également appelés bâtons d'Ishango, sont
+    considérés comme le plus ancien outil de calcul jamais mis au
+    jour. Ils ont été découverts au sein de vestiges archéologiques
+    découverts dans l'ancien Congo belge. Le site est daté de plus de
+    20 000 ans. Selon certains auteurs, il pourrait s'agir de la plus
+    ancienne attestation de la pratique de l'arithmétique dans
+    l'histoire de l'humanité. Ils ont été considérés, dans un premier
+    temps, comme des bâtons de comptage.
+    
+*** Jetons d'argile mésopotamiens
+
+    Irak actuelle entre 8 000 et 3 000 avant l'ère commune.
+
+    #+CAPTION: Jetons d'argile mésopotamiens
+    #+ATTR_HTML: :width 300px :height: 200px
+    [[./images/collier7800.jpg]]
+    <<fig3:argile>>
+
+    Ces petits objets en forme de cônes, sphères ou disques servaient
+    à compter les biens (bétail, céréales) avant l'invention de
+    l'écriture. Les jetons d'argile mésopotamiens ont joué un rôle
+    important dans le développement des systèmes de comptabilité et de
+    commerce dès 8000 avant J.-C. Ces objets, dont la forme variait en
+    fonction de l'objet qu'ils représentaient, étaient utilisés pour
+    désigner et quantifier des marchandises.
+    
+*** Tablettes cunéiformes babyloniennes
+
+    Irak actuelle aux alentours de 3 000 avant l'ère commune.
+
+    #+CAPTION: Tablettes cunéiformes babyloniennes
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/Proto-cuneiform-sexagesimal.png]]
+    <<fig4:cuneiform>>
+
+    Les premières traces écrites de calculs arithmétiques, avec un
+    système sexagésimal (base 60) encore utilisé aujourd'hui pour
+    mesurer le temps (1 heure = 60 minutes, 1 minute = 60 secondes,
+    \dots ) et les angles (60 minutes = 1 degré).
+    
+*** Papyrus de Rhind
+
+    Egypte, 2 000 ans avant l'ère commune.
+
+    #+CAPTION: Papyrus de Rhind
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/Rhind-Papyrus.jpg]]
+    <<fig5:Rhind>>
+
+    Le papyrus Rhind, copié par Ahmès (Deuxième Période
+    intermédiaire), synthétise les maths égyptiennes. Acheté par Rhind
+    en 1858 à Louxor, il est au British Museum depuis 1865. Ce rouleau
+    de 5 m (87 problèmes) couvre arithmétique, algèbre et géométrie,
+    inspiré du Moyen Empire (2000 av. J.-C.). Son écriture hiératique
+    en fait un document unique.
+    
+    
+** Premières techniques de calcul
+*** L'abaque
+
+    #+CAPTION: Abaque
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/Abacus.png]]
+    <<fig6:abacus>>
+
+    Apparu vers 2700-2300 av. J.-C. en Mésopotamie, puis perfectionné
+    par les Grecs et les Romains. Il permettait d'effectuer les quatre
+    opérations fondamentales en déplaçant des jetons sur des lignes ou
+    dans des colonnes.
+    
+*** Le système décimal positionnel
+
+    #+CAPTION: Système décimal positionnel
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/Numeration.png]]
+    <<fig7:positionnel>>
+
+    Le système de numération indo-arabe est un système de numération
+    de base dix employant une notation positionnelle et dix chiffres,
+    allant de zéro à neuf, dont le tracé est indépendant de la valeur
+    représentée. Dans ce système, la représentation d'un nombre
+    correspond à son développement décimal. Le système doit son nom au
+    fait qu'il est apparu en Inde et qu'il est parvenu en Europe par
+    l'intermédiaire de mathématiciens et comptables de langue
+    arabe. La variante graphique la plus répandue sont les chiffres
+    utilisés en Europe, communément appelés chiffres arabes. Ce
+    système tend aujourd’hui à s’imposer dans le monde.
+    
+*** Les bâtons de Napier
+
+    #+CAPTION: Les bâtons de Napier (1617)
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/batons-napier.jpg]]
+    <<fig8:Napier>>
+
+    Le bâton de Napier, ou réglette de Neper est un abaque facilitant
+    le calcul des produits, quotients, puissances et racines, inventé
+    par le mathématicien écossais John Napier (en français Neper)
+    en 1617.
+    
+
+    L'abaque est constitué d'un plateau à rebord sur lequel peuvent être
+    placées des réglettes gravées. Le bord gauche du plateau est gravé lui
+    aussi, divisé en neuf cases numérotées de 1 à 9. Les dix types de
+    réglettes, qui ont donné leur nom à l'ensemble du dispositif, étaient
+    originellement en os, d'où le nom anglais de /Napier's
+    bones/. Elles sont divisées en neuf cases. La case supérieure
+    porte un nombre de 0 à 9. Les huit autres cases sont divisées en
+    deux par un trait diagonal.
+
+*** La pascaline
+
+    #+CAPTION: La pascaline (1642)
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/pascaline.jpg]]
+    <<fig9:Pascal>>
+
+    La pascaline, initialement dénommée machine d’arithmétique puis
+    roue pascaline, est une calculatrice mécanique inventée par Blaise
+    Pascal et considérée comme la première machine à calculer.
+        
+** Les premières traces de géométrie
+
+   Si les Grecs sont souvent vus comme les fondateurs de la géométrie
+   en tant que science, de nombreuses connaissances en géométrie ont
+   émergé bien avant eux, notamment vers 3000 av. J.-C., en Égypte
+   ancienne, en Mésopotamie et dans l'Inde antique, pour répondre à
+   des besoins pratiques en agriculture, astronomie, architecture et
+   topographie.
+
+*** Manuscript de Bakhshali
+
+    #+CAPTION: Manuscript de Bakhshali
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/Bakhshali_manuscript.jpg]]
+    <<fig10:Bakhshali>>
+
+    La civilisation de la vallée de l'Indus, attestée dès environ
+    -3300, livre les premiers indices d'une activité mathématique en
+    Inde. Les découvertes effectuées à Harappa, Mohenjo-daro et dans
+    leur environnement révèlent un système de poids et mesures précis
+    et décimal datant d’environ 2600 avant J.-C., une technologie de
+    fabrication de briques basée sur des proportions rigoureuses,
+    ainsi qu’une attention aux formes géométriques.
+
+*** Tablette babylonienne YBC 7289
+
+    #+CAPTION: Tablette babylonienne YBC 7289
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/Ybc7289.jpg]]
+    <<fig11:Ybc7289>>
+    
+    La tablette YBC 7289 a probablement été rédigée par un scribe
+    babylonien de la première dynastie, entre 1900 et 1600 avant
+    J.-C. Elle aurait été écrite dans le sud de l’actuel Irak,
+    vraisemblablement par un apprenti utilisant des valeurs tirées
+    d’une liste connue. De forme ronde et compacte (8 à 12 cm
+    environ), elle était facile à tenir en main.
+    
+
+    La suite de nombres est à interpréter de la façon suivante :
+
+     1 + 24/60 + 51/60^{2} + 10/60^{3} ~ √2
+     
+     42 + 25/60 + 35/60^{2} ~ 30√2
+
+*** Papyrus de Moscou
+
+    #+CAPTION: Papyrus de Moscou
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/papyrus-moscou.jpg]]
+    <<fig12:Moscou>>
+
+    Écrit vers 1850 av. J.-C., pendant la XI^{e} dynastie, le papyrus
+    de Moscou est un exemple ancien d’étude mathématique utilisant le
+    système unaire. Long d’environ 5,40 mètres et large de 4 à 7 cm,
+    il contient 25 problèmes résolus, dont certains portent sur la
+    surface d’une demi-sphère et le volume d’une pyramide tronquée.
+    
+*** Les Neuf Chapitres sur l'art mathématique (après les Grecs)
+
+    #+CAPTION: Les Neuf Chapitres sur l'art mathématique
+    #+ATTR_HTML: :width 300px :height: 200px
+    [[./images/9chap_cropped.jpg]]
+    <<fig13:9chap>>
+
+    Les Neuf Chapitres sur l’art mathématique forment un ouvrage
+    chinois anonyme compilé entre le II^{e} et le I^{er} siècle av. J.-C.,
+    au début de la dynastie Han. Reprenant des textes antérieurs, il
+    propose une approche méthodique des mathématiques à travers des
+    techniques générales de résolution de problèmes. Connu grâce aux
+    copies des scribes puis à l’imprimerie, il fut commenté notamment
+    par Liu Hui en 263.
+            
+* Niveau primaire
+** Calcul niveau primaire
+
+   Pour les séries de calculs ci-dessous, essayez de les faire de
+   tête. Si vous n'y arrivez pas alors posez-les à la main. Et si vous
+   n'y arrivez toujours pas vérifiez avec une calculatrice.
+   
+*** Exercice 1 (primaire) : Additions simples
+
+    <<exo1>>
+
+    + C01) 5 + 3 =
+    + C02) 9 + 2 =
+    + C03) 7 + 6 =
+    + C04) 4 + 8 =
+    + C05) 3 + 9 =
+    + C06) 1 + 7 =
+    + C07) 2 + 3 =
+    + C08) 3 + 4 =
+    + C09) 4 + 5 =
+    + C10) 5 + 6 =
+    + C11) 1 + 9 =
+    + C12) 9 + 2 =
+    + C13) 2 + 8 =
+    + C14) 8 + 3 =
+    + C15) 3 + 9 =
+    + C16) 9 + 7 =
+    + C17) 7 + 8 =
+    + C18) 8 + 5 =
+    + C19) 5 + 9 =
+    + C20) 5 + 7 =
+
+      
+    [[sol1][Voir les solutions de l'exercice 1.]]
+          
+*** Exercice 2 (primaire) : Soustractions
+
+    <<exo2>>
+
+    + C01) 15 - 7 = 
+    + C02) 18 - 9 = 
+    + C03) 12 - 4 = 
+    + C04) 20 - 11 = 
+    + C05) 17 - 8 = 
+    + C06) 30 - 15 = 
+    + C07) 49 - 26 = 
+    + C08) 58 - 37 = 
+    + C09) 67 - 48 = 
+    + C10) 76 - 59 = 
+    + C11) 51 - 17 = 
+    + C12) 81 - 29 = 
+    + C13) 21 - 14 = 
+    + C14) 30 - 11 = 
+    + C15) 47 - 18 = 
+    + C16) 50 - 15 = 
+    + C17) 94 - 62 = 
+    + C18) 85 - 73 = 
+    + C19) 76 - 48 = 
+    + C20) 67 - 59 =
+
+
+    [[sol2][Voir les solutions de l'exercice 2.]]
+
+*** Exercice 3 (primaire) : Multiplications à 1 chiffre
+
+    <<exo3>>
+
+    + C01) 3 × 4 = 
+    + C02) 6 × 7 = 
+    + C03) 8 × 5 = 
+    + C04) 9 × 3 = 
+    + C05) 2 × 6 = 
+    + C06) 6 × 5 = 
+    + C07) 7 × 6 = 
+    + C08) 8 × 9 = 
+    + C09) 2 × 8 = 
+    + C10) 7 × 3 = 
+    + C11) 2 × 2 = 
+    + C12) 3 × 3 = 
+    + C13) 4 × 4 = 
+    + C14) 5 × 5 = 
+    + C15) 6 × 6 = 
+    + C16) 7 × 7 = 
+    + C17) 8 × 8 = 
+    + C18) 9 × 9 = 
+    + C19) 5 × 7 = 
+    + C20) 7 × 8 = 
+    
+      
+    [[sol3][Voir solutions de l'exercice 3.]]
+
+*** Exercice 4 (primaire) : Multiplications à 2 chiffres par 11
+
+    <<exo4>>
+
+    + C01) 11 × 12 = 
+    + C02) 11 × 23 = 
+    + C03) 11 × 34 = 
+    + C04) 11 × 45 = 
+    + C05) 11 × 56 = 
+    + C06) 11 × 67 = 
+    + C07) 11 × 78 = 
+    + C08) 11 × 89 = 
+    + C09) 11 × 13 = 
+    + C10) 11 × 24 = 
+    + C11) 99 × 11 = 
+    + C12) 89 × 11 = 
+    + C13) 78 × 11 = 
+    + C14) 65 × 11 = 
+    + C15) 54 × 11 = 
+    + C16) 46 × 11 = 
+    + C17) 37 × 11 = 
+    + C18) 29 × 11 = 
+    + C19) 19 × 11 = 
+    + C20) 91 × 11 =
+
+      
+    [[sol4][Voir solutions de l'exercice 4.]]
+    
+*** Exercice 5 (primaire) : Divisions à 1 chiffre
+
+    <<exo5>>
+
+    
+    + C01) 9 ÷ 3 = 
+    + C02) 9 ÷ 9 = 
+    + C03) 8 ÷ 2 =  
+    + C04) 5 ÷ 5 =  
+    + C05) 5 ÷ 1 =  
+    + C06) 9 ÷ 1 =  
+    + C07) 6 ÷ 3 = 
+    + C08) 6 ÷ 1 =  
+    + C09) 5 ÷ 1 = 
+    + C10) 6 ÷ 2 =  
+    + C11) 5 ÷ 1 =  
+    + C12) 8 ÷ 1 = 
+    + C13) 9 ÷ 1 =  
+    + C14) 7 ÷ 1 =  
+    + C15) 9 ÷ 1 =  
+    + C16) 9 ÷ 3 =  
+    + C17) 8 ÷ 4 =  
+    + C18) 6 ÷ 2 = 
+    + C19) 8 ÷ 1 =  
+    + C20) 8 ÷ 2 = 
+
+
+    [[sol5][Voir les solutions de l'exercice 5.]]
+         
+*** Exercice 6 (primaire) : Divisions à 2 chiffres
+
+    <<exo6>>
+
+    + C01) 11 ÷ 11 =  
+    + C02) 84 ÷ 14 = 
+    + C03) 72 ÷ 72 = 
+    + C04) 96 ÷ 12 = 
+    + C05) 00 ÷ 28 = 
+    + C06) 42 ÷ 14 = 
+    + C07) 36 ÷ 12 = 
+    + C08) 99 ÷ 11 = 
+    + C09) 88 ÷ 11 = 
+    + C10) 80 ÷ 10 = 
+    + C11) 91 ÷ 13 = 
+    + C12) 64 ÷ 16 = 
+    + C13) 90 ÷ 10 = 
+    + C14) 96 ÷ 12 = 
+    + C15) 99 ÷ 11 = 
+    + C16) 80 ÷ 20 = 
+    + C17) 80 ÷ 10 = 
+    + C18) 48 ÷ 12 = 
+    + C19) 96 ÷ 12 = 
+    + C20) 90 ÷ 45 = 
+
+
+    [[sol6][Voir les solutions de l'exercice 6.]]
+    
+* Niveau secondaire : collège
+** Calculs niveau collège
+
+   Dans cette partie, on commence dans la continuité de la partie
+   précédente avec des calculs purs et durs mais déjà vous devriez
+   pouvoir trouver des astuces de calculs. Cela signifie que le
+   raisonnement commence à jouer un rôle utile. Ensuite, on passera au
+   calcul littéral, puis sa liaison avec la géométrie. Et de la
+   géométrie on en viendra aux probabilités.
+   
+
+*** Exercice 7 (collège) : carrés
+
+    <<exo7>>
+
+
+    + C01) 11^{2} = 11 × 11 = 
+    + C02) 12^{2} = 12 × 12 = 
+    + C03) 13^{2} = 13 × 13 = 
+    + C04) 14^{2} = 14 × 14 = 
+    + C05) 15^{2} = 15 × 15 = 
+    + C06) 16^{2} = 16 × 16 = 
+    + C07) 17^{2} = 17 × 17 = 
+    + C08) 18^{2} = 18 × 18 = 
+    + C09) 19^{2} = 19 × 19 = 
+    + C10) 20^{2} = 20 × 20 = 
+    + C11) 25^{2} = 25 × 25 = 
+    + C12) 35^{2} = 35 × 35 = 
+    + C13) 45^{2} = 45 × 45 = 
+    + C14) 55^{2} = 55 × 55 = 
+    + C15) 65^{2} = 65 × 65 = 
+    + C16) 75^{2} = 75 × 75 = 
+    + C17) 85^{2} = 85 × 85 = 
+    + C18) 95^{2} = 95 × 95 = 
+    + C19) 111^{2} = 111 × 111 = 
+    + C20) 1111^{2} = 1111 × 1111 = 
+
+    
+    [[sol7][Voir les solutions de l'exercice 7.]]
+    
+*** Exercice 8 (collège) : carrés avec des 1 et une calculatrice
+
+    <<exo8>>
+
+    + C01) 1 × 1 =  
+    + C02) 11 × 11 = 
+    + C03) 111 × 111 = 
+    + C04) 1111 × 1111 = 
+    + C05) 11111 × 11111 = 
+    + C06) 111111 × 111111 = 
+    + C07) 1111111 × 1111111 = 
+    + C08) 11111111 × 11111111 = 
+    + C09) 111111111 × 111111111 = 
+    + C10) 1111111111 × 1111111111 = 
+    
+
+    
+    [[sol8][Voir les solutions de l'exercice 8.]]
+    
+*** Exercice 9 (collège) : un programme de calcul particulier
+
+    <<exo9>>
+
+
+    Considérons le programme de calcul suivant :
+    
+    + P01) Choisir un nombre entier strictement supérieur à 1
+      (c'est-à-dire m > 1 tel que par exemple 2, 3, 4...)
+    + P02) Choisir un autre nombre entier strictement positif n
+      strictement inférieur à m (c'est-à-dire n < m)
+    + P03) Calculer le nombre a comme la différence du carré de m avec
+      le carré de n, concrètement a = m^{2} - n^{2}
+    + P04) Calculer le nombre b comme le double du produit de m et de
+      n, concrètement b = 2mn
+    + P05) Calculer le nombre c comme la somme du carré de m avec le
+      carré de n, concrètement c = m^{2} + n^{2}
+    + P06) Calculer le carré de a
+    + P07) Calculer le carré de b
+    + P08) Calculer le carré de c
+    + P09) Calculer la somme du carré de a et celui de b
+    + P10) Comparer cette somme avec le carré de c
+
+
+    Appliquons le programme de calcul ci-dessus avec les nombres m = 2
+    et n = 1 :
+    
+    + A01) m^{2} = 
+    + A02) n^{2} = 
+    + A03) a = m^{2} - n^{2} = 
+    + A04) b = 2 × m × n = 
+    + A05) c = m^{2} + n^{2} = 
+    + A06) a^{2} = 
+    + A07) b^{2} = 
+    + A08) c^{2} = 
+    + A09) Vérifier que  a^{2} + b^{2} = c^{2} 
+    + A10) Est-ce valable pour n'importe quelles valeurs de m et n ? 
+    
+    [[sol9][Voir solutions de l'exercice 9.]]
+    
+    
+*** Exercice 10 (collège) : un programme de construction géométrique
+
+    <<exo10>>
+
+    + G1) Dans un repère orthonormé placer le point A de coordonnées
+      (-1 ; -2) c'est-à-dire d'abscisse x_{A} = -1 et d'ordonnée y_{A} =
+      -2
+    + G2) Placer le point B de coordonnées (2 ; -2) c'est-à-dire
+      d'abscisse x_{B} = 2 et d'ordonnée y_{B} = -2
+    + G3) Placer le point C de coordonnées (2 ; 2) c'est-à-dire
+      d'abscisse x_{C} = 2 et d'ordonnée y_{C} = 2
+    + G4) En utilisant le théorème de Pythagore vérifier que le triangle
+      ABC est rectangle en B.
+      
+   
+    
+    [[sol10][Voir les solutions de l'exercice 10.]]
+
+    
+*** Exercice 11 (collège) : une cible circulaire
+
+    <<exo11>>
+
+
+    Considérons la cible définie par les cercles concentriques sur le
+    schéma ci-dessous :
+    
+    #+CAPTION: Cible de cercles concentriques
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/proba-target.png]]
+    <<fig:exo11>>
+
+    On considère que les joueurs atteignent toujours la cible,
+    c'est-à-dire le cercle <<jaune1>>@@html:<span
+    class="jaune">jaune</span>@@ @@html:<span
+    class="jaune">(C<sub>E</sub>)</span>@@<<CE1jaune>>.
+
+    + G1) Quelle est la probabilité que le joueur atteigne l'intérieur
+      du cercle <<rouge1>>@@html:<span class="rouge">rouge</span>@@
+      @@html:<span class="rouge">(C<sub>A</sub>)</span>@@<<CA1rouge>> ?
+    + G2) Quelle est la probabilité que le joueur atteigne la couronne
+      entre les cercles <<rouge2>>@@html:<span class="rouge">rouge</span>@@
+      @@html:<span class="rouge">(C<sub>A</sub>)</span>@@<<CA2rouge>> et
+      <<citron1>>@@html:<span class="citron">citron vert</span>@@
+      @@html:<span class="citron">(C<sub>B</sub>)</span>@@<<CB1citron>> ?
+    + G3) Quelle est la probabilité que le joueur atteigne la couronne
+      entre les cercles <<citron2>>@@html:<span class="citron">citron vert</span>@@
+      @@html:<span class="citron">(C<sub>B</sub>)</span>@@<<CB2citron>> et
+      <<marine1>>@@html:<span class="marine">marine</span>@@
+      @@html:<span class="marine">(C<sub>C</sub>)</span>@@<<CC1marine>> ?
+    + G4) Quelle est la probabilité que le joueur atteigne la couronne
+      entre les cercles <<marine2>>@@html:<span class="marine">marine</span>@@
+      @@html:<span class="marine">(C<sub>C</sub>)</span>@@<<CC2marine>> et
+      <<orange1>>@@html:<span class="orange">orange</span>@@
+      @@html:<span class="orange">(C<sub>D</sub>)</span>@@<<CD1orange>> ?
+    + G5) Quelle est la probabilité que le joueur atteigne la couronne
+      entre les cercles <<orange2>>@@html:<span class="orange">orange</span>@@
+      @@html:<span class="orange">(C<sub>D</sub>)</span>@@<<CD2orange>> et
+      <<jaune3>>@@html:<span class="jaune">jaune</span>@@
+      @@html:<span class="jaune">(C<sub>E</sub>)</span>@@<<CD3jaune>> ?
+      
+    
+    [[sol11][Voir les solutions de l'exercice 11.]]
+    
+*** Exercice 12 (collège) : carrés de Fibonacci
+
+    <<exo12>>
+
+    + G1) Dans un repère orthonormé construire le carré passant par
+      les points O(0; 0) , A(1 ; 0) , B(1 ; 1) , C(0 ; 1). Quelle est
+      la longueur du côté de carré ?
+    + G2) Placer les points D(2 ; 0) et E(2 ; 1) et tracer le carré
+      ADEB. Quelle est la longueur du côté de carré ?
+    + G3) Construire le carré passant par F(2 ; 3) , G(0 ; 3) , C(0 ;
+      1), E(2 ; 1). Quelle est la longueur du côté de carré ?
+    + G4) Placer les points H(-3 ; 3), I(-3 ; 0) et tracer le
+      carré GHIO. Quelle est la longueur du côté de carré ?
+    + G5) Construire le carré passant par J(-3 ; -5), K(2 ; -5),
+      D(2 ; 0), I(-3 ; 0). Quelle est la longueur du côté de carré
+      ?
+    + G6) Placer les points L(10 ; -5), M(10 ; 3) et tracer le
+      carré KLMF. Quelle est la longueur du côté de carré ?
+    + G7) Construire le carré passant par N(10 ; 16), P(-3 ; 16)
+      et tracer le carré MNPH. Quelle est la longueur du côté de carré
+      ?
+    + G8) Placer les points Q(-24 ; 16), R(-24 ; -5) et tracer le
+      carré PQRJ. Quelle est la longueur du côté de carré ?
+      
+
+
+    [[sol12][Voir les solutions de l'exercice 12.]]
+    
+    
+*** Exercice 13 (collège) : aire des carrés de Fibonacci
+
+    <<exo13>>
+
+    Dans cet exercice on reprend la [[fig:exo12][figure des carrés de Fibonacci]].
+
+    + G1) Quelle est l'aire du carré <<rouge7>>@@html:<span
+      class="rouge">rouge</span>@@ @@html:<span
+      class="rouge">OABC</span>@@<<OABC2>> ?
+    + G2) Quelle est l'aire du carré <<rouge8>>@@html:<span
+      class="rouge">rouge</span>@@ @@html:<span
+      class="rouge">ADEB</span>@@<<ADEB2>> ?
+    + G3) Quelle est l'aire du carré <<orange6>>@@html:<span
+      class="orange">orange</span>@@ @@html:<span
+      class="orange">FGCE</span>@@<<FGCE2>> ?
+    + G4) Quelle est l'aire du carré <<olive2>>@@html:<span
+      class="olive">olive</span>@@
+      @@html:<span class="olive">GHIO</span>@@<<GHIO2>> ?
+    + G5) Quelle est l'aire du carré <<marine6>>@@html:<span
+      class="marine">marine</span>@@ @@html:<span
+      class="marine">IJKD</span>@@<<IJKD2>> ?
+    + G6) Quelle est l'aire du carré <<rose2>>@@html:<span
+      class="rose">rose</span>@@
+      @@html:<span class="rose">KLMF</span>@@<<KLMF2>> ?
+    + G7) Quelle est l'aire du carré <<citron6>>@@html:<span
+      class="citron">citron vert</span>@@ @@html:<span
+      class="citron">MNPH</span>@@<<MNPH2>> ?
+    + G8) Quelle est l'aire du carré <<mauve2>>@@html:<span
+      class="mauve">mauve</span>@@
+      @@html:<span class="mauve">PQRJ</span>@@<<PQRJ2>> ?
+    
+    
+    [[sol13][Voir les solutions de l'exercice 13.]]
+    
+    
+*** Exercice 14 (collège) : une cible avec des carrés de Fibonacci
+
+    <<exo14>>
+
+
+    Dans cet exercice on continue avec la [[fig:exo12][figure des carrés]] de
+    Fibonacci.
+    
+    On la considère comme une cible particulière et on admet que le
+    joueur atteint forcément le grand rectangle.
+    
+
+    + G1) Quelle est la probabilité que le joueur atteigne le carré
+      <<rouge10>>@@html:<span
+      class="rouge">rouge</span>@@ @@html:<span
+      class="rouge">OABC</span>@@<<OABC4>> ?
+    + G2) Quelle est la probabilité que le joueur atteigne le carré
+      <<orange8>>@@html:<span
+      class="orange">orange</span>@@ @@html:<span
+      class="orange">FGCE</span>@@<<FGCE4>> ?
+    + G3) Quelle est la probabilité que le joueur atteigne le carré
+      <<olive4>>@@html:<span
+      class="olive">olive</span>@@
+      @@html:<span class="olive">GHIO</span>@@<<GHIO4>> ?
+    + G4) Quelle est la probabilité que le joueur atteigne le carré
+      <<marine8>>@@html:<span
+      class="marine">marine</span>@@ @@html:<span
+      class="marine">IJKD</span>@@<<IJKD4>> ?
+    + G5) Quelle est la probabilité que le joueur atteigne le carré
+      <<rose4>>@@html:<span
+      class="rose">rose</span>@@
+      @@html:<span class="rose">KLMF</span>@@<<KLMF4>> ?
+    + G6) Quelle est la probabilité que le joueur atteigne le carré
+      <<citron8>>@@html:<span
+      class="citron">citron vert</span>@@ @@html:<span
+      class="citron">MNPH</span>@@<<MNPH4>> ?
+    + G7) Quelle est la probabilité que le joueur atteigne le carré
+      <<mauve4>>@@html:<span
+      class="mauve">mauve</span>@@
+      @@html:<span class="mauve">PQRJ</span>@@<<PQRJ4>> ?
+
+
+    [[sol14][Voir les solutions de l'exercice 14.]] 
+
+* Niveau secondaire : lycée
+** Calculs niveau lycée
+
+   Désormais il faudrait raisonner et alterner les registres. Tantôt
+   vous utiliserez le langage symbolique avec les formules et le
+   calcul littéral, tantôt vous utiliserez le langage verbal qui est
+   votre langage naturel et tantôt vous utiliserez le langage
+   visuel. Faire des mathématiques consiste principalement à passer
+   d'un registre à un autre afin de s'assurer que l'on comprenne et
+   maîtrise tous les aspects d'un problème. Parfois les choses
+   sembleront abstraites mais il y aura toujours des applications
+   concrètes.
+   
+
+   Courage, la bravoure est une qualité nécessaire pour faire des
+   mathématiques.
+   
+
+*** Exercice 15 (lycée) : nombres triangulaires
+
+    <<exo15>>
+
+
+    On considère un repère orthonormé :
+
+
+    + G1) Construire le triangle passant par les points O(0; 0) , A(1
+      ; 0) , B(0 ; 1). Quelle est la nature de ce triangle ? Quelle
+      est l'aire de ce triangle ?
+    + G2) Construire le triangle passant par les points O(0; 0) , C(2
+      ; 0) , E(0 ; 2). Quelle est la nature de ce triangle ? Quelle
+      est l'aire de ce triangle ? Le point D(1 ; 1) est-il sur le
+      segment [CE] ?
+    + G3) Construire le triangle passant par les points O(0; 0) , F(3
+      ; 0) , I(0 ; 3). Quelle est la nature de ce triangle ? Quelle
+      est l'aire de ce triangle ? Les points G(2 ; 1) et H(1 ; 2)
+      sont-ils sur le segment [FI] ?
+    + G4) Construire le triangle passant par les points O(0; 0) , J(4
+      ; 0) , N(0 ; 4). Quelle est la nature de ce triangle ? Quelle
+      est l'aire de ce triangle ? Les points K(3 ; 1), L(2 ; 2) et M(1
+      ; 3) sont-ils sur le segment [JN] ?
+    + G5) Combien faudra-t-il ajouter de points pour la prochaine
+      étape si on suit ce même schéma ? Quelle sera la nature de ce
+      nouveau triangle ? Quelle sera son aire ? Les points entre les
+      axes du repère seront-ils alignés ?
+      
+
+    
+    [[sol15][Voir les solutions de l'exercice 15.]]
+
+    
+*** Exercice 16 (lycée) : divisions par 7
+
+    <<exo16>>
+
+    + C1) Effectuer la division décimale de 1 par 7. Combien de
+      décimales avez-vous besoin de calculer pour approcher la
+      fraction 1 / 7 de la façon la plus juste qui soit ?
+    + C2) Même question avec la fraction 2 / 7.
+    + C3) Même question avec la fraction 3 / 7.
+    + C4) Même question avec la fraction 4 / 7.
+    + C5) Même question avec la fraction 5 / 7.
+    + C6) Même question avec la fraction 6 / 7.
+
+    
+    [[sol16][Voir les solutions de l'exercice 16.]]
+    
+*** Exercice 17 (lycée) : comment choisir le milieu d'une série statistique ?
+
+    <<exo17>>
+
+    On considère la série statistique S_{0} = {1 ; 1 ; 1 ; 1 ; 10}
+
+
+    + C1) Quelle est la médiane de  la série S_{0} ?
+    + C2) Quel est le mode de  la série S_{0} ? 
+    + C3) Quelle est la moyenne de  la série S_{0} ?
+    + C4) Reprendre les 3 questions initiales avec la nouvelle série
+      S_{1} = {1 ; 1 ; 1 ; 1 ; 10 ; 10}.
+    + C5) Reprendre les 3 questions initiales avec la nouvelle série
+      S_{2} = {1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11}.
+    + C6) Reprendre les 3 questions initiales avec la nouvelle série
+      S_{3} = {1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15}.
+    + C7) Reprendre les 3 questions initiales avec la nouvelle série
+      S_{4} = {1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15 ; 15 ; 15 ;
+      16 ; 16 ; 18 ; 18}.
+    + C8) Peut-on ajouter 1 valeur à la série S_{4} de sorte que la
+      médiane augmente et la moyenne diminue ? Expliquez la démarche.
+    + C9) Peut-on ajouter 1 valeur à la série S_{5} de sorte que la
+      médiane diminue et la moyenne augmente ? Expliquez la démarche.
+    + C10) Peut-on ajouter 1 valeur à la série S_{6} de sorte que la
+      médiane égale le mode ? Que se passerait-il pour la moyenne ?
+      Expliquez la démarche.
+      
+    
+    [[sol17][Voir les solutions de l'exercice 17.]]
+
+    
+*** Exercice 18 (lycée) : comment contribuer efficacement à un projet collaboratif ?
+
+    <<exo18>>
+
+    Considérons deux contributeurs de Wikipédia : Alice et Bob. La
+    semaine 1, Alice modifie 60% des articles qu'elle consulte alors
+    que Bob modifie 90% des articles qu'il lit. La semaine 2, Alice
+    ne modifie que 10% des articles lus et Bob 30%.
+    
+    + C1) Qui a le taux de modifications le plus élevé de la semaine 1 ?
+    + C2) Qui a le taux de modifications le plus élevé de la semaine 2 ?
+    + C3) La semaine 1, Alice lit 100 articles et en
+      modifie 60. Pendant ce temps, Bob modifie 9 des 10 articles
+      qu'il consulte. La semaine 2, Alice modifie 1 article sur les 10
+      lus et Bob 30 sur 100.
+      Sur les deux semaines qui a modifié le plus d'articles ?
+    + C4) Ranger les informations dans un tableau avec 3 colonnes :
+      semaine 1, semaine 2, total et deux lignes : Alice, Bob.
+    + C5) On appelle S_A(1) le taux de modification d'Alice la
+      semaine 1 et S_A(2) son taux de modification la semaine 2. On
+      fait de même pour Bob avec les notations S_B(1) et
+      S_B(2). Vérifier que S_A(1) < S_B(1) et que S_A(2) <
+      S_B(2).
+    + C6) On note les taux sur les deux semaines de la façon suivante :
+	+ S_{A} = S_{A}(1) × (100 / 110) + S_{A}(2) × (10 / 110) 
+	+ S_{B} = S_{B}(1) × (10 / 110) + S_{B}(2) × (100 / 110)
+	Justifiez les valeurs des fractions utilisées.
+
+
+    [[sol18][Voir les solutions de l'exercice 18.]]
+
+    
+*** Exercice 19 (lycée) : une interprétation géométrique du paradoxe de Simpson
+
+    <<exo19>>
+
+    + G1) Placer les points O(0 ; 0) et A(1 ; 0) et tracer en
+      <<bleu1>>@@html:<span class="bleu">bleu</span>@@ le vecteur
+      @@html:<span class="bleu">u<sub>1</sub> = Vecteur(OA)</span>@@<<OA1>>
+    + G2) Placer le point B(3 ; 1) et tracer en <<rouge12>>@@html:<span
+      class="rouge">rouge</span>@@ le vecteur
+      @@html:<span class="rouge">v<sub>1</sub> = Vecteur(OB)</span>@@<<OB1>>
+    + G3) Placer les points C(0 ; 3) et D(2 ; 7) et tracer en
+      <<bleu2>>@@html:<span class="bleu">bleu</span>@@ le vecteur
+      @@html:<span class="bleu">u<sub>2</sub> = Vecteur(CD)</span>@@<<CD1>>
+    + G4) Placer le point E(0 ; 4) et tracer en <<rouge13>>@@html:<span
+      class="rouge">rouge</span>@@ le vecteur @@html:<span
+      class="rouge">v<sub>2</sub> = Vecteur(CE)</span>@@<<CE1>>
+    + G5) Vérifier que le pente de @@html:<span
+      class="bleu">u<sub>1</sub></span>@@ est supérieure à celle de
+      @@html:<span class="rouge">v<sub>1</sub></span>@@.
+    + G6) Vérifier que le pente de  @@html:<span
+      class="bleu">u<sub>2</sub></span>@@ est supérieure à celle de
+      @@html:<span class="rouge">v<sub>2</sub></span>@@.
+    + G7) Placer les points F(4 ; 2) et G(7 ; 4) et tracer en
+      <<rouge14>>@@html:<span class="rouge">rouge</span>@@ le vecteur
+      @@html:<span class="rouge">v = v<sub>1</sub> +
+      v<sub>2</sub> = Vecteur(FG)</span>@@
+    + G8) Placer le point H(7 ; 6) et tracer en <<bleu3>>@@html:<span
+      class="bleu">bleu</span>@@ le vecteur @@html:<span
+      class="bleu">u = u<sub>1</sub> + u<sub>2</sub> =
+      Vecteur(FH)</span>@@
+    + G9) Comparer les pentes des vecteurs @@html:<span
+      class="bleu">u</span>@@ et @@html:<span
+      class="rouge">v</span>@@. Que remarquez-vous ?
+      
+    
+
+    [[sol19][Voir les solutions de l'exercice 19.]]
+
+    
+*** Exercice 20 (lycée) : constructions et comparaisons de moyennes
+
+    <<exo20>>
+
+    + G1) Placer les points O(0 ; 0), A(4 ; 0) et B(-4 ; 0) puis
+      tracer le demi-cercle de centre O passant par A et B.
+    + G2) Placer le point C(2 ; 0) puis le point D d'abscisse 2 sur le
+      demi-cercle. Tracer le segment [CD].
+    + G3) On pose a = BC et b = CA.
+      Ainsi le demi-cercle a pour diamètre a + b.
+      Placer le point E(0 ; 4).
+      Montrer que OE = (a + b) / 2
+    + G4) Montrer que le triangle ADB est rectangle en D.
+    + G5) Exprimer AD en fonction CD et b.
+    + G6) Exprimer BD en fonction de CD et a.
+    + G7) En déduire une expression de CD en fonction de a et b.
+    + G8) On appelle moyenne géométrique de a et b le nombre √(ab)
+      et moyenne arithmétique le nombre (a + b) / 2.
+      Utilisez ce qui précède pour démontrer qu'on a :
+      (a + b) / 2 ≤  √(ab)
+    + G9) Tracer OD puis la hauteur issue de C qui coupe (OD) en F. 
+    + G10) Exprimer OC en fonction de a et b.
+    + G11) Calculer l'aire du triangle DOC de deux façons différentes.
+      D'une part en utilisant OC comme base et CD comme hauteur,
+      d'autre part en utilisant OD comme base et FC comme hauteur.
+      En déduire une expression de FC en fonction de a et b.
+    + G12) Montrer FD = (2ab) / (a + b) c'est ce qu'on appelle la
+      moyenne harmonique de a et b.
+    + G13) Tracer EC et calculer sa longueur.
+      Montrer que EC = √( (a^{2} + b^{2}) / 2). 
+      On l'appelle moyenne quadratique de a et b.
+    + G14) Classer les différentes moyennes dans l'ordre croissant en
+      utilisant uniquement la géométrie.
+    + G15) Faire de même en utilisant uniquement les calculs algébriques.
+
+    
+    [[sol20][Voir solutions de l'exercice 20.]]
+
+* Solutions des exercices
+** Solutions niveau primaire
+*** Solution exercice 1 (primaire) : additions
+
+    <<sol1>>
+
+    + C1) 5 + 3 = 8
+    + C2) 9 + 2 = 11
+    + C3) 7 + 6 = 13
+    + C4) 4 + 8 = 12
+    + C5) 3 + 9 = 12
+    + C6) 1 + 7 = 8
+    + C7) 2 + 3 = 5
+    + C8) 3 + 4 = 7
+    + C9) 4 + 5 = 9
+    + C10) 5 + 6 = 11
+    + C11) 1 + 9 = 10
+    + C12) 9 + 2 = 11
+    + C13) 2 + 8 = 10
+    + C14) 8 + 3 = 11
+    + C15) 3 + 9 = 12
+    + C16) 9 + 7 = 16
+    + C17) 7 + 8 = 15
+    + C18) 8 + 5 = 13
+    + C19) 5 + 9 = 14
+    + C20) 5 + 7 =  12
+
+    [[exo1][Voir l'énoncé de l'exercice 1.]]
+    
+*** Solution exercice 2 (primaire) : soustractions
+
+    <<sol2>>
+
+    + C01) 15 - 7 = 8
+    + C02) 18 - 9 = 9
+    + C03) 12 - 4 = 8
+    + C04) 20 - 11 = 9
+    + C05) 17 - 8 = 9
+    + C06) 30 - 15 = 15
+    + C07) 49 - 26 = 23
+    + C08) 58 - 37 = 21
+    + C09) 67 - 48 = 19
+    + C10) 76 - 59 = 17
+    + C11) 51 - 17 = 34
+    + C12) 81 - 29 = 52
+    + C13) 21 - 14 = 7
+    + C14) 30 - 11 = 19
+    + C15) 47 - 18 = 29
+    + C16) 50 - 15 = 35
+    + C17) 94 - 62 = 32
+    + C18) 85 - 73 = 12
+    + C19) 76 - 48 = 28
+    + C20) 67 - 59 = 8
+
+
+    [[exo2][Voir l'énoncé de l'exercice 2.]]
+    
+*** Solution exercice 3 (primaire) : multiplications à 1 chiffre
+
+    <<sol3>>
+
+    + C01) 3 × 4 = 12
+    + C02) 6 × 7 = 42
+    + C03) 8 × 5 = 40
+    + C04) 9 × 3 = 27
+    + C05) 2 × 6 = 12
+    + C06) 6 × 5 = 30
+    + C07) 7 × 6 = 42
+    + C08) 8 × 9 = 72
+    + C09) 2 × 8 = 16
+    + C10) 7 × 3 = 21
+    + C11) 2 × 2 = 4
+    + C12) 3 × 3 = 9
+    + C13) 4 × 4 = 16
+    + C14) 5 × 5 = 25
+    + C15) 6 × 6 = 36
+    + C16) 7 × 7 = 49
+    + C17) 8 × 8 = 64
+    + C18) 9 × 9 = 81
+    + C19) 5 × 7 = 35
+    + C20) 7 × 8 = 56
+
+    [[exo3][Voir l'énoncé de l'exercice 3.]]
+
+*** Solution exercice 4 (primaire) : multiplications à 2 chiffres par 11
+
+    <<sol4>>
+
+    + C01) 11 × 12 = 132
+    + C02) 11 × 23 = 253
+    + C03) 11 × 34 = 374
+    + C04) 11 × 45 = 495
+    + C05) 11 × 56 = 616
+    + C06) 11 × 67 = 737
+    + C07) 11 × 78 = 858
+    + C08) 11 × 89 = 979
+    + C09) 11 × 13 = 143
+    + C10) 11 × 24 = 264
+    + C11) 99 × 11 = 1089
+    + C12) 89 × 11 = 979
+    + C13) 78 × 11 = 858
+    + C14) 65 × 11 = 715
+    + C15) 54 × 11 = 594
+    + C16) 46 × 11 = 506
+    + C17) 37 × 11 = 407
+    + C18) 29 × 11 = 319
+    + C19) 19 × 11 = 209
+    + C20) 91 × 11 = 1001
+
+
+
+    [[exo4][Voir l'énoncé de l'exercice 4.]]
+
+*** Solution exercice 5 (primaire) : divisions à 1 chiffre
+
+    <<sol5>>
+
+    
+    + C01) 9 ÷ 3 = 3
+    + C02) 9 ÷ 9 = 1
+    + C03) 8 ÷ 2 = 4 
+    + C04) 5 ÷ 5 = 1 
+    + C05) 5 ÷ 1 = 5 
+    + C06) 9 ÷ 1 = 9 
+    + C07) 6 ÷ 3 = 2
+    + C08) 6 ÷ 1 = 6 
+    + C09) 5 ÷ 1 = 5
+    + C10) 6 ÷ 2 = 3 
+    + C11) 5 ÷ 1 = 5 
+    + C12) 8 ÷ 1 = 8
+    + C13) 9 ÷ 1 = 9 
+    + C14) 7 ÷ 1 = 7 
+    + C15) 9 ÷ 1 = 9 
+    + C16) 9 ÷ 3 = 3 
+    + C17) 8 ÷ 4 = 2 
+    + C18) 6 ÷ 2 = 3
+    + C19) 8 ÷ 1 = 8 
+    + C20) 8 ÷ 2 = 4
+
+
+    [[exo5][Voir l'énoncé de l'exercice 5.]]
+
+    [[https://weblaperouse.ac-noumea.nc/IMG/pdf/3-decimales_de_oc.pdf][Regardez les 20 premières décimales du nombre π]] (en commençant par 3).
+    
+*** Solution exercice 6 (primaire) : divisions à 2 chiffres
+
+    <<sol6>>
+
+    + C01) 11 ÷ 11 =  1
+    + C02) 84 ÷ 14 = 6
+    + C03) 72 ÷ 72 = 1
+    + C04) 96 ÷ 12 = 8
+    + C05) 00 ÷ 28 = 0
+    + C06) 42 ÷ 14 = 3
+    + C07) 36 ÷ 12 = 3
+    + C08) 99 ÷ 11 = 9
+    + C09) 88 ÷ 11 = 8
+    + C10) 80 ÷ 10 = 8
+    + C11) 91 ÷ 13 = 7
+    + C12) 64 ÷ 16 = 4
+    + C13) 90 ÷ 10 = 9
+    + C14) 96 ÷ 12 = 8
+    + C15) 99 ÷ 11 = 9
+    + C16) 80 ÷ 20 = 4
+    + C17) 80 ÷ 10 = 8
+    + C18) 48 ÷ 12 = 4
+    + C19) 96 ÷ 12 = 8
+    + C20) 90 ÷ 45 = 2
+
+    [[exo6][Voir l'énoncé de l'exercice 6.]]
+
+    [[https://www.dcode.fr/decimales-nombre-or][Regardez les 20 premières décimales du nombre d'or 𝚽]] (en
+    commençant par 1)
+
+** Solutions niveau secondaire : collège
+*** Solution exercice 7 (collège) : carrés
+
+    <<sol7>>
+
+
+    + C01) 11^{2} = 11 × 11 = 121
+    + C02) 12^{2} = 12 × 12 = 144
+    + C03) 13^{2} = 13 × 13 = 169
+    + C04) 14^{2} = 14 × 14 = 196
+    + C05) 15^{2} = 15 × 15 = 225
+    + C06) 16^{2} = 16 × 16 = 256
+    + C07) 17^{2} = 17 × 17 = 289
+    + C08) 18^{2} = 18 × 18 = 324
+    + C09) 19^{2} = 19 × 19 = 361
+    + C10) 20^{2} = 20 × 20 = 400
+    + C11) 25^{2} = 25 × 25 =  625
+    + C12) 35^{2} = 35 × 35 = 1225
+    + C13) 45^{2} = 45 × 45 = 2025
+    + C14) 55^{2} = 55 × 55 = 3025
+    + C15) 65^{2} = 65 × 65 = 4225
+    + C16) 75^{2} = 75 × 75 = 5625
+    + C17) 85^{2} = 85 × 85 = 7225
+    + C18) 95^{2} = 95 × 95 = 9025
+    + C19) 111^{2} = 111 × 111 = 12321
+    + C20) 1111^{2} = 1111 × 1111 = 1234321
+
+      
+    [[exo7][Voir l'énoncé de l'exercice 7.]]
+    
+*** Solution exercice 8 (collège) : carrés avec des 1 et une calculatrice
+
+    <<sol8>>
+
+    + C01) 1 × 1 =  1
+    + C02) 11 × 11 = 121
+    + C03) 111 × 111 = 12321
+    + C04) 1111 × 1111 = 1234321
+    + C05) 11111 × 11111 = 123454321
+    + C06) 111111 × 111111 = 12345654321
+    + C07) 1111111 × 1111111 = 1234567654321
+    + C08) 11111111 × 11111111 = 123456787654321
+    + C09) 111111111 × 111111111 = 12345678987654321
+    + C10) 1111111111 × 1111111111 = 12345678900987654321
+    
+
+    [[exo8][Voir l'énoncé de l'exercice 8.]]
+
+    Pour des exercices en ligne vous pouvez essayer ce [[https://didaskalosmanthanon.github.io/qcm-numbers/][QCM sur les nombres]].
+        
+*** Solution exercice 9 (collège) : un programme de calcul particulier
+
+    <<sol9>>
+
+
+    + A01) m^{2} = 2^{2} =  4
+    + A02) n^{2} = 1^{2} = 1
+    + A03) a = m^{2} - n^{2} = 4 - 1 = 3
+    + A04) b = 2 × m × n = 2 × 2 × 1 = 4
+    + A05) c = m^{2} + n^{2} = 4 + 1 = 5
+    + A06) a^{2} = 3^{2} = 9
+    + A07) b^{2} = 4^{2} = 16
+    + A08) c^{2} = 5^{2} = 25
+    + A09) Vérifions que  a^{2} + b^{2} = c^{2} = 9 + 16 = 25
+    + A10) Est-ce valable pour n'importe quelles valeurs de m et n ?
+      Oui pour toutes les valeurs qui vérifient les contraintes
+      énoncées 1 ≤ n < m car on peut généraliser les calculs grâce au
+      calcul littéral sans donner de valeur à m et n.
+
+
+    On obtient ainsi les calculs suivants : 
+      
+      
+
+    + a^{2} = (m^{2} - n^{2})^{2}
+    + a^{2} = (m^{2})^{2} - 2 × (m^{2}) × (n^{2}) + (n^{2})^{2} 
+    + a^{2} = m^{4} - 2m^{2}n^{2} + n^{4} 
+    + b^{2} = (2mn)^{2}
+    + b^{2} = 2^{2}m^{2}n^{2}
+    + b^{2} = 4m^{2}n^{2} 
+    + c^{2} = (m^{2} - n^{2})^{2}
+    + c^{2} = m^{4} + 2m^{2}n^{2} + n^{4} 
+    + a^{2} + b^{2} = m^{4} - 2m^{2}n^{2} + n^{4} + 4m^{2}n^{2} 
+    + a^{2} + b^{2} = m^{4} + 2m^{2}n^{2} + n^{4}
+    + a^{2} + b^{2} = c^{2}
+    
+
+    [[exo9][Voir énoncé de l'exercice 9.]]
+
+    Vous pouvez voir une [[https://youtu.be/6Nnv3K7k2No?si=y7Hmvb5IwpIsHaWW][illustration géométrique de la 3^{ème} identité remarquable]]
+    dans cette vidéo.
+    
+    
+*** Solution exercice 10 (collège) : un programme de construction géométrique
+
+    <<sol10>>
+
+
+    #+CAPTION: Pythagore (3, 4, 5)
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/pythagore345.png]]
+    <<fig:sol10>>
+
+    Comme on l'a vu dans l'[[sol9][exercice 9]] : 3^{2} + 4^{2} = 5^{2}
+    c'est-à-dire que 9 + 16 = 25. On a bien vérifié la relation de
+    Pythagore.
+    
+
+    [[exo10][Voir l'énoncé de l'exercice 10.]]
+    
+*** Solution exercice 11 (collège) : une cible circulaire
+
+    <<sol11>>
+
+    On considère que les joueurs atteignent toujours la cible
+    c'est-à-dire le cercle <<jaune1>>@@html:<span
+    class="jaune">jaune</span>@@ @@html:<span
+    class="jaune">(C<sub>E</sub>)</span>@@<<CE1jaune>>
+    ([[fig:exo11][voir figure avec les cercles concentriques]]).
+
+    + G1) L'aire de l'intérieur du cercle <<rouge3>>@@html:<span
+      class="rouge">rouge</span>@@ @@html:<span
+      class="rouge">(C<sub>A</sub>)</span>@@<<CA3rouge>> est celle du
+      disque de centre O et de rayon 1 soit π × 1^{2} = π ainsi
+      @@html:<span class="rouge">(D<sub>A</sub>)</span>@@<<DA1rouge>>
+      = π.
+      L'aire de l'intérieur du cercle @@html:<span
+      class="jaune">(C<sub>E</sub>)</span>@@<<CEjaune>> est celle du
+      disque de centre O et de rayon 5 soit π × 5^{2} = 25π ainsi
+      @@html:<span class="jaune">(D<sub>E</sub>)</span>@@<<DE1jaune>>
+      = 25π.
+      Par conséquent la probabilité recherchée est P = @@html:<span
+      class="rouge">(D<sub>A</sub>)</span>@@<<DA2rouge>> /
+      @@html:<span class="jaune">(D<sub>E</sub>)</span>@@<<DE2jaune>>
+      = π / 25π = 1 / 25 = 4%.
+    + G2) Pour calculer la probabilité que le joueur atteigne la
+      couronne entre les cercles <<rouge4>>@@html:<span
+      class="rouge">rouge</span>@@ @@html:<span
+      class="rouge">(C<sub>A</sub>)</span>@@<<CA4rouge>> et
+      <<citron3>>@@html:<span class="citron">citron vert</span>@@
+      @@html:<span
+      class="citron">(C<sub>B</sub>)</span>@@<<CB3citron>> il faut
+      calculer l'aire de la couronne c'est-à-dire la différence entre
+      l'aire du disque de centre O de rayon 2, @@html:<span
+      class="citron">(D<sub>B</sub>)</span>@@<<DB1citron>> = 4π et du
+      disque @@html:<span
+      class="rouge">(D<sub>A</sub>)</span>@@<<DA3rouge>> = π soit 4π -
+      π = 3π. Ensuite on calcule le rapport d'aires : P = 3π / 25π = 3
+      / 25 = 12%.
+    + G3) Pour calculer la probabilité que le joueur atteigne la
+      couronne entre les cercles <<citron4>>@@html:<span
+      class="citron">citron vert</span>@@ @@html:<span
+      class="citron">(C<sub>B</sub>)</span>@@<<CB4citron>> et
+      <<marine3>>@@html:<span class="marine">marine</span>@@
+      @@html:<span
+      class="marine">(C<sub>C</sub>)</span>@@<<CC3marine>> il faut
+      calculer l'aire de la couronne c'est-à-dire la différence entre
+      l'aire du disque de centre O de rayon 3, @@html:<span
+      class="marine">(C<sub>C</sub>)</span>@@<<CC4marine>> = 9π et du
+      disque @@html:<span
+      class="citron">(D<sub>B</sub>)</span>@@<<DB2citron>> = 4π soit
+      9π - 4π = 5π. Ensuite on calcule le rapport d'aires : P = 5π /
+      25π = 1 / 5 = 20%.
+    + G4) Pour calculer la probabilité que le joueur atteigne la
+      couronne entre les cercles <<marine4>>@@html:<span
+      class="marine">marine</span>@@ @@html:<span
+      class="marine">(C<sub>C</sub>)</span>@@<<CC4marine>> et
+      <<orange3>>@@html:<span class="orange">orange</span>@@
+      @@html:<span
+      class="orange">(C<sub>D</sub>)</span>@@<<CD3orange>> il faut
+      calculer l'aire de la couronne c'est-à-dire la différence entre
+      l'aire du disque de centre O de rayon 4, @@html:<span
+      class="orange">(D<sub>D</sub>)</span>@@<<DD4orange>> = 16π et du
+      disque @@html:<span
+      class="marine">(D<sub>C</sub>)</span>@@<<DC3marine>> = 9π soit
+      16π - 9π = 7π. Ensuite on calcule le rapport d'aires : P = 7π /
+      25π = 7 / 25 = 28%.
+    + G5) Pour calculer la probabilité que le joueur atteigne la
+      couronne entre les cercles <<orange4>>@@html:<span
+      class="orange">orange</span>@@ @@html:<span
+      class="orange">(C<sub>D</sub>)</span>@@<<CD5orange>> et
+      <<jaune2>>@@html:<span class="jaune">jaune</span>@@ @@html:<span
+      class="jaune">(C<sub>E</sub>)</span>@@<<CEjaune>>
+      il faut calculer l'aire de la couronne c'est-à-dire la
+      différence entre l'aire du disque de centre O de rayon 5,
+      @@html:<span class="jaune">(D<sub>E</sub>)</span>@@<<DE3jaune>>
+      = 25π et du disque @@html:<span
+      class="orange">(D<sub>D</sub>)</span>@@<<DD1orange>> = 16π soit
+      25π - 16π = 9π. Ensuite on calcule le rapport d'aires : P = 9π /
+      25π = 9 / 25 = 45%.
+
+      
+    [[exo11][Voir l'énoncé de l'exercice 11.]]
+
+    Pour des exercices en ligne vous pouvez essayer ce [[https://didaskalosmanthanon.github.io/qcm-proba/][QCM sur les probabilités]].
+    
+
+    
+*** Solution exercice 12 (collège) : carrés de Fibonacci
+
+    <<sol12>>
+
+    #+CAPTION: Carrés de Fibonacci
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/fibo-squares.png]]
+    <<fig:exo12>>
+
+    + G1) Le carré <<rouge5>>@@html:<span class="rouge">rouge</span>@@
+      @@html:<span class="rouge">OABC</span>@@<<OABC>> a pour côté 1.
+    + G2) Le carré <<rouge6>>@@html:<span class="rouge">rouge</span>@@
+      @@html:<span class="rouge">ADEB</span>@@<<ADEB>> a pour côté 1.
+    + G3) Le carré <<orange5>>@@html:<span
+      class="orange">orange</span>@@ @@html:<span
+      class="orange">FGCE</span>@@<<FGCE>> a pour côté 2.
+    + G4) Le carré <<olive1>>@@html:<span class="olive">olive</span>@@
+      @@html:<span class="olive">GHIO</span>@@<<GHIO>> a pour côté 3.
+    + G5) Le carré <<marine5>>@@html:<span
+      class="marine">marine</span>@@ @@html:<span
+      class="marine">IJKD</span>@@<<IJKD>> a pour côté 5.
+    + G6) Le carré <<rose1>>@@html:<span class="rose">rose</span>@@
+      @@html:<span class="rose">KLMF</span>@@<<KLMF>> a pour côté 8.
+    + G7) Le carré <<citron5>>@@html:<span class="citron">citron
+      vert</span>@@ @@html:<span class="citron">MNPH</span>@@<<MNPH>> a
+      pour côté 13.
+    + G8) Le carré <<mauve1>>@@html:<span class="mauve">mauve</span>@@
+      @@html:<span class="mauve">PQRJ</span>@@<<PQRJ>> a pour côté 21.
+      
+
+    
+    [[exo12][Voir l'énoncé de l'exercice 12.]]
+
+    Pour voir comment [[https://youtu.be/y5DSNeBfzFs?si=lMOjAZNY7J9CTfKU][construire la suite de Fibonacci]] avec un
+    programme Python consultez cette vidéo.
+    
+*** Solution exercice 13 (collège) : aire des carrés de Fibonacci
+
+    <<sol13>>
+
+    Voir [[fig:exo12][figure avec les carrés de Fibonacci]].
+
+
+    + G1) L'aire du carré <<rouge9>>@@html:<span
+      class="rouge">rouge</span>@@ @@html:<span
+      class="rouge">OABC</span>@@<<OABC3>> est 1^{2} = 1.
+    + G2) L'aire du carré <<rouge9>>@@html:<span
+      class="rouge">rouge</span>@@ @@html:<span
+      class="rouge">ADEB</span>@@<<ADEB3>> est 1^{2} = 1.
+    + G3) L'aire du carré <<orange7>>@@html:<span
+      class="orange">orange</span>@@ @@html:<span
+      class="orange">FGCE</span>@@<<FGCE3>> est 2^{2} = 4.
+    + G4) L'aire du carré <<olive3>>@@html:<span
+      class="olive">olive</span>@@
+      @@html:<span class="olive">GHIO</span>@@<<GHIO3>> est 3^{2} = 9.
+    + G5) L'aire du carré <<marine7>>@@html:<span
+      class="marine">marine</span>@@ @@html:<span
+      class="marine">IJKD</span>@@<<IJKD3>> est 5^{2} = 25.
+    + G6) L'aire du carré <<rose3>>@@html:<span
+      class="rose">rose</span>@@
+      @@html:<span class="rose">KLMF</span>@@<<KLMF3>> est 8^{2} = 54.
+    + G7) L'aire du carré <<citron7>>@@html:<span
+      class="citron">citron vert</span>@@ @@html:<span
+      class="citron">MNPH</span>@@<<MNPH3>> est 13^{2} = 169.
+    + G8) L'aire du carré <<mauve3>>@@html:<span
+      class="mauve">mauve</span>@@
+      @@html:<span class="mauve">PQRJ</span>@@<<PQRJ3>> est 21^{2} = 441.
+
+
+    [[exo13][Voir l'énoncé de l'exercice 13.]]
+
+        
+*** Solution exercice 14 (collège) : cible des carrés de Fibonacci
+
+    <<sol14>>
+
+    Pour tout l'exercice il faut considérer les dimensions de la cible
+    c'est-à-dire le grand rectangle LNQR de largeur 21 et longueur
+    21 + 13 = 34 et a donc pour aire 21 × 34 = 714.
+    
+
+    Voir [[fig:exo12][figure avec les carrés de Fibonacci]].
+
+
+    + G1) La probabilité que le joueur atteigne le carré
+      <<rouge11>>@@html:<span
+      class="rouge">rouge</span>@@ @@html:<span
+      class="rouge">OABC</span>@@<<OABC5>> est OABC / LNQR = 1 / 714
+      soit environ 0,14%.
+    + G2) La probabilité que le joueur atteigne le carré
+      <<orange9>>@@html:<span
+      class="orange">orange</span>@@ @@html:<span
+      class="orange">FGCE</span>@@<<FGCE5>> est FGCE / LNQR = 4 / 714
+      = 2 / 357 soit environ 0,56%.
+    + G3) La probabilité que le joueur atteigne le carré
+      <<olive5>>@@html:<span
+      class="olive">olive</span>@@
+      @@html:<span class="olive">GHIO</span>@@<<GHIO5>> est GHIO /
+      LNQR = 9 / 714 = 3 / 238 soit environ 1,26%.
+    + G4) La probabilité que le joueur atteigne le carré
+      <<marine9>>@@html:<span
+      class="marine">marine</span>@@ @@html:<span
+      class="marine">IJKD</span>@@<<IJKD5>> est IJKD / LNQR = 25 / 714 soit environ 3,5%.
+    + G5) La probabilité que le joueur atteigne le carré
+      <<rose5>>@@html:<span
+      class="rose">rose</span>@@
+      @@html:<span class="rose">KLMF</span>@@<<KLMF5>> est KLMF / LNQR
+      = 64 / 714 = 32 / 357 soit environ 8,96%. 
+    + G6) La probabilité que le joueur atteigne le carré
+      <<citron9>>@@html:<span
+      class="citron">citron vert</span>@@ @@html:<span
+      class="citron">MNPH</span>@@<<MNPH5>> est MNPH / LNQR = 169 /
+      714 soit environ 23,67%.
+    + G7) La probabilité que le joueur atteigne le carré
+      <<mauve5>>@@html:<span
+      class="mauve">mauve</span>@@
+      @@html:<span class="mauve">PQRJ</span>@@<<PQRJ5>> est PQRJ /
+      LNQR = 441 / 714 = 147 / 238 soit environ 61,76%.     
+
+    
+    [[exo14][Voir l'énoncé de l'exercice 14.]]
+
+** Solutions niveau secondaire : lycée
+*** Solution exercice 15 (lycée) : nombres triangulaires
+
+    <<sol15>>
+
+    On considère le repère orthonormé de la [[fig:exo15][figure ci-dessous]].
+    
+
+
+    + G1) Le triangle passant par les points O(0; 0) , A(1 ; 0) , B(0
+      ; 1) est isorectangle car OA = OB et (OA) ⊥ (OB). L'aire de ce
+      triangle est (OA × OB) / 2 = 1 / 2 = 0,5 unités d'aire. 
+    + G2) Le triangle passant par les points O(0; 0) , C(2 ; 0) , E(0
+      ; 2) est isorectangle car OC = OE et (OC) ⊥ (OE). L'aire de ce
+      triangle est (OC × OE) / 2 = (2 × 2) / 2 = 2 unités d'aire. Le
+      point D(1 ; 1) est sur le segment [CE] car c'est son milieu.
+    + G3) Le triangle passant par les points O(0; 0) , F(3 ; 0) , I(0
+      ; 3) est isorectangle car OF = OI et (OF) ⊥ (OI). L'aire de ce
+      triangle est (OF × OI) / 2 = (3 × 3) / 2 = 4,5 unités
+      d'aire. Les points G(2 ; 1) et H(1 ; 2) sont sur le segment [FI]
+      car (EH) ∥ (BG) ∥ (OF) donc on peut utiliser Thalès dans les
+      triangles IEH et IBG puis dans les triangles IBG et IOF par
+      exemple.
+    + G4) Le triangle passant par O(0 ; 0), J(4 ; 0) et N(0 ; 4) est
+      isorectangle en O. L'aire de ce triangle est (OJ × ON) / 2 = (4
+      × 4) / 2 = 8 unités d'aire.
+
+	#+CAPTION: Calculs des vecteurs colinéaires
+	#+ATTR_HTML: :width 600px :height: 400px
+	[[./images/vect-cols.png]]
+	<<fig:exo14-vect-cols>>
+	
+	Ainsi K, L, M sont sur [JN] car les vecteurs sont
+	colinéaires. Géométriquement :
+
+	1. L est l'image de K par la translation qui transforme J en K
+           donc K est le milieu de [JL]
+	2. M est l'image de L par la translation qui transforme J en K
+           donc L est le milieu de [KM]
+	3. N est l'image de M par la translation qui transforme J en K
+           donc M est le milieu de [LN]
+
+    + G5) Il faudra ajouter 6 points pour la prochaine étape si on
+      suit ce même schéma. Le nouveau triangle obtenu OPU sera encore
+      isorectangle en O.
+      Son aire sera  (OP × OU) / 2 = (5 × 5) / 2 = 12,5 unités d'aire.
+      Les points entre les axes du repère seront alignés. On pourra le
+      vérifier en utilisant le calcul vectoriel ou Thalès (au choix).
+
+
+    #+CAPTION: Nombres triangulaires
+    #+ATTR_HTML: :width 600px :height: 400px
+    [[./images/nb-trig.png]]
+    <<fig:exo15>>
+    
+    [[exo15][Voir l'énoncé de l'exercice 15.]]
+
+    Si vous voulez d'autres [[https://youtu.be/qjJ84nor6DE?si=kEnLaxRkw9qRPLj4][exercices sur les vecteurs]] avec
+    coordonnées consultez cette vidéo.
+    
+*** Solution exercice 16 (lycée) : divisions par 7
+
+    <<sol16>>
+
+    + C1) On a besoin de 6 décimales pour approcher la fraction 1 / 7
+      ≃ 0,142857... car cette suite de 6 chiffres se répètent
+      indéfiniment, on l'appelle la période du développement décimal.
+    + C2) On a besoin de 6 décimales pour approcher la fraction 2 / 7
+      ≃ 0,285714... car cette suite de 6 chiffres se répètent
+      indéfiniment, on l'appelle la période du développement décimal.
+    + C3) On a besoin de 6 décimales pour approcher la fraction 3 / 7
+      ≃ 0,428571... car cette suite de 6 chiffres se répètent
+      indéfiniment, on l'appelle la période du développement décimal.
+    + C4) On a besoin de 6 décimales pour approcher la fraction 4 / 7
+      ≃ 0,571428... car cette suite de 6 chiffres se répètent
+      indéfiniment, on l'appelle la période du développement décimal.
+    + C5) On a besoin de 6 décimales pour approcher la fraction 5 / 7
+      ≃ 0,714285... car cette suite de 6 chiffres se répètent
+      indéfiniment, on l'appelle la période du développement décimal.
+    + C6) On a besoin de 6 décimales pour approcher la fraction 6 / 7
+      ≃ 0,857142... car cette suite de 6 chiffres se répètent
+      indéfiniment, on l'appelle la période du développement décimal.
+      
+    
+    [[exo16][Voir l'énoncé de l'exercice 16.]]
+    
+*** Solution exercice 17 (lycée) : comment choisir le milieu d'une série statistique ?
+
+    <<sol17>>
+
+    + C1) La médiane de  la série S_{0} = {1 ; 1 ; 1 ; 1 ; 10} est 1.
+    + C2) Le mode de  la série S_{0} est 1.
+    + C3) La moyenne de  la série S_{0} est 2,8.
+    + C4) La médiane et le mode de la série S_{1} = {1 ; 1 ; 1 ; 1 ;
+      10 ; 10} est toujours 1. Par contre la moyenne de la série S_{1}
+      est désormais 4.
+    + C5) La médiane et le mode de la série S_{2} = {1 ; 1 ; 1 ; 1 ;
+      10 ; 10 ; 11} est toujours 1. Par contre la moyenne de la série
+      S_{2} est désormais 5.
+    + C6) La médiane de la série S_{3} = {1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11
+      ; 15 ; 15 ; 15} vaut désormais 10 ; le mode vaut toujours 1 et
+      la moyenne vaut 8.
+    + C7) La série S_{4} = {1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ;
+      15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18} a désormais pour médiane 13 ;
+      mode 15 et moyenne 11,125.
+    + C8) Oui c'est possible en ajoutant 1 à la série S_{4} on obtient
+      la série S_{5} = {1 ; 1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ;
+      15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18} qu'on peut rendre plus
+      compacte avec un tableau :
+      
+      #+CAPTION: Version traitée de la série S_{5}
+      | x_{i} |   1 |  10 |  11 |  15 |  16 |   18 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | n_{i} |   5 |   2 |   1 |   5 |   2 |    2 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | ECC   |   5 |   7 |   8 |  13 |  15 |   17 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | FCC   | 29% | 41% | 47% | 76% | 88% | 100% |
+      <<tab:sol17-S5>>
+
+      + ECC : signifie Effectifs Cumulés Croissants
+      + FCC : signifie Fréquences Cumulées Croissantes
+	
+      Ainsi la médiane vaut 15, le mode est double 1 et 15 (on dit que
+      la série est bimodale) et la moyenne vaut environ 10,53 <
+      11,125. Ici il suffisait d'ajouter une valeur inférieure à la
+      moyenne pour augmenter la médiane car la moyenne se trouvait
+      entre les deux bornes de la série S_{4} à savoir 11 et 15.
+    + C9) Oui c'est possible en ajoutant 11 à la série S_{5} on
+      obtient la série S_{6} = {1 ; 1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 11
+      ; 15 ; 15 ; 15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18} qu'on peut rendre
+      plus compacte avec un tableau :
+      
+      #+CAPTION: Version traitée de la série S_{6}
+      | x_{i} |   1 |  10 |  11 |  15 |  16 |   18 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | n_{i} |   5 |   2 |   2 |   5 |   2 |    2 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | ECC   |   5 |   7 |   9 |  14 |  16 |   18 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | FCC   | 28% | 39% | 50% | 78% | 89% | 100% |
+      <<tab:sol17-S6>>
+
+      + ECC : signifie Effectifs Cumulés Croissants
+      + FCC : signifie Fréquences Cumulées Croissantes
+	
+      Ainsi la médiane vaut 13 < 15, le mode est double 1 et 15 (la
+      série est encore bimodale) et la moyenne vaut environ 10,56 >
+      10,53. Ici il suffisait d'ajouter une valeur supérieure à la
+      moyenne et inférieure à la médiane pour augmenter la moyenne et
+      diminuer la médiane.
+    + C10) Oui c'est possible en ajoutant 15 à la série S_{6} on
+      obtient la série : 
+      
+      #+CAPTION: Version traitée de la série S_{7}
+      | x_{i} |   1 |  10 |  11 |  15 |  16 |   18 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | n_{i} |   5 |   2 |   2 |   6 |   2 |    2 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | ECC   |   5 |   7 |   9 |  15 |  17 |   19 |
+      |-------+-----+-----+-----+-----+-----+------|
+      | FCC   | 26% | 37% | 47% | 79% | 89% | 100% |
+      <<tab:sol17-S7>>
+
+      + ECC : signifie Effectifs Cumulés Croissants
+      + FCC : signifie Fréquences Cumulées Croissantes
+
+      Ainsi la médiane vaut 15, le mode vaut 15 (la série est n'est
+      plus bimodale) et la moyenne vaut environ 10,79. Ici il
+      suffisait d'ajouter 15 mais ça ne marchait pas avec 1 (la
+      médiane aurait été 11).
+      
+
+    [[exo17][Voir l'énoncé de l'exercice 17.]]
+
+    Si vous aimez les défis voici une vidéo qui propose une [[https://youtu.be/S-OxF0nh4KU?si=7EByNEsU6KD-v2RA][énigme]]
+    statistique contre-intuitive.
+    
+    
+*** Solution exercice 18 (lycée) : comment contribuer efficacement à un projet collaboratif ?
+
+    <<sol18>>
+
+    + C1) La semaine 1, Bob a un taux de 90% > 60% pour Alice. Donc
+      Bob a un taux supérieur.
+    + C2) La semaine 2, Bob a un taux de 30% > 10% pour Alice. Donc
+      Bob a un taux supérieur.
+    + C3) Alice a modifié 60 articles la semaine 1, puis 1 la semaine
+      2, soit un total de 61 articles alors que Bob en a modifié 9 la
+      semaine 1, puis 30 la semaine 2, soit un total de 39
+      articles. Ainsi Alice a modifié plus d'articles que Bob sur les
+      deux semaines.
+    + C4)
+          #+CAPTION: Bilan des semaine 1 et 2 pour Alice et Bob
+          |       | Semaine 1 | Semaine 2 | Total    |
+          |-------+-----------+-----------+----------|
+          | Alice | 60 / 100  | 1 / 10    | 61 / 110 |
+          |-------+-----------+-----------+----------|
+          | Bob   | 9 / 10    | 30 / 100  | 39 / 110 |
+	  <<tab:sol18-Bilan-Semaine>>
+    + C5) 
+	+ S_{A}(1) = 60/ 100 = 60% < S_{B}(1) = 9 / 10 = 90% 
+	+ S_{A}(2) = 10 / 100 = 10% < S_{B}(2) = 30 / 100 = 30% 
+    + C6) La semaine 1, Alice a consulté 100 articles sur les 110
+      articles qu'elle a lu au total donc le poids de son taux de
+      modifications cette semaine par rapport à l'ensemble est
+      100 / 110.
+      Et pour la semaine 2, c'est 10 / 110.
+      Pour Bob, il a consulté 10 articles la semaine 1 donc le poids
+      de son taux de modifications cette semaine-là est 10 / 110.	
+      Alors que pour la semaine 2, il a lu 100 articles d'où le poids
+      100 / 110.
+      
+
+
+
+Ce paradoxe connu sous le nom de [[https://fr.wikipedia.org/wiki/Paradoxe_de_Simpson][paradoxe de Simpson]] vient du fait que
+Bob a un taux de modification supérieur sur chaque semaine alors
+qu'Alice a modifié plus d'articles que lui sur les quinze jours. Le
+truc c'est que l'on ne compte pas la même chose dans les deux cas,
+pour les semaines individuelles on considère les taux de modifications
+alors que pour le calcul des deux semaines on compte le nombre
+d'articles modifiés. On pourrait à première vue se dire qu'Alice est
+plus efficace que Bob puisqu'elle a modifié plus d'articles. Néanmoins
+on pourrait affiner l'analyse en se posant la question de l'impact de
+ses modifications (corrections orthographiques ou apport sur le
+fond...). Le résultat dépend donc de ce qu'on cherche à mesurer.
+
+
+Cet exemple montre l'importance du contexte, de la question posée et
+de ce qu'on cherche à mesurer car les chiffres à eux seuls ne peuvent
+pas parler.
+
+
+
+[[exo18][Voir l'énoncé de l'exercice 18.]]
+
+    
+*** Solution exercice 19 (lycée) : une interprétation du paradoxe de Simpson
+
+    <<sol19>>
+
+    #+CAPTION: Interprétation géométrique du paradoxe de Simpson
+    #+ATTR_HTML: :width 600px :height 600px
+    [[./images/simpson-vect.png]]
+    <<fig:exo19>>
+
+    On remarque que la somme des vecteurs de pentes inférieures
+    (@@html:<span class="bleu">u = u<sub>1</sub> +
+    u<sub>2</sub></span>@@) donne un vecteur de pente supérieure à la
+    somme des vecteurs de pentes supérieures (@@html:<span
+    class="rouge">v = v<sub>1</sub> + v<sub>2</sub></span>@@).
+    
+    
+    [[exo19][Voir l'énoncé de l'exercice 19.]]
+
+    Pour d'autres [[https://youtu.be/cqzUqKlPXxA?si=Fi0eR0XronkjrIPp][exercices faisant intervenir les vecteurs]] sur un
+    quadrillage consultez cette vidéo.
+    
+
+
+    
+*** Solution exercice 20 (lycée) : constructions et comparaisons de moyennes
+
+    <<sol20>>
+
+    #+CAPTION: Comparaison des moyennes harmonique, géométrique, arithmétique et quadratique
+    #+ATTR_HTML: :width 800px :height 600px
+    [[./images/means-comparison.png]]
+    <<fig:exo20>>
+
+    Pour voir une [[https://youtu.be/NbcGUclj8sk?si=_sJ8iSSMd1OkOpDg][animation de la comparaison des moyennes]] consultez
+    cette vidéo.
+    
+    + G1) [[fig:exo20][Voir figure ci-dessus.]]
+    + G2) [[fig:exo20][Voir figure ci-dessus.]]
+    + G3) OE = (a + b) / 2 car O est le centre du cercle de diamètre a + b et E est un point de ce cercle donc OE est un rayon (donc un demi-diamètre).
+    + G4) Le triangle ADB est rectangle en D car les points A, D et B sont cocycliques (sur le même cercle) de centre O donc il s'agit de son cercle circonscrit et O est le milieu de [AB] puisque c'est un diamètre. Tout triangle inscrit dans un cercle dont l'un des côtés est un diamètre est un triangle rectangle. 
+    + G5) Appliquons Pythagore dans le triangle ACD : 
+	  + AD^{2} = AC^{2} + CD^{2} 
+	  + AD^{2} = b^{2} + CD^{2} 
+	  + AD = √(b^{2} + CD^{2})
+    + G6) Appliquons Pythagore dans le triangle BCD : 
+          + BD^{2} = BC^{2} + CD^{2} 
+	  + BD^{2} = a^{2} + CD^{2} 
+	  + BD = √(a^{2} + CD^{2})
+    + G7) Appliquons Pythagore dans le triangle ABD : 
+          + AB^{2} = AD^{2} + BD^{2} 
+	  + AB^{2} = a^{2} + b^{2} + 2CD^{2} 
+	  + 2CD^{2} = AB^{2} - (a^{2} + b^{2}) 
+	  + 2CD^{2} = (a + b)^{2} - (a^{2} + b^{2}) 
+	  + 2CD^{2} = a^{2} + b^{2} + 2ab - a^{2} - b^{2}
+	  + 2CD^{2} = 2ab 
+	  + ⇒ CD = √(ab)
+    + G8) Sur la figure on peut voir que CD = √(ab) est une corde donc est inférieure au rayon OE = (a + b) / 2 par conséquent (a + b) / 2 ≤ √(ab)
+    + G9) [[fig:exo20][Voir figure ci-dessus.]]
+    + G10) Sur la figure on peut voir : 
+          + OC = OA - CA
+	  + OC = ( (a + b) / 2 ) - b
+	  + OC = (a + b - 2b) / 2
+	  + OC = (a - b) / 2
+    + G11) Calculons l'aire du triangle DOC de deux façons différentes. 
+		D'une part en utilisant OC comme base et CD comme hauteur, 
+	  + A_{DOC} = (OC × DC) / 2
+	  + A_{DOC} = ( ( (a - b) / 2 ) × √(ab) ) / 2 
+	  + A_{DOC} = ( (a - b)√(ab) ) / 4
+
+	  d'autre part en utilisant OD comme base et FC comme hauteur :
+	  + A_{DOC} = (FC × DO) / 2
+	  + A_{DOC} = (FC × ( (a + b) / 2 ) ) / 2 
+	  + A_{DOC} = FC × ( (a + b) ) / 4
+		
+	  O en déduirt une expression de FC en fonction de a et b :
+	  + FC × ( (a + b) ) / 4 = ( (a - b)√(ab) ) / 4
+	  + FC = √(ab) × ( a - b ) / (a + b)
+    + G12)  Appliquons Pythagore dans CDF : 
+          + FD^{2} = CD^{2} - FC^{2}
+	  + FD^{2} = ab - ab × ( (a - b)^{2} ) / ( (a + b)^{2} )
+	  + FD^{2} = ab ( 1 - ( (a - b)^{2} ) / ( (a + b)^{2} ) ) 
+	  + FD^{2} = ab ( ( (a + b)^{2} - (a - b)^{2} ) / ( (a +
+            b)^{2} ) ) 
+	  + FD^{2} = ab ( (4ab) / ( (a + b)^{2} ) ) 
+	  + FD^{2} = ( (2ab) / (a + b) )^{2}
+	  + ⇒ FD = (2ab) / (a + b)
+    + G13)  Appliquons Pythagore dans le triangle CEO :
+          + EC^{2} = OC^{2} + EO^{2} 
+	  + EC^{2} = ( (a - b) / 2 )^{2} + ( (a + b) / 2 )^{2} 
+	  + EC^{2} = ( 2(a^{2} + b^{2}) ) / 4 
+	  + EC^{2} = (a^{2} + b^{2}) / 2 
+	  + ⇒ EC = √( ( a^{2} + b^{2} ) / 2 )
+    + G14)  Sur la figure on peut voir que FD < CD < OE < EC
+    + G15)  Faisons les calculs :
+          Commençons par la gauche : 
+	  + √(ab)  ≤ √( (2ab) / (a + b) ) ⇔ ab  ≤  (2ab) / (a + b)
+	  + √(ab)  ≤ √( (2ab) / (a + b) ) ⇔ a + b  ≤  2 
+	  Nous venons d'aboutir à une relation toujours vraie puisque nous avons choisis a et b tels que le diamètre du cercle est a + b = 8 donc toujours supérieur à 2. Ainsi 
+	  √( (2ab) / (a + b) ≥ √(ab)
+		
+	  Poursuivons avec celle du milieu : 
+	  + (a + b) / 2  ≤ √(ab) ⇔ a + b  ≤ 2√(ab)
+	  + (a + b) / 2  ≤ √(ab) ⇔ a + b - 2√(ab)  ≤ 0
+	  + (a + b) / 2  ≤ √(ab) ⇔ (√(a} - √(b))^{2}  ≤ 0
+	  Nous venons d'aboutir à une inégalité toujours puisque le
+	  carré d'un nombre réel est toujours positif donc l'inégalité
+	  initiale est toujours vraie √(ab) ≥ ( a + b ) / 2
+		
+	  Il reste la dernière inégalité à établir : 
+	  + √( (a^{2} + b^{2}) / 2 )  ≤ (a + b ) / 2 ⇔ (a^{2} + b^{2})
+            / 2  ≤ ( (a + b) / 2 )^{2} 
+	  + √( ( a^{2} + b^{2} ) / 2 )  ≤  ( a + b ) / 2 ⇔  ( a^{2} +
+            b^{2} ) / 2  ≤  ( a^{2} + b^{2} + 2ab ) / 4 
+	  + √( ( a^{2} + b^{2} ) / 2 )  ≤  ( a + b ) / 2 ⇔  (
+            2(a^{2} + b^{2}) - ( a^{2} + b^{2} + 2ab) / 4  ≤ 0 
+	  + √( ( a^{2} + b^{2} ) / 2 )  ≤  ( a + b ) / 2 ⇔  ( a^{2} +
+            b^{2} - 2ab ) / 4  ≤ 0 
+	  + √( ( a^{2} + b^{2} ) / 2 )  ≤  ( a + b ) / 2 ⇔  ( (a -
+            b)^{2} ) / 4  ≤ 0 
+
+	  Nous venons d'aboutir à une inégalité toujours vraie ainsi 
+	  ( a + b ) / 2 ≥ √( ( a^{2} + b^{2} ) / 2 )
+		
+    
+    [[exo20][Voir l'énoncé de l'exercice 20.]]
+
+* Et maintenant ?
+** Que faire une fois que vous avez fait tous les exercices ?
+*** Vous en voulez encore ?
+
+    Voilà, c'est terminé vous avez achevé tous les exercices de cet
+    ouvrage. Bravo ! Maintenant, que faire ?
+    
+
+    Vous avez plusieurs possibilités. Si vous êtes créatif et curieux
+    vous pouvez commencer par modifier les exercices proposés
+    ici. C'est un très bon moyen d'approfondir. Ensuite vous pouvez
+    aller voir du côté de mes exercices en ligne :
+	+ [[https://didaskalosmanthanon.github.io/fct-affine/][Comprendre la notion de fonction affine]]
+	+ [[https://didaskalosmanthanon.github.io/image-fonction-affine/index.html][Calcul de l'image par une fonction affine]]
+	+ [[https://didaskalosmanthanon.github.io/antecedent-fonction-affine/index.html][Antécédent par une fonction affine]] 
+	+ [[https://didaskalosmanthanon.github.io/quizz/index.html][QCM sur divers thèmes]] : trigonométrie, identités remarquables...
+	+ [[https://didaskalosmanthanon.github.io/quizz-stats-3eme/index.html][QCM sur les statistiques en 3ème]] 
+	+ [[https://didaskalosmanthanon.github.io/qcm-numbers/][QCM sur les nombres en 3ème]] 
+	+ [[https://didaskalosmanthanon.github.io/quizz-fonctions-3eme/index.html][QCM sur les fonctions en classe de 3ème]] 
+	+ [[https://didaskalosmanthanon.github.io/geometry/exercice1.html][Exercices de géométrie niveau 3ème - 2de]] 
+	+ [[https://didaskalosmanthanon.github.io/testimonial-slider/index.html][Ce que mes élèves pensent de mes cours]] 
+
+
+*** D'autres livres du même auteur
+
+    Vous pouvez également vous procurez mes autres ouvrages
+    disponibles sur Amazon :
+	+ [[https://amzn.to/40n8rdI][Apprendre Python en moins de 5 heures]] un livre pour vous
+          mettre toute suite en action (évidemment que vous ne
+          maîtriserez pas le langage en seulement 5 heures)
+	+ [[https://amzn.to/3THL1Mq][Comment devenir autonome en anglais en 3 mois]] aujourd'hui
+          l'anglais est un outil indispensable que ça soit pour
+          travailler, pour les sciences, pour voyager, pour de la
+          documentation technique et même pour explorer les
+          mathématiques de façon internationale
+	  
+
+
+*** Pour allez plus loin
+
+    Pour toutes remarques, suggestions, ou demandes d'aide
+    personnelles merci de remplir ce [[https://forms.gle/x7fAce7GqiJAGbsC7][formulaire]] :
+    https://forms.gle/x7fAce7GqiJAGbsC7
+    
+
+    En remplissant ce formulaire vous me permettrez de vous contacter
+    pour vous faire part de mes actualités et de l'aide que je
+    pourrais vous apportez si vous en avez besoin. Et vous pourrez
+    également obtenir la version numérique de ce livre.
+    
+
+
+    À très bientôt pour de nouvelles aventures et encore merci d'avoir
+    acheté ce livre et de l'avoir lu jusqu'au bout.
+    
+   
+
+* Liste des figures
+** Un peu de culture historique
+*** Introduction
+*** Origine étymologique du mot calcul
+
+    + [[fig1:cailloux][Cailloux]] 
+
+*** Premières traces de calculs
+**** Os d'Ishango
+
+     + [[fig2:Ishango][Os d'Ishango]]
+
+**** Jetons d'argile mésopotamiens
+
+     + [[fig3:argile][Jetons d'argile mésopotamiens]]
+
+**** Tablettes cunéiformes babyloniennes
+
+     + [[fig4:cuneiform][Tablettes cunéiformes babyloniennes]]
+
+**** Papyrus de Rhind
+
+     + [[fig5:Rhind][Payrus de Rhind]]
+       
+*** Premières techniques de calcul
+**** L'abaque
+
+     + [[fig6:abacus][Abaque]]
+
+**** Le système décimal positionnel
+
+     + [[fig7:positionnel][Système décimal positionnel]]
+
+**** Les bâtons de Napier
+
+     + [[fig8:Napier][Bâtons de Napier]]
+
+
+     
+**** La pascaline
+
+     + [[fig9:Pascal][Pascaline]]
+
+*** Premières traces de géométrie
+**** Manuscript de Bakhshali
+
+     + [[fig10:Bakhshali][Bakhshali]]
+
+       
+**** Tablette babylonienne YBC 7289
+
+     + [[fig11:Ybc7289][YBC 7289]]
+
+**** Papyrus de Moscou
+
+     + [[fig12:Moscou][Papyrus de Moscou]]
+
+**** Les Neuf Chapitres sur l'art mathématique
+
+     + [[fig13:9chap][Neuf Chapitres]]
+** Niveau secondaire : collège
+*** Exercice 11 (collège) : une cible circulaire
+
+    + [[fig:exo11][Cible de cercles concentriques]]
+       
+** Solutions
+*** Solutions niveau secondaire : collège
+**** Solution exercice 10 (collège) : un programme de construction géométrique
+
+     + [[fig:sol10][Pythagore (3, 4, 5)]]
+
+**** Solution exercice 12 (collège) : carrés de Fibonacci
+
+     + [[fig:exo12][Carrés de Fibonacci]]
+
+*** Solutions niveau secondaire : lycée
+**** Solution exercice 15 (lycée) : nombres triangulaires
+
+     + [[fig:exo14-vect-cols][Calculs des vecteurs colinéaires]]
+     + [[fig:exo15][Nombres triangulaires]]
+
+**** Solution exercice 19 (lycée) : une interprétation du paradoxe de Simpson
+
+     + [[fig:exo19][Interprétation géométrique du paradoxe de Simpson]]
+
+**** Solution exercice 20 (lycée) : constructions et comparaisons de moyennes
+
+     + [[fig:exo20][Comparaison des moyennes harmonique, géométrique, arithmétique et quadratique]]
+     
+* Liste des tableaux
+** Solutions
+*** Solutions niveau secondaire : lycée
+**** Solution exercice 17 (lycée) : comment choisir le milieu d'une série statistique ?
+
+     + [[tab:sol17-S5][Version traitée de la série S_{5}]]
+     + [[tab:sol17-S6][Version traitée de la série S_{6}]]
+     + [[tab:sol17-S7][Version traitée de la série S_{7}]]
+
+**** Solution exercice 18 (lycée) : comment contribuer efficacement à un projet collaboratif ?
+
+     + [[tab:sol18-Bilan-Semaine][Bilan des semaines 1 et 2 pour Alice et Bob]]

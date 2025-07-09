@@ -1,0 +1,603 @@
+\section{Solutions niveau secondaire : lycée}
+\addcontentsline{toc}{chapter}{Solutions niveau secondaire : lycée}
+
+\newpage 
+
+\subsection{Solution exercice 15 (secondaire : lycée) : nombres triangulaires}
+
+\label{sol:niveau15}
+
+On considère le repère orthonormé de la \hyperref[fig:nb-triangulaire]{figure page \pageref{fig:nb-triangulaires}}.
+
+\begin{enumerate}[label=G\arabic*)]
+	\item Le triangle passant par les points O(0; 0) , A(1 ; 0) , B(0 ; 1) est isorectangle car OA = OB et $(OA)\perp (OB)$. 
+	
+	L'aire de ce triangle est \[\dfrac{OA\times OB}{2} = \dfrac{1}{2} = 0,5\] unités d'aire.
+	\item Le triangle passant par les points O(0; 0) , C(2 ; 0) , E(0 ; 2) est isorectangle car OC = OE et $(OC)\perp (OE)$. 
+	
+	L'aire de ce triangle est \[\dfrac{OC\times OE}{2} = \dfrac{2\times 2}{2} = 2\] unités d'aire.
+	
+	Le point D(1 ; 1) est sur le segment [CE] car c'est son milieu. 
+	\item Le triangle passant par les points O(0; 0) , F(3 ; 0) , I(0 ; 3) est isorectangle car OF = OI et $(OF)\perp (OI)$. 
+	
+	L'aire de ce triangle est \[\dfrac{OF\times OI}{2} = \dfrac{3\times 3}{2} = 4,5\] unités d'aire.
+	
+	Les points G(2 ; 1) et H(1 ; 2) sont sur le segment [FI] car $(EH)\parallel (BG)\parallel (OF)$ donc on peut utiliser Thalès dans les triangles IEH et IBG puis dans les triangles IBG et IOF par exemple.
+	\item Le triangle passant par O$(0 ; 0)$, J$(4 ; 0)$ et N$(0 ; 4)$ est isorectangle en O. 
+	
+	L'aire de ce triangle est 
+	 \[\dfrac{OJ\times ON}{2} = \dfrac{4\times 4}{2} = 8\] unités d'aire.
+
+	\begin{align*}
+	\overrightarrow{JK}&\begin{pmatrix}x_K - x_J\\ y_K - y_J\end{pmatrix}=\begin{pmatrix}-1\\1\end{pmatrix}\\
+	\overrightarrow{JL}&\begin{pmatrix}x_L - x_J\\ y_L - y_J\end{pmatrix}=\begin{pmatrix}-2\\ 2\end{pmatrix} = 2\overrightarrow{JK}\\
+	\overrightarrow{JM}&\begin{pmatrix}x_M - x_J\\ y_M - y_J\end{pmatrix}=\begin{pmatrix}-3\\ 3\end{pmatrix} = 3\overrightarrow{JK}\\
+	\overrightarrow{JN}&\begin{pmatrix}x_N - x_J\\ y_N - y_J\end{pmatrix}=\begin{pmatrix}-4\\ 4\end{pmatrix} = 4\overrightarrow{JK}
+	\end{align*}
+	Ainsi K, L, M sont sur [JN] car les vecteurs sont colinéaires. Géométriquement :
+	\begin{enumerate}
+		\item L est l'image de K par la translation qui transforme J en K donc K est le milieu de [JL]
+		\item M est l'image de L par la translation qui transforme J en K donc L est le milieu de [KM]
+		\item N est l'image de M par la translation qui transforme J en K donc M est le milieu de [LN]
+	\end{enumerate}
+	\item Il faudra ajouter 6 points pour la prochaine étape si on suit ce même schéma. Le nouveau triangle obtenu (\textcolor{orange}{OPU}) sera encore isorectangle en O. 
+	
+	Son aire sera  \[\dfrac{OP\times OU}{2} = \dfrac{5\times 5}{2} = 12,5\] unités d'aire.
+
+	
+	Les points entre les axes du repère seront alignés. On pourra le vérifier en utilisant le calcul vectoriel ou Thalès (au choix). 
+\end{enumerate}
+
+Si vous voulez d'autres \urlnote{exercices sur les vecteurs avec coordonnées}{https://youtu.be/qjJ84nor6DE?si=kEnLaxRkw9qRPLj4} consultez cette vidéo.
+
+
+\newpage
+
+\definecolor{pink4}{rgb}{1,0,1}
+\definecolor{pink3}{rgb}{1,0.5,0}
+\definecolor{pink2}{rgb}{1,0.75}
+\definecolor{pink1}{rgb}{1,0,0}
+\definecolor{blue}{rgb}{0,0, 1}
+
+
+
+\begin{figure}[H]
+\centering
+\caption{Nombres triangulaires}
+\vspace{0.5cm}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1.5cm,y=1.5cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-.5,
+xmax=5.5,
+ymin=-0.5,
+ymax=5.5,
+xtick={1,2,...,5},
+ytick={1,2,...,5},]
+\clip(-0.5,-0.5) rectangle (5.5,5.5);
+\fill[line width=2pt,color=pink1,fill=pink1,fill opacity=1] (0,0) -- (1,0) -- (0,1) -- cycle;
+\fill[line width=2pt,color=pink2,fill=pink2,fill opacity=0.65] (0,0) -- (2,0) -- (0,2) -- cycle;
+\fill[line width=2pt,color=pink3,fill=pink3,fill opacity=0.24] (0,0) -- (3,0) -- (0,3) -- cycle;
+\fill[line width=2pt,color=pink4,fill=pink4,fill opacity=0.21] (0,0) -- (4,0) -- (0,4) -- cycle;
+\begin{scriptsize}
+\draw [fill=blue] (0,0) circle (2.5pt);
+\draw[color=blue] (-0.25,-0.25) node {$O$};
+\draw [fill=blue] (1,0) circle (2.5pt);
+\draw[color=blue] (1.25,0.25) node {$A$};
+\draw [fill=blue] (0,1) circle (2.5pt);
+\draw[color=blue] (-0.25,1.25) node {$B$};
+\draw [fill=blue] (2,0) circle (2.5pt);
+\draw[color=blue] (2.25,0.25) node {$C$};
+\draw [fill=blue] (0,2) circle (2.5pt);
+\draw[color=blue] (-0.25,2.25) node {$E$};
+\draw [fill=blue] (1,1) circle (2.5pt);
+\draw[color=blue] (1.25,1.25) node {$D$};
+\draw [fill=blue] (3,0) circle (2.5pt);
+\draw[color=blue] (3.25,0.25) node {$F$};
+\draw [fill=blue] (0,3) circle (2.5pt);
+\draw[color=blue] (-0.25,3.25) node {$I$};
+\draw [fill=blue] (2,1) circle (2.5pt);
+\draw[color=blue] (2.25,1.25) node {$G$};
+\draw [fill=blue] (1,2) circle (2.5pt);
+\draw[color=blue] (1.25,2.25) node {$H$};
+\draw [fill=blue] (4,0) circle (2.5pt);
+\draw[color=blue] (4.25,0.25) node {$J$};
+\draw [fill=blue] (0,4) circle (2.5pt);
+\draw[color=blue] (-0.25,4.25) node {$N$};
+\draw [fill=blue] (3,1) circle (2.5pt);
+\draw[color=blue] (3.25,1.25) node {$K$};
+\draw [fill=blue] (2,2) circle (2.5pt);
+\draw[color=blue] (2.25,2.25) node {$L$};
+\draw [fill=blue] (1,3) circle (2.5pt);
+\draw[color=blue] (1.25,3.25) node {$M$};
+\draw [fill=orange] (5,0) circle (2.5pt);
+\draw[color=orange] (5.25,0.25) node {$P$};
+\draw [fill=orange] (4,1) circle (2.5pt);
+\draw[color=orange] (4.25,1.25) node {$Q$};
+\draw [fill=orange] (3,2) circle (2.5pt);
+\draw[color=orange] (3.25,2.25) node {$R$};
+\draw [fill=orange] (2,3) circle (2.5pt);
+\draw[color=orange] (2.25,3.25) node {$S$};
+\draw [fill=orange] (1,4) circle (2.5pt);
+\draw[color=orange] (1.25,4.25) node {$T$};
+\draw [fill=orange] (0,5) circle (2.5pt);
+\draw[color=orange] (-0.25,5.25) node {$U$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\label{fig:nb-triangulaires}
+\end{figure}
+
+\hyperref[geom:niveau15]{Voir questions page \pageref{geom:niveau15}}.
+
+Pour une explication complète de la \urlnote{construction des nombres triangulaires}{https://youtu.be/dqJIKHeBRio?si=nNHWJ5m8al-MAUfy} consultez cette vidéo.
+
+\newpage
+
+
+\subsection{Solution exercice 16 (secondaire : lycée) : divisions par 7}
+
+\label{sol:niveau16}
+
+\begin{enumerate}[label=C\arabic*)]
+	\item On a besoin de 6 décimales pour approcher la fraction 
+	\[\dfrac{1}{7} \simeq 0,142857\dots = 0,\overline{142857}\]
+	car cette suite de 6 chiffres se répètent indéfiniment, on l'appelle la période du développement décimal.
+	\item On a besoin de 6 décimales pour approcher la fraction 
+	\[\dfrac{2}{7} \simeq 0,285714\dots = 0,\overline{285714}\]
+	car cette suite de 6 chiffres se répètent indéfiniment, on l'appelle la période du développement décimal.
+	\item On a besoin de 6 décimales pour approcher la fraction 
+	\[\dfrac{3}{7} \simeq 0,428571\dots = 0,\overline{428571}\]
+	car cette suite de 6 chiffres se répètent indéfiniment, on l'appelle la période du développement décimal.
+	\item On a besoin de 6 décimales pour approcher la fraction 
+	\[\dfrac{4}{7} \simeq 0,571428\dots = 0,\overline{571428}\]
+	car cette suite de 6 chiffres se répètent indéfiniment, on l'appelle la période du développement décimal.
+	\item On a besoin de 6 décimales pour approcher la fraction 
+	\[\dfrac{5}{7} \simeq 0,714285\dots = 0,\overline{714285}\]
+	car cette suite de 6 chiffres se répètent indéfiniment, on l'appelle la période du développement décimal.
+	\item On a besoin de 6 décimales pour approcher la fraction 
+	\[\dfrac{6}{7} \simeq 0,857142\dots = 0,\overline{857142}\]
+	car cette suite de 6 chiffres se répètent indéfiniment, on l'appelle la période du développement décimal.
+\end{enumerate}
+
+\hyperref[calc:niveau16]{Voir questions page \pageref{calc:niveau16}}.
+
+
+\newpage
+
+\subsection{Solution exercice 17 (secondaire : lycée) : comment choisir le milieu d'une série statistique ?}
+
+\label{sol:niveau17}
+
+\begin{enumerate}[label=C\arabic*)]
+	\item La médiane de  la série $S_0 = \{1 ; 1 ; 1 ; 1 ; 10\}$ est 1.
+	\item Le mode de  la série $S_0$ est 1.
+	\item La moyenne de  la série $S_0$ est 2,8.
+	\item La médiane et le mode de la série $S_1 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10\}$ est toujours 1. Par contre la moyenne de la série $S_1$ est désormais 4.
+	\item La médiane et le mode de la série $S_2 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11\}$ est toujours 1. Par contre la moyenne de la série $S_2$ est désormais 5.
+	\item La médiane de la série $S_3 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15\}$ vaut désormais 10 ; le mode vaut toujours 1 et la moyenne vaut 8.
+	\item La série \[S_4 = \{1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18\}\] a désormais pour médiane 13 ; mode 15 et moyenne 11,125.
+	\item Oui c'est possible en ajoutant 1 à la série $S_4$ on obtient la série \[S_5 = \{1 ; 1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 15 ; 15 ; 15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18\}\] qu'on peut rendre plus compacte avec un tableau :
+	\begin{center}
+		\begin{figure}[H]
+		\caption{Version traitée de la série $S_5$}
+		\centering
+		\vspace{.5cm}
+		\begin{tabular}{*{7}{|c}|}
+			\hline
+			$x_i$ & 1 & 10 & 11 & 15 & 16 & 18 \\
+			\hline
+			$n_i$ & 5 & 2 & 1 & 5 & 2 & 2 \\
+			\hline
+			ECC & 5 & 7 & 8 & 13 & 15 & 17\\
+			\hline
+			FCC & $29\%$ & $41\%$ & $47\%$ & $76\%$ & $88\%$ & $100\%$  \\
+			\hline
+		\end{tabular}
+			\vspace{.5cm}
+			\begin{itemize}
+				\item ECC signifie Effectifs Cumulés Croissants
+				\item FCC signifie Fréquences Cumulées Croissants
+			\end{itemize}
+		\end{figure}
+	\end{center}
+	
+			
+	Ainsi la médiane vaut 15, le mode est double 1 et 15 (on dit que la série est bimodale) et la moyenne vaut environ $10,53 < 11,125$. Ici il suffisait d'ajouter une valeur inférieure à la moyenne pour augmenter la médiane car la moyenne se trouvait entre les deux bornes de la série $S_4$ à savoir 11 et 15.
+	\item Oui c'est possible en ajoutant 11 à la série $S_5$ on obtient la série \[S_6 = \{1 ; 1 ; 1 ; 1 ; 1 ; 10 ; 10 ; 11 ; 11 ; 15 ; 15 ; 15 ; 15 ; 15 ; 16 ; 16 ; 18 ; 18\}\] qu'on peut rendre plus compacte avec un tableau :
+	\begin{center}
+		\begin{figure}[H]
+		\caption{Version traitée de la série $S_6$}
+		\centering
+		\vspace{.5cm}
+		\begin{tabular}{*{8}{|c}|}
+			\hline
+			$x_i$ & 1 & 10 & 11 & 15 & 16 & 18 \\
+			\hline
+			$n_i$ & 5 & 2 & 2 & 5 & 2 & 2 \\
+			\hline
+			ECC & 5 & 7 & 9 & 14 & 16 & 18\\
+			\hline
+			FCC & $28\%$ & $39\%$ & $50\%$ & $78\%$ & $89\%$ & $100\%$  \\
+			\hline
+		\end{tabular}
+			\vspace{.5cm}
+			\begin{itemize}
+				\item ECC signifie Effectifs Cumulés Croissants
+				\item FCC signifie Fréquences Cumulées Croissants
+			\end{itemize}
+		\end{figure}
+	\end{center}
+	
+	
+
+	
+	Ainsi la médiane vaut $13 < 15$, le mode est double 1 et 15 (la série est encore bimodale) et la moyenne vaut environ $10,56 > 10,53$. Ici il suffisait d'ajouter une valeur supérieure à la moyenne et inférieure à la médiane pour augmenter la moyenne et diminuer la médiane.
+	\item Oui c'est possible en ajoutant 15 à la série $S_6$ on obtient la série 
+	\begin{align*}
+		S_7 &= \\
+		& \{ \\
+		& 01 ; 01 ; 01 ; 01 ; 01 ; \\
+		& 10 ; 10 ; \\
+		& 11 ; 11 ; \\
+		& 15 ; 15 ; 15 ; 15 ; 15 ; 15 ; \\
+		& 16 ; 16 ; \\
+		& 18 ; 18 \\
+		&\}
+	\end{align*}
+	qu'on peut rendre plus compacte avec un tableau :
+	
+	\begin{center}
+		\begin{figure}[H]
+		\caption{Version traitée de la série $S_7$}
+		\centering
+		\vspace{.5cm}
+		\begin{tabular}{*{9}{|c}|}
+			\hline
+			$x_i$ & 1 & 10 & 11 & 15 & 16 & 18 \\
+			\hline
+			$n_i$ & 5 & 2 & 2 & 6 & 2 & 2 \\
+			\hline
+			ECC & 5 & 7 & 9 & 15 & 17 & 19\\
+			\hline
+			FCC & $26\%$ & $37\%$ & $47\%$ & $79\%$ & $89\%$ & $100\%$  \\
+			\hline
+		\end{tabular}
+			\vspace{.5cm}
+			\begin{itemize}
+				\item ECC signifie Effectifs Cumulés Croissants
+				\item FCC signifie Fréquences Cumulées Croissants
+			\end{itemize}
+		\end{figure}
+	\end{center}
+	
+	
+	Ainsi la médiane vaut $15$, le mode vaut 15 (la série est n'est plus bimodale) et la moyenne vaut environ $10,79$. Ici il suffisait d'ajouter 15 mais ça ne marchait pas avec 1 (la médiane aurait été 11).
+\end{enumerate}
+
+\hyperref[calc:niveau17]{Voir questions page \pageref{calc:niveau17}}.
+
+Si vous aimez les défis voici une vidéo qui propose une \urlnote{énigme statistique contre-intuitive}{https://youtu.be/S-OxF0nh4KU?si=7EByNEsU6KD-v2RA}.
+
+\newpage
+
+\subsection{Solution exercice 18 (secondaire : lycée) : comment contribuer efficacement à un projet collaboratif ?}
+
+\label{sol:niveau18}
+
+\begin{enumerate}[label=C\arabic*)]
+	\item La semaine 1, Bob a un taux de $90\% > 60\%$ pour Alice. Donc Bob a un taux supérieur.
+	\item La semaine 2, Bob a un taux de $30\% > 10\%$ pour Alice. Donc Bob a un taux supérieur.
+	\item Alice a modifié 60 articles la semaine 1, puis 1 la semaine 2, soit un total de 61 articles alors que Bob en a modifié 9 la semaine 1, puis 30 la semaine 2, soit un total de 39 articles. Ainsi Alice a modifié plus d'articles que Bob sur les deux semaines.
+	\item 
+		\begin{center}
+			\begin{tabular}{|>{\columncolor{gray!20}}c|c|c|c|}
+				\hline
+			\cellcolor{white!100}&\cellcolor{gray!20}Semaine 1&\cellcolor{gray!20}Semaine 2&\cellcolor{gray!20}Total \\
+				\hline
+				Alice   & $\dfrac{60}{100}$ & $\dfrac{1}{10}$      & $\dfrac{61}{110}$ \\
+				\hline
+				Bob    & $\dfrac{9}{10}$     & $\dfrac{30}{100}$     & $\dfrac{39}{110}$ \\
+				\hline
+			\end{tabular}
+		\end{center}
+	\item 
+		\begin{align*}
+			S_A(1) &= \dfrac{60}{100} = 60\% &&<& S_B(1) = \dfrac{9}{10} = 90\% \\
+			S_A(2) &= \dfrac{1}{10} = 10\% &&<& S_B(2) = \dfrac{30}{100} = 30\% 
+		\end{align*}
+	\item La semaine 1, Alice a consulté 100 articles sur les 110 articles qu'elle a lu au total donc le poids de son taux de modifications cette semaine par rapport à l'ensemble est $\dfrac{100}{110}$.
+	
+	Et pour la semaine 2, c'est $\dfrac{10}{110}$.
+	
+	Pour Bob, il a consulté 10 articles la semaine 1 donc le poids de son taux de modifications cette semaine-là est $\dfrac{10}{110}$.
+	
+	Alors que pour la semaine 2, il a lu 100 articles d'où le poids $\dfrac{100}{110}$.
+\end{enumerate}
+
+\newpage
+
+Ce paradoxe connu sous le nom de \urlnote{paradoxe de Simpson}{https://fr.wikipedia.org/wiki/Paradoxe_de_Simpson} vient du fait que Bob a un taux de modification supérieur sur chaque semaine alors qu'Alice a modifié plus d'articles que lui sur les quinze jours. Le truc c'est que l'on ne compte pas la même chose dans les deux cas, pour les semaines individuelles on considère les taux de modifications alors que pour le calcul des deux semaines on compte le nombre d'articles modifiés. On pourrait à première vue se dire qu'Alice est plus efficace que Bob puisqu'elle a modifié plus d'articles. Néanmoins on pourrait affiner l'analyse en se posant la question de l'impact de ses modifications (corrections orthographiques ou apport sur le fond...). Le résultat dépend donc de ce qu'on cherche à mesurer.
+
+Cet exemple montre l'importance du contexte, de la question posée et de ce qu'on cherche à mesurer car les chiffres à eux seuls ne peuvent pas parler.
+
+\hyperref[calc:niveau18]{Voir questions page \pageref{calc:niveau18}}.
+
+
+\newpage
+
+\subsection{Solution exercice 19 (secondaire : lycée) : une interprétation géométrique du paradoxe de Simpson}
+
+\label{sol:niveau19}
+
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{blue}{rgb}{0,0,1}
+\definecolor{black}{rgb}{0,0,0}
+
+\begin{figure}[H]
+\centering
+\caption{Paradoxe de Simpson version géométrique}
+\vspace{.5cm}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-.75,
+xmax=7.75,
+ymin=-.75,
+ymax=7.75,
+xtick={1,2,...,7},
+ytick={1,2,...,7},]
+\clip(-.75,-.75) rectangle (7.75,7.75);
+\draw [->,line width=2pt,color=blue] (0,0) -- (1,0);
+\draw [->,line width=2pt,color=red] (0,0) -- (3,1);
+\draw [->,line width=2pt,color=blue] (0,3) -- (2,7);
+\draw [->,line width=2pt,color=red] (0,3) -- (0,4);
+\draw [->,line width=2pt,color=red] (4,2) -- (7,4);
+\draw [->,line width=1pt,color=red, dashed] (4,2) -- (7,3);
+\draw[color=red] (6.5,2.5) node {$\vec{v}_1$};
+\draw [->,line width=1pt,color=red, dashed] (7,3) -- (7,4);
+\draw[color=red] (7.5,3.75) node {$\vec{v}_2$};
+\draw [->,line width=2pt,color=blue] (4,2) -- (7,6);
+\draw [->,line width=1pt,color=blue, dashed] (6,6) -- (7,6);
+\draw[color=blue] (6.5,6.5) node {$\vec{u}_1$};
+\draw [->,line width=1pt,color=blue, dashed] (4,2) -- (6,6);
+\draw[color=blue] (4.5,4.5) node {$\vec{u}_2$};
+
+\begin{scriptsize}
+\draw [fill=orange] (0,0) circle (2.5pt);
+\draw[color=orange] (-0.35,-0.25) node {$O$};
+\draw [fill=orange] (1,0) circle (2.5pt);
+\draw[color=orange] (1.25,-0.25) node {$A$};
+\draw[color=blue] (0.5,-0.5) node {$\vec{u}_1$};
+\draw [fill=orange] (3,1) circle (2.5pt);
+\draw[color=orange] (3.25,1.5) node {$B$};
+\draw[color=red] (1.25,.75) node {$\vec{v}_1$};
+\draw [fill=orange] (0,3) circle (2.5pt);
+\draw[color=orange] (-0.35,2.5) node {$C$};
+\draw [fill=orange] (2,7) circle (2.5pt);
+\draw[color=orange] (2.25,7.25) node {$D$};
+\draw[color=blue] (0.8,5.5) node {$\vec{u}_2$};
+\draw [fill=orange] (0,4) circle (2.5pt);
+\draw[color=orange] (-0.35,4.5) node {$E$};
+\draw[color=red] (-0.5,3.5) node {$\vec{v}_2$};
+\draw [fill=orange] (4,2) circle (2.5pt);
+\draw[color=orange] (3.75,2.5) node {$F$};
+\draw [fill=orange] (7,4) circle (2.5pt);
+\draw[color=orange] (7.25,4.25) node {$G$};
+\draw[color=red] (5.75,1.5) node {$\boxed{\vec{v} = \vec{v}_1 + \vec{v}_2}$};
+\draw [fill=orange] (7,6) circle (2.5pt);
+\draw[color=orange] (7.25,6.25) node {$H$};
+\draw[color=blue] (5.75,7.35) node {$\boxed{\vec{u} = \vec{u}_1 + \vec{u}_2}$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+On remarque que la somme des vecteurs de pentes inférieures ($\textcolor{blue}{\vec{u} = \vec{u}_1 + \vec{u}_2}$) donne un vecteur de pente supérieure à la somme des vecteurs de pentes supérieures ($\textcolor{red}{\vec{v} = \vec{v}_1 + \vec{v}_2}$).
+
+
+\hyperref[geom:niveau19]{Voir questions page \pageref{geom:niveau19}}.
+
+Pour d'autres \urlnote{exercices faisant intervenir les vecteurs sur un quadrillage}{https://youtu.be/cqzUqKlPXxA?si=Fi0eR0XronkjrIPp} consultez cette vidéo.
+
+
+\newpage
+
+\subsection{Solution exercice 20 (secondaire : lycée) : constructions et comparaisons de moyennes}
+
+\label{sol:niveau20}
+
+
+\begin{figure}[H]
+\centering
+\caption{Comparaison visuelle des moyennes harmonique, géométrique, arithmétique et quadratique}
+\vspace{1cm}
+\label{fig:compare-means}
+\definecolor{brown}{rgb}{0.34, 0.09, 0.27}
+\definecolor{yellow}{rgb}{1, 0.76,0}
+\definecolor{purple}{rgb}{0.5,0,1}
+\definecolor{pink}{rgb}{1,0,1}
+\definecolor{lime}{rgb}{0,1,0}
+\definecolor{cyan}{rgb}{0,1,1}
+\definecolor{melon}{rgb}{1,0.75,0.8}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{green2}{rgb}{0.2, 1, 0.51}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{blue}{rgb}{0.3,0.3,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-6,
+xmax=6,
+ymin=-3,
+ymax=5.5,
+xtick={-3,1,...,5},
+ytick={-1, 3,...,7},]
+\clip(-6,-3) rectangle (6,5.5);
+\draw[line width=2pt,color=black,fill=black,fill opacity=0.1] (0.7,0.76) -- (0.81,0.95) -- (0.62,1.06) -- (0.5,0.87) -- cycle; 
+\draw[line width=1pt, color=blue, domain=0:180, variable=\t, samples=1000]
+    plot ({4*cos(\t)}, {4*sin(\t)});
+\draw [line width=2pt,color=melon] (-4,0)-- (2,0);
+\draw [line width=2pt,color=cyan] (2,0)-- (4,0);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt,color=black] (-4,0)-- (2.008062411337031,3.4594342531944884);
+\draw[color=lime] (-0.525,1.35) node {$\dfrac{a+b}{2}$};
+
+\draw [line width=2pt,dash pattern=on 1pt off 1pt,color=black] (2.008062411337031,3.4594342531944884)-- (4,0);
+\draw[color=pink] (2.5,1.25) node {$\sqrt{ab}$};
+\draw [line width=2pt,color=lime] (0,0)-- (0,4);
+\draw [line width=2pt,color=pink] (2,0)-- (2,3.46);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt on 1pt off 4pt,color=purple] (0.5040393309780865,0.8683449860414557)-- (0,0);
+\draw [line width=2pt,color=red] (2.008062411337031,3.4594342531944884)-- (0.5040393309780865,0.8683449860414557);
+\draw[color=red] (2.85, 4) node { \scriptsize $\bm{ \sqrt{ \dfrac{ 2ab }{ a + b } } }$ };
+\draw [line width=2pt,dash pattern=on 1pt off 1pt,color=blue] (0,4)-- (2,0);
+\draw[color=blue] (.85, 4.5) node { \scriptsize $\bm{ \sqrt{ \dfrac{ a^2+b^2 }{ 2 } } }$ };
+
+\draw[color=red](-4, -2) node {\scriptsize $H(a, b) = \boxed{\sqrt{ \dfrac{ 2ab }{ a + b } }} \leq\quad$};
+\draw[color=pink](-1.25, -2) node {\scriptsize $G(a, b) = \boxed{\sqrt{ab}} \leq\quad$};
+\draw[color=lime](1.5, -2) node {\scriptsize $A(a, b) = \boxed{\dfrac{ a + b }{2}} \leq\quad$};
+\draw[color=blue](4.15, -2) node {\scriptsize $Q(a, b) = \boxed{\sqrt{ \dfrac{ a^2 + b^2 }{2}}}$};
+
+\draw [line width=2pt] (2,0)-- (0.5,0.87);
+\begin{scriptsize}
+\draw [fill=yellow] (0,0) circle (2.5pt);
+\draw[color=yellow] (-0.25,-0.25) node {$O$};
+\draw [fill=yellow] (4,0) circle (2.5pt);
+\draw[color=yellow] (4.25,-0.25) node {$A$};
+\draw [fill=yellow] (-4,0) circle (2.5pt);
+\draw[color=yellow] (-4.25,-0.25) node {$B$};
+\draw [fill=yellow] (2,0) circle (2.5pt);
+\draw[color=yellow] (2,-0.3) node {$C$};
+\draw[color=melon] (-1.5,0.25) node {$a$};
+\draw[color=cyan] (3,0.25) node {$b$};
+\draw [fill=yellow] (2.008062411337031,3.4594342531944884) circle (2.5pt);
+\draw[color=yellow] (2,3.75) node {$D$};
+\draw [fill=yellow] (0,4) circle (2.5pt);
+\draw[color=yellow] (-0.25,4.25) node {$E$};
+\draw [fill=yellow] (0.5040393309780865,0.8683449860414557) circle (2pt);
+\draw[color=yellow] (0.5,.5) node {$F$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+Pour voir une \urlnote{animation de la comparaison des moyennes}{https://youtu.be/NbcGUclj8sk?si=_sJ8iSSMd1OkOpDg} consultez cette vidéo.
+
+\newpage
+
+\begin{enumerate}[label=C\arabic*)]
+	\item \hyperref[fig:compare-means]{Voir figure ci-dessus page \pageref{fig:compare-means}.}
+	\item \hyperref[fig:compare-means]{Voir figure ci-dessus page \pageref{fig:compare-means}.}
+	\item \[OE = \dfrac{a + b}{2}\] car O est le centre du cercle de diamètre $a + b$ et E est un point de ce cercle donc OE est un rayon (donc un demi-diamètre).
+	\item Le triangle ADB est rectangle en D car les points A, D et B sont cocycliques (sur le même cercle) de centre O donc il s'agit de son cercle circonscrit et O est le milieu de [AB] puisque c'est un diamètre. Tout triangle inscrit dans un cercle dont l'un des côtés est un diamètre est un triangle rectangle. 
+	\item Appliquons Pythagore dans le triangle ACD : 
+		\begin{align*}
+			AD^2 &= AC^2 + CD^2 \\
+			AD^2 &= b^2 + CD^2 \\
+			AD &= \sqrt{b^2 + CD^2}
+		\end{align*}
+	\item Appliquons Pythagore dans le triangle BCD : 
+		\begin{align*}
+			BD^2 &= BC^2 + CD^2 \\
+			BD^2 &= a^2 + CD^2 \\
+			BD &= \sqrt{a^2 + CD^2}
+		\end{align*}
+	\item Appliquons Pythagore dans le triangle ABD : 
+		\begin{align*}
+			AB^2 &= AD^2 + BD^2 \\
+			AB^2 &= a^2 + b^2 + 2CD^2 \\
+			2CD^2 &= AB^2 - (a^2 + b^2) \\
+			2CD^2 &= (a + b)^2 - (a^2 + b^2) \\
+			2CD^2 &= a^2 + b^2 + 2ab - a^2 - b^2\\
+			2CD^2 &= 2ab \\
+			&\Rightarrow \boxed{CD = \sqrt{ab}}
+		\end{align*}
+	\item Sur la figure on peut voir que $CD = \sqrt{ab}$ est une corde donc est inférieure au rayon $OE = \dfrac{a + b}{2}$ par conséquent \[\dfrac{a + b}{2}\geq \sqrt{ab}\]
+	\item \hyperref[fig:compare-means]{Voir figure ci-dessus page \pageref{fig:compare-means}.} 
+	\item Sur la figure on peut voir : 
+		\begin{align*}
+			OC &= OA - CA\\
+			OC &= \left( \dfrac{a + b}{2} \right) - b\\
+			OC &= \dfrac{a + b - 2b}{2}\\
+			OC &= \dfrac{a - b}{2}
+		\end{align*}
+	\item Calculons l'aire du triangle DOC de deux façons différentes. 
+		D'une part en utilisant OC comme base et CD comme hauteur, 
+		\begin{align*}
+			\mathcal{A}_{DOC} &= \dfrac{OC\times DC}{2}\\
+			\mathcal{A}_{DOC} &= \dfrac{\left(\dfrac{a - b}{2}\right)\times \sqrt{ab}}{2} \\
+			\mathcal{A}_{DOC} &= \dfrac{(a - b)\sqrt{ab}}{4}
+		\end{align*}
+		d'autre part en utilisant OD comme base et FC comme hauteur :
+		\begin{align*}
+			\mathcal{A}_{DOC} &= \dfrac{FC\times DO}{2}\\
+			\mathcal{A}_{DOC} &= \dfrac{FC\times \left(\dfrac{a + b}{2}\right)}{2} \\
+			\mathcal{A}_{DOC} &= FC\times \dfrac{(a + b)}{4}
+		\end{align*}
+		
+		O en déduirt une expression de FC en fonction de a et b :
+		\begin{align*}
+			FC\times \dfrac{(a + b)}{4} &= \dfrac{(a - b)\sqrt{ab}}{4}\\
+			FC &= \sqrt{ab}\times\dfrac{a - b}{a + b}
+		\end{align*}
+	\item Appliquons Pythagore dans CDF : 
+		\begin{align*}
+			FD^2 &= CD^2 - FC^2\\
+			FD^2 &= ab - ab \times\dfrac{(a - b)^2}{(a + b)^2} \\
+			FD^2 &= ab\left( 1 - \dfrac{(a - b)^2}{(a + b)^2}\right) \\
+			FD^2 &= ab\left( \dfrac{(a + b)^2 - (a - b)^2}{(a + b)^2}\right) \\
+			FD^2 &= ab\left( \dfrac{4ab}{(a + b)^2}\right) \\
+			FD^2 &= \left(\dfrac{2ab}{a + b}\right)^2\\
+			 &\Rightarrow \boxed{FD = \dfrac{2ab}{a + b}}
+		\end{align*}
+	\item Appliquons Pythagore dans le triangle CEO :
+		\begin{align*}
+			EC^2 &= OC^2 + EO^2 \\
+			EC^2 &= \left(\dfrac{a - b}{2}\right)^2 + \left(\dfrac{a + b}{2}\right)^2 \\
+			EC^2 &= \dfrac{2(a^2 + b^2)}{4} \\
+			EC^2 &= \dfrac{a^2 + b^2}{2} \\
+			&\Rightarrow \boxed{EC = \sqrt{\dfrac{a^2 + b^2}{2}}}
+		\end{align*}
+	\item Sur la figure on peut voir que \[FD < CD < OE < EC\]
+	\item Faisons les calculs :
+		Commençons par la gauche : 
+		\begin{align*}
+			\sqrt{ab} \geq \sqrt{\dfrac{2ab}{a + b}} &\iff ab \geq  \dfrac{2ab}{a + b} \\
+			\sqrt{ab} \geq \sqrt{\dfrac{2ab}{a + b}} &\iff a + b \geq  2 
+		\end{align*}
+		Nous venons d'aboutir à une relation toujours vraie puisque nous avons choisis a et b tels que le diamètre du cercle est $a + b = 8$ donc toujours supérieur à 2. Ainsi 
+		\[\boxed{\sqrt{\dfrac{2ab}{a + b}} \leq \sqrt{ab}}\]
+		
+		Poursuivons avec celle du milieu : 
+		\begin{align*}
+			\dfrac{a + b}{2} \geq \sqrt{ab} &\iff a + b \geq 2\sqrt{ab}\\
+			\dfrac{a + b}{2} \geq \sqrt{ab} &\iff a + b - 2\sqrt{ab} \geq 0\\
+			\dfrac{a + b}{2} \geq \sqrt{ab} &\iff (\sqrt{a} - \sqrt{b})^2 \geq 0
+		\end{align*}
+		Nous venons d'aboutir à une inégalité toujours puisque le carré d'un nombre réel est toujours positif donc l'inégalité initiale est toujours vraie \[\boxed{\sqrt{ab} \leq \dfrac{a+b}{2}}\]
+		
+		Il reste la dernière inégalité à établir : 
+		\begin{align*}
+			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{a^2+b^2}{2} \geq \left(\dfrac{a+b}{2}\right)^2 \\
+			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{a^2+b^2}{2} \geq \dfrac{a^2+b^2 + 2ab}{4} \\
+			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{2(a^2+b^2) - (a^2+b^2 + 2ab)}{4} \geq 0 \\
+			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{a^2 + b^2 - 2ab}{4} \geq 0 \\
+			\sqrt{\dfrac{a^2+b^2}{2}} \geq \dfrac{a+b}{2} &\iff \dfrac{(a - b)^2}{4} \geq 0 
+		\end{align*}
+		Nous venons d'aboutir à une inégalité toujours vraie ainsi 
+		\[\boxed{\dfrac{a + b}{2}\leq \sqrt{\dfrac{a^2+b^2}{2}}}\]
+		
+\end{enumerate}
+
+
+\hyperref[geom:niveau20]{Voir questions page \pageref{geom:niveau20}}.
+
+\newpage

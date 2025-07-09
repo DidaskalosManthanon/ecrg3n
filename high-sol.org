@@ -1,0 +1,21 @@
+* Solutions niveau secondaire : lycée
+#+BEGIN_EXPORT HTML
+<a id="high-sol"></a>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT latex
+\newpage
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<hr style="margin: 2em 0;" />
+#+END_EXPORT
+
+#+INCLUDE: "sol-level-15.org"
+#+INCLUDE: "sol-level-16.org"
+#+INCLUDE: "sol-level-17.org"
+#+INCLUDE: "sol-level-18.org"
+#+INCLUDE: "sol-level-19.org"
+#+INCLUDE: "sol-level-20.org"
+

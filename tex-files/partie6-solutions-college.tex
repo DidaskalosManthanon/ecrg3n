@@ -1,0 +1,373 @@
+\section{Solutions niveau secondaire : collège}
+\addcontentsline{toc}{chapter}{Solutions niveau secondaire : collège}
+
+\newpage 
+
+\subsection{Solutions exercice 7 (secondaire : collège) : carrés}
+
+\label{sol:niveau7}
+
+\begin{enumerate}[label=C\arabic*)]
+    \item \(11^2 = 11 \times 11 = 121\)
+    \item \(12^2 = 12 \times 12 = 144\)
+    \item \(13^2 = 13 \times 13 = 169\)
+    \item \(14^2 = 14 \times 14 = 196\)
+    \item \(15^2 = 15 \times 15 = 225\)
+    \item \(16^2 = 16 \times 16 = 256\)
+    \item \(17^2 = 17 \times 17 = 289\)
+    \item \(18^2 = 18 \times 18 = 324\)
+    \item \(19^2 = 19 \times 19 = 361\)
+    \item \(20^2 = 20 \times 20 = 400\)
+    \item \(25^2 = 25 \times 25 =  625\)
+    \item \(35^2 = 35 \times 35 = 1225\)
+    \item \(45^2 = 45 \times 45 = 2025\)
+    \item \(55^2 = 55 \times 55 = 3025\)
+    \item \(65^2 = 65 \times 65 = 4225\)
+    \item \(75^2 = 75 \times 75 = 5625\)
+    \item \(85^2 = 85 \times 85 = 7225\)
+    \item \(95^2 = 95 \times 95 = 9025\)
+    \item \(111^2 = 111 \times 111 = 12321\)
+    \item \(1111^2 = 1111 \times 1111 = 1234321\)
+\end{enumerate}
+
+\hyperref[calc:niveau7]{Calculs des carrés page \pageref{calc:niveau7}}.
+
+
+\newpage
+
+
+\subsection{Solutions exercice 8 (secondaire : collège) : carrés avec des 1 et une calculatrice}
+
+\label{sol:niveau8}
+
+\begin{enumerate}[label=C\arabic*)]
+    \item \(1 \times 1 =  1\)
+    \item \(11 \times 11 = 121\)
+    \item \(111 \times 111 = 12321\)
+    \item \(1111 \times 1111 = 1234321\)
+    \item \(11111 \times 11111 = 123454321\)
+    \item \(111111 \times 111111 = 12345654321\)
+    \item \(1111111 \times 1111111 = 1234567654321\)
+    \item \(11111111 \times 11111111 = 123456787654321\)
+    \item \(111111111 \times 111111111 = 12345678987654321\)
+    \item \(1111111111 \times 1111111111 = 12345678900987654321\)
+\end{enumerate}
+
+\hyperref[calc:niveau8]{Calculs avec des 1 page \pageref{calc:niveau8}}.
+
+Pour des exercices en ligne vous pouvez essayer ce \urlnote{QCM sur les nombres}{https://didaskalosmanthanon.github.io/qcm-numbers/}.
+
+
+\newpage
+
+
+
+\subsection{Solutions exercice 9 (secondaire : collège) : Un programme de calcul particulier}
+
+\label{sol:niveau9}
+
+\begin{enumerate}[label=C\arabic*)]
+    \item \(m^2 = 2^2 =  4\)
+    \item \(n^2 = 1^2 = 1\)
+    \item \(a = m^2 - n^2 = 4 - 1 = 3\)
+    \item \(b = 2 \times m \times n = 2\times 2\times 1 = 4\)
+    \item \(c = m^2 + n^2 = 4 + 1 = 5\)
+    \item \(a^2 = 3^2 = 9\)
+    \item \(b^2 = 4^2 = 16\)
+    \item \(c^2 = 5^2 = 25\)
+    \item Vérifions que \( a^2 + b^2 = c^2 = 9 + 16 = 25\)
+    \item Est-ce valable pour n'importe quelles valeurs de \(m\) et \(n\) ? Oui pour toutes les valeurs qui vérifient les contraintes énoncées $1\leq n < m$ car
+    \begin{align*}
+    	a^2 &= (m^2 - n^2)^2 = (m^2)^2 - 2\times (m^2)\times (n^2) + (n^2)^2 \\
+	a^2 &= m^4 - 2m^2n^2 + n^4 \\
+	b^2 &= (2mn)^2 = 2^2m^2n^2 = 4m^2n^2 \\
+	c^2 &= (m^2 - n^2)^2 = m^4 + 2m^2n^2 + n^4 \\
+	a^2 + b^2 &= m^4 - 2m^2n^2 + n^4 + 4m^2n^2 \\
+	a^2 + b^2 &= m^4 + 2m^2n^2 + n^4\\
+	&\boxed{a^2 + b^2 = c^2}
+    \end{align*} 
+\end{enumerate}
+
+\hyperref[calc:niveau9]{Calculs avec le programme page \pageref{calc:niveau9}}.
+
+Vous pouvez voir une \urlnote{illustration géométrique de la 3\up{ème} identité remarquable}{https://youtu.be/6Nnv3K7k2No?si=y7Hmvb5IwpIsHaWW} dans cette vidéo.
+
+\newpage
+
+
+\subsection{Solutions exercice 10 (secondaire : collège) : Un programme de construction géométrique, Pythagore}
+
+\label{sol:niveau10}
+
+\definecolor{navy}{rgb}{0,0,1}
+\definecolor{lime}{rgb}{0.3,1}
+
+\begin{figure}[H] % Utiliser H (de l'option float here) nécessite \usepackage{float}
+\centering
+\caption{Construction du triangle rectangle 3, 4, 5}
+\vspace{.25cm}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-2.25,
+xmax=4.25,
+ymin=-3.25,
+ymax=3.25,
+xtick={-2,-1,...,4},
+ytick={-3,-2,...,3},]
+\clip(-2.25,-3.25) rectangle (4.25,3.25);
+\fill[line width=2pt,color=navy,fill=navy,fill opacity=0.24] (-1,-2) -- (2,-2) -- (2,2) -- cycle;
+\draw [line width=2pt,color=navy] (-1,-2)-- (2,-2);
+\draw [line width=2pt,color=navy] (2,-2)-- (2,2);
+\draw [line width=2pt,color=navy] (2,2)-- (-1,-2);
+\begin{scriptsize}
+\draw [fill=lime] (-1,-2) circle (2.5pt);
+\draw[color=lime] (-1.25,-2.25) node {$A$};
+\draw [fill=lime] (2,-2) circle (2.5pt);
+\draw[color=lime] (2.25,-2.25) node {$B$};
+\draw [fill=lime] (2,2) circle (2.5pt);
+\draw[color=lime] (2.25,2.25) node {$C$};
+\draw[color=navy] (0.75,-2.25) node {$a = 3$};
+\draw[color=navy] (2.75,0.25) node {$b = 4$};
+\draw[color=navy] (-0.15,0.25) node {$c = 5$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\label{fig:pythagore345}
+\end{figure}
+
+\begin{align*}
+3^2 + 4^2 &= 5^2\\
+9 + 16 &= 25\\
+\Rightarrow \boxed{a^2 + b^2 = c^2}
+\end{align*}
+
+\hyperref[geom:niveau10]{Voir le programme de construction géométrique page \pageref{geom:niveau10}}
+
+Pour voir une \urlnote{démonstration du théorème de Pythagore}{https://youtube.com/shorts/80CO794dwco}  consultez cette vidéo.
+
+\newpage
+
+\subsection{Solutions exercice 11 (secondaire : collège) : Un cible circulaire, probabilités}
+
+\label{sol:niveau11}
+
+
+\definecolor{yellow}{rgb}{1,0.8,0.2}
+\definecolor{orange}{rgb}{1,0.5,0}
+\definecolor{navy}{rgb}{0,0,1}
+\definecolor{lime}{rgb}{0,1,0}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{black}{rgb}{0,0}
+
+On considère que les joueurs atteignent toujours la cible c'est-à-dire le cercle $\textcolor{yellow}{(\mathcal{C}_{E})}$ (\hyperref[fig:proba-target]{voir figure avec les cercles concentriques page \pageref{fig:proba-target}}).
+
+\begin{enumerate}[label=G\arabic*)]
+\item L'aire de l'intérieur du cercle $\textcolor{red}{(\mathcal{C}_{A})}$ est celle du disque de centre O et de rayon 1 soit $\pi\times 1^2 = \pi$ ainsi \[\textcolor{red}{\mathcal{D}_{A} = \pi}\] 
+L'aire de l'intérieur du cercle $\textcolor{yellow}{(\mathcal{C}_{E})}$ est celle du disque de centre O et de rayon 5 soit $\pi\times 5^2 = 25\pi$ ainsi \[ \textcolor{yellow}{\mathcal{D}_{E} = 25\pi}\]
+Par conséquent la probabilité recherchée est  \[P = \dfrac{ \textcolor{red}{ \mathcal{D}_{A} } }{ \textcolor{yellow}{ \mathcal{D}_{E} } } = \dfrac{\pi}{25\pi} = \dfrac{1}{25} = 4\% \]
+\item Pour calculer la probabilité que le joueur atteigne la couronne entre les cercles $\textcolor{red}{(\mathcal{C}_{A})}$ et $\textcolor{lime}{(\mathcal{C}_{B})}$ il faut calculer l'aire de la couronne c'est-à-dire la différence entre l'aire du disque de centre O de rayon 2, $\textcolor{lime}{\mathcal{D}_{B} = 4\pi}$ et du disque $\textcolor{red}{\mathcal{D}_{A} = \pi}$ soit $\textcolor{lime}{4\pi} - \textcolor{red}{\pi} = 3\pi$. Ensuite on calcule le rapport d'aires : \[P = \dfrac{3\pi}{25\pi} = \dfrac{3}{25} = 12\%\]
+\item Pour calculer la probabilité que le joueur atteigne la couronne entre les cercles $\textcolor{lime}{(\mathcal{C}_{B})}$ et $\textcolor{navy}{(\mathcal{C}_{C})}$ il faut calculer l'aire de la couronne c'est-à-dire la différence entre l'aire du disque de centre O de rayon 3, $\textcolor{navy}{\mathcal{D}_{C} = 9\pi}$ et du disque $\textcolor{lime}{\mathcal{D}_{B} = 4\pi}$ soit $\textcolor{navy}{9\pi} - \textcolor{lime}{4\pi} = 5\pi$. Ensuite on calcule le rapport d'aires : \[P = \dfrac{5\pi}{25\pi} = \dfrac{1}{5} = 20\%\]
+\item Pour calculer la probabilité que le joueur atteigne la couronne entre les cercles $\textcolor{navy}{(\mathcal{C}_{C})}$ et $\textcolor{orange}{(\mathcal{C}_{D})}$ il faut calculer l'aire de la couronne c'est-à-dire la différence entre l'aire du disque de centre O de rayon 4, $\textcolor{orange}{\mathcal{D}_{D} = 16\pi}$ et du disque $\textcolor{navy}{\mathcal{D}_{C} = 9\pi}$ soit $\textcolor{orange}{16\pi} - \textcolor{navy}{9\pi} = 7\pi$. Ensuite on calcule le rapport d'aires : \[P = \dfrac{7\pi}{25\pi} = \dfrac{7}{25} = 28\%\] 
+\item Pour calculer la probabilité que le joueur atteigne la couronne entre les cercles $\textcolor{orange}{(\mathcal{C}_{D})}$ et $\textcolor{yellow}{(\mathcal{C}_{E})}$  il faut calculer l'aire de la couronne c'est-à-dire la différence entre l'aire du disque de centre O de rayon 5, $\textcolor{yellow}{ \mathcal{D}_{E}  = 25\pi }$ et du disque $\textcolor{orange}{\mathcal{D}_{D} = 16\pi}$ soit $\textcolor{yellow}{25\pi} - \textcolor{orange}{16\pi} = 9\pi$. Ensuite on calcule le rapport d'aires : \[P = \dfrac{9\pi}{25\pi} = \dfrac{9}{25} = 45\%\] 
+\end{enumerate}
+
+\hyperref[fig:proba-target]{Voir figure avec les cercles concentriques page \pageref{fig:proba-target}}.
+
+Pour des exercices en ligne vous pouvez essayer ce  \urlnote{QCM sur les probabilités}{https://didaskalosmanthanon.github.io/qcm-proba/}.
+
+
+\newpage
+
+\subsection{Solutions exercice 12 (secondaire : collège) : Fibonacci}
+
+\label{sol:niveau12} 
+
+\definecolor{purple}{rgb}{0.4980392156862745,0,1}
+\definecolor{lime}{rgb}{0,1,0}
+\definecolor{pink}{rgb}{1,0,1}
+\definecolor{navy}{rgb}{0,0,1}
+\definecolor{olive}{rgb}{0,0.4,0.2}
+\definecolor{orange}{rgb}{1,0.4980392156862745,0}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{black}{rgb}{0,0,0}
+
+\begin{figure}[H]
+\centering
+\caption{Carrés de Fibonacci}
+\vspace{.25cm}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=.3cm,y=.3cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-25.5,
+xmax=12.5,
+ymin=-7,
+ymax=19,
+xtick={-24,-20,...,8},
+ytick={-7,-2,...,18	},]
+\clip(-25.5,-7) rectangle (12.5,19);
+\fill[line width=2pt,color=red,fill=red,fill opacity=0.75] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;
+\fill[line width=2pt,color=red,fill=red,fill opacity=0.75] (1,0) -- (2,0) -- (2,1) -- (1,1) -- cycle;
+\fill[line width=2pt,color=orange,fill=orange,fill opacity=0.75] (0,1) -- (2,1) -- (2,3) -- (0,3) -- cycle;
+\fill[line width=2pt,color=olive,fill=olive,fill opacity=0.75] (0,3) -- (-3,3) -- (-3,0) -- (0,0) -- cycle;
+\fill[line width=2pt,color=navy,fill=navy,fill opacity=0.75] (-3,0) -- (-3,-5) -- (2,-5) -- (2,0) -- cycle;
+\fill[line width=2pt,color=pink,fill=pink,fill opacity=0.75] (2,-5) -- (10,-5) -- (10,3) -- (2,3) -- cycle;
+\fill[line width=2pt,color=lime,fill=lime,fill opacity=0.75] (10,3) -- (10,16) -- (-3,16) -- (-3,3) -- cycle;
+\fill[line width=2pt,color=purple,fill=purple,fill opacity=0.75] (-3,16) -- (-24,16) -- (-24,-5) -- (-3,-5) -- cycle;
+\draw [line width=2pt,color=red] (0,0)-- (1,0);
+\draw [line width=2pt,color=red] (1,0)-- (1,1);
+\draw [line width=2pt,color=red] (1,1)-- (0,1);
+\draw [line width=2pt,color=red] (0,1)-- (0,0);
+\draw [line width=2pt,color=red] (1,0)-- (2,0);
+\draw [line width=2pt,color=red] (2,0)-- (2,1);
+\draw [line width=2pt,color=red] (2,1)-- (1,1);
+\draw [line width=2pt,color=red] (1,1)-- (1,0);
+\draw [line width=2pt,color=orange] (0,1)-- (2,1);
+\draw [line width=2pt,color=orange] (2,1)-- (2,3);
+\draw [line width=2pt,color=orange] (2,3)-- (0,3);
+\draw [line width=2pt,color=orange] (0,3)-- (0,1);
+\draw [line width=2pt,color=olive] (0,3)-- (-3,3);
+\draw [line width=2pt,color=olive] (-3,3)-- (-3,0);
+\draw [line width=2pt,color=olive] (-3,0)-- (0,0);
+\draw [line width=2pt,color=olive] (0,0)-- (0,3);
+\draw [line width=2pt,color=navy] (-3,0)-- (-3,-5);
+\draw [line width=2pt,color=navy] (-3,-5)-- (2,-5);
+\draw [line width=2pt,color=navy] (2,-5)-- (2,0);
+\draw [line width=2pt,color=navy] (2,0)-- (-3,0);
+\draw [line width=2pt,color=pink] (2,-5)-- (10,-5);
+\draw [line width=2pt,color=pink] (10,-5)-- (10,3);
+\draw [line width=2pt,color=pink] (10,3)-- (2,3);
+\draw [line width=2pt,color=pink] (2,3)-- (2,-5);
+\draw [line width=2pt,color=lime] (10,3)-- (10,16);
+\draw [line width=2pt,color=lime] (10,16)-- (-3,16);
+\draw [line width=2pt,color=lime] (-3,16)-- (-3,3);
+\draw [line width=2pt,color=lime] (-3,3)-- (10,3);
+\draw [line width=2pt,color=purple] (-3,16)-- (-24,16);
+\draw [line width=2pt,color=purple] (-24,16)-- (-24,-5);
+\draw [line width=2pt,color=purple] (-24,-5)-- (-3,-5);
+\draw [line width=2pt,color=purple] (-3,-5)-- (-3,16);
+\begin{scriptsize}
+\draw [fill=red] (0,0) circle (2.5pt);
+\draw[color=red] (-0.5, -1) node {$O$};
+\draw [fill=red] (1,0) circle (2.5pt);
+\draw[color=red] (1,-1) node {$A$};
+\draw [fill=red] (1,1) circle (2.5pt);
+\draw[color=red] (1.28,1.85) node {$B$};
+\draw [fill=red] (0,1) circle (2.5pt);
+\draw[color=red] (-0.75,1.75) node {$C$};
+\draw [fill=red] (2,0) circle (2.5pt);
+\draw[color=red] (2.75,-1) node {$D$};
+\draw [fill=red] (2,1) circle (2.5pt);
+\draw[color=red] (2.85,1.85) node {$E$};
+\draw [fill=orange] (2,3) circle (2.5pt);
+\draw[color=orange] (2.85,3.85) node {$F$};
+\draw [fill=orange] (0,3) circle (2.5pt);
+\draw[color=orange] (-0.75,3.85) node {$G$};
+\draw [fill=olive] (-3,3) circle (2.5pt);
+\draw[color=olive] (-3.75,3.85) node {$H$};
+\draw [fill=olive] (-3,0) circle (2.5pt);
+\draw[color=olive] (-3.5,1) node {$I$};
+\draw [fill=navy] (-3,-5) circle (2.5pt);
+\draw[color=navy] (-3.5,-5.95) node {$J$};
+\draw [fill=navy] (2,-5) circle (2.5pt);
+\draw[color=navy] (2.75,-5.95) node {$K$};
+\draw [fill=pink] (10,-5) circle (2.5pt);
+\draw[color=pink] (10.85,-5.95) node {$L$};
+\draw [fill=pink] (10,3) circle (2.5pt);
+\draw[color=pink] (10.85,3.85) node {$M$};
+\draw [fill=lime] (10,16) circle (2.5pt);
+\draw[color=lime] (10.85,16.85) node {$N$};
+\draw [fill=purple] (-3,16) circle (2.5pt);
+\draw[color=purple] (-3.75,16.85) node {$P$};
+\draw [fill=purple] (-24,16) circle (2.5pt);
+\draw[color=purple] (-24.75,16.85) node {$Q$};
+\draw [fill=purple] (-24,-5) circle (2.5pt);
+\draw[color=purple] (-24.75,-5.95) node {$R$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\label{fig:fibo-squares}
+\end{figure}
+
+\newpage
+
+\begin{enumerate}[label=G\arabic*)]
+	\item Le carré \textcolor{red}{OABC} a pour côté 1.
+	\item Le carré \textcolor{red}{ADEB} a pour côté 1.
+	\item Le carré \textcolor{orange}{FGCE} a pour côté 2.
+	\item Le carré \textcolor{olive}{GHIO} a pour côté 3.
+	\item Le carré \textcolor{navy}{IJKD} a pour côté 5.
+	\item Le carré \textcolor{pink}{KLMF} a pour côté 8.
+	\item Le carré \textcolor{lime}{MNPH} a pour côté 13.
+	\item Le carré \textcolor{purple}{PQRJ} a pour côté 21.
+\end{enumerate}
+
+
+
+\hyperref[geom:niveau12]{Voir les questions page \pageref{geom:niveau12}}.
+
+Pour voir comment \urlnote{construire la suite de Fibonacci avec un programme Python}{https://youtu.be/y5DSNeBfzFs?si=Ehuap02-Lg_sETAH} consultez cette vidéo.
+ 
+\newpage
+
+
+\subsection{Solutions exercice 13 (secondaire : collège) : aire des carrés de Fibonacci}
+
+\label{sol:niveau13}
+
+\hyperref[fig:fibo-squares]{Voir figure avec les carrés de Fibonacci page \pageref{fig:fibo-squares}}.
+
+\begin{enumerate}[label=G\arabic*)]
+	\item L'aire du carré \textcolor{red}{OABC} est $1^2 = 1$.
+	\item L'aire du carré \textcolor{red}{ADEB} est $1^2 = 1$.
+	\item L'aire du carré \textcolor{orange}{FGCE} est $2^2 = 4$.
+	\item L'aire du carré \textcolor{olive}{GHIO} est $3^2 = 9$.
+	\item L'aire du carré \textcolor{navy}{IJKD} est $5^2 = 25$.
+	\item L'aire du carré \textcolor{pink}{KLMF} est $8^2 = 54$.
+	\item L'aire du carré \textcolor{lime}{MNPH} est $13^2 = 169$.
+	\item L'aire du carré \textcolor{purple}{PQRJ} est $21^2 = 441$.
+\end{enumerate}
+
+
+\hyperref[geom:niveau13]{Voir questions page \pageref{geom:niveau13}}.
+
+
+\newpage
+
+
+\subsection{Solutions exercice 14 (secondaire : collège) : aire des carrés de Fibonacci}
+
+\label{sol:niveau14}
+
+Pour tout l'exercice il faut considérer les dimensions de la cible c'est-à-dire le grand rectangle LNQR de largeur 21 et longueur $21 + 13 = 34$ et a donc pour aire $21\times 34 = 714$.
+
+\hyperref[fig:fibo-squares]{Voir figure avec les carrés de Fibonacci page \pageref{fig:fibo-squares}}.
+
+\begin{enumerate}[label=G\arabic*)]
+	\item La probabilité que le joueur atteigne le carré \textcolor{red}{OABC} est 
+	\[\dfrac{\textcolor{red}{OABC}}{LNQR} = \dfrac{1}{714} \simeq 0,14\%\]
+	\item La probabilité que le joueur atteigne le carré \textcolor{orange}{FGCE} est 
+	\[\dfrac{\textcolor{orange}{FGCE}}{LNQR} = \dfrac{4}{714} = \dfrac{2}{357} \simeq 0,56\%\] 
+	\item La probabilité que le joueur atteigne le carré \textcolor{olive}{GHIO} est 
+	\[\dfrac{\textcolor{olive}{GHIO}}{LNQR} = \dfrac{9}{714} = \dfrac{3}{238} \simeq 1,26\%\]
+	\item La probabilité que le joueur atteigne le carré \textcolor{navy}{IJKD} est 
+	\[\dfrac{\textcolor{navy}{IJKD}}{LNQR} = \dfrac{25}{714} =  \simeq 3,5\%\]
+	\item La probabilité que le joueur atteigne le carré \textcolor{pink}{KLMF} est 
+	\[\dfrac{\textcolor{pink}{KLMF}}{LNQR} = \dfrac{64}{714} = \dfrac{32}{357} \simeq 8,96\%\]
+	\item La probabilité que le joueur atteigne le carré \textcolor{lime}{MNPH} est 
+	\[\dfrac{\textcolor{lime}{MNPH}}{LNQR} = \dfrac{169}{714} \simeq 23,67\%\]
+	\item La probabilité que le joueur atteigne le carré \textcolor{purple}{PQRJ} est 
+	\[\dfrac{\textcolor{purple}{PQRJ}}{LNQR} = \dfrac{441}{714} = \dfrac{147}{238} \simeq 61,76\%\]    
+\end{enumerate}
+
+
+\hyperref[proba:niveau14]{Voir questions page \pageref{proba:niveau14}}.
+
+
+\newpage

@@ -1,0 +1,49 @@
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Monaco, "Georgia", serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.jaune {
+    color: #FFCC33 !important;
+}
+.rouge {
+    color: red !important;
+}
+.citron {
+    color: #00FF00 !important;
+}
+.marine {
+    color: #0000FF !important;
+}
+.orange {
+    color: #FF8000 !important;
+}
+
+.olive {
+    color: #808000 !important;
+}
+
+.rose {
+    color: magenta !important;
+}
+
+.mauve {
+    color: purple !important;
+}
+
+.bleu {
+    color: blue !important;
+}

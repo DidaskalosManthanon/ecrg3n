@@ -1,0 +1,183 @@
+\documentclass[12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=6in, paperheight=9in, margin=0.75in]{geometry}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{float}
+\usepackage{wrapfig} % Pour enrouler le texte autour des images
+\usepackage{graphicx} % Pour inclure des images
+\usepackage{microtype} % Amélioration typographique
+\usepackage[table]{xcolor} % Pour une meilleure gestion des couleurs
+\usepackage{array}
+\usepackage{bm}
+
+\renewcommand{\arraystretch}{2.5}
+		
+%\let\cleardoublepage\clearpage
+
+
+
+\usepackage{fancyhdr}
+\usepackage[french]{babel}
+
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{xurl} % Casse les URLs longues proprement
+\usepackage{cleveref} % Pour les références intelligentes
+\usepackage{etoolbox}
+
+\makeatletter
+\newcommand{\urllist}{}
+\newcounter{urlcounter}
+
+% Commande principale simplifiée
+\newcommand{\urlnote}[2]{%
+    \refstepcounter{urlcounter}%
+    \label{urlpage:\theurlcounter}% Label standard
+    \href{#2}{#1}\footnote{\url{#2}}%
+    \protected@xappto{\urllist}{%
+        \noexpand\item[#1] \noexpand\url{#2}%
+        \noexpand\space(voir page~\noexpand\pageref{urlpage:\theurlcounter})%
+    }%
+}
+
+% Affichage de l'annexe
+\newcommand{\printurlannexe}{%
+    \chapter*{Annexe des URLs}
+    \addcontentsline{toc}{chapter}{Annexe des URLs}
+    \ifdefvoid{\urllist}
+        {\textit{Aucun URL enregistré.}}
+        {\begin{description}
+            \urllist
+        \end{description}}%
+}
+\makeatother
+
+
+% Définition des couleurs
+\definecolor{myblue}{RGB}{0,0,139}
+\definecolor{mygreen}{RGB}{0,100,0}
+
+% Configuration des listes
+\setlist[enumerate]{itemsep=0.5em, topsep=0.5em}
+\setlist[itemize]{itemsep=0.5em, topsep=0.5em}
+
+% Amélioration de l'interligne
+\linespread{1.1}
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{\textcolor{myblue}{Calcul et géométrie}}
+%\lhead{\textcolor{myblue}{\sc Laurent Garnier}}
+%\rfoot{\thepage}
+
+%\title{Exercices de calculs et représentations géométriques}
+%\author{\textsc{Laurent Garnier}}
+%\date{}
+
+\begin{document}
+\pagestyle{plain}                        % ↳ numéros en pied de page, en-têtes vides
+%\maketitle
+
+% ----------------- Page de titre (exemple sobre) -----------
+\begin{titlepage}
+    \centering
+    %\Huge\bfseries Exercices de calculs et représentations géométriques\\[2cm]
+    %\Large \textsc{Laurent Garnier}\\[1cm]
+    \includegraphics[width=1.0\textwidth]{../images/cover.png}\\[2cm]
+    \normalsize \copyright\ 2025 \textsc{Laurent Garnier} – Tous droits réservés
+\end{titlepage}
+%\cleardoublepage
+
+% ============  AVANT-PROPOS éventuel  ======================
+\frontmatter      % numérotation romaine (i, ii, …) pour les pages préliminaires
+
+% ----------------- SOMMAIRE NON DÉTAILLÉ -------------------
+\chapter*{Sommaire succint}
+\begin{itemize}
+  \item \hyperlink{chap1}{\textbf{Un peu de culture historique}}
+  \item \hyperlink{chap:level1}{\textbf{Niveau primaire}}
+  \item \hyperlink{chap:level2}{\textbf{Niveau secondaire : collège}}
+  \item \hyperlink{chap:level3}{\textbf{Niveau secondaire : lycée}}
+  \item \hyperlink{chap:sol}{\textbf{Solutions des exercices}}
+  \item \hyperlink{chap:and-now}{\textbf{Et maintenant ?}}
+\end{itemize}
+\cleardoublepage
+
+
+% ============  CORPS DU LIVRE  =============================
+\mainmatter       % passe en numérotation arabe (1, 2, …)
+
+\hypertarget{chap1}{}
+\chapter{Un peu de culture historique}\label{chap1}
+
+\input{partie1-intro-culture.tex}
+
+\hypertarget{chap:level1}{}
+\chapter{Niveau primaire}\label{chap:level1}
+
+\input{partie2-calculs-primaire.tex}
+
+\hypertarget{chap:level2}{}
+\chapter{Niveau secondaire : collège}\label{chap:level2}
+
+\input{partie3-calculs-college.tex}
+
+\hypertarget{chap:level3}{}
+\chapter{Niveau secondaire : lycée}\label{chap:level3}
+
+\input{partie4-calculs-lycee.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%                                   SOLUTIONS                                        %%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypertarget{chap:sol}{}
+\chapter{Solutions des exercices}\label{chap:sol}
+
+\newpage
+
+\input{partie5-solutions-primaire.tex}
+
+\input{partie6-solutions-college.tex}
+
+\input{partie7-solutions-lycee.tex}
+
+\hypertarget{chap:and-now}{}
+\chapter{Et maintenant ?}\label{chap:and-now}
+
+\input{partie8-et-apres.tex}
+
+
+
+%\backmatter
+\cleardoublepage
+\setcounter{tocdepth}{2}
+\renewcommand{\contentsname}{Table des matières détaillée}
+\tableofcontents
+\cleardoublepage
+\renewcommand{\contentsname}{Table des matières}
+
+% ------------- LISTE DES FIGURES ---------------------------
+\cleardoublepage
+\renewcommand{\listfigurename}{Liste des figures}
+\listoffigures
+
+
+
+\appendix
+\printurlannexe % Génère l'annexe automatiquement
+
+
+\end{document}

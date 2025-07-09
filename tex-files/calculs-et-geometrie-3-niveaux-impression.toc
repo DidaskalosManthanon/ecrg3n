@@ -1,0 +1,71 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {1}Un peu de culture historique}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {chapter}{Introduction}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Origine étymologique du mot calcul}{6}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Premières traces de calculs}{7}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Premières techniques de calcul}{11}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Les premières traces de géométrie}{15}{subsection.1.1.4}%
+\contentsline {chapter}{\numberline {2}Niveau primaire}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Calculs niveau primaire}{19}{section.2.1}%
+\contentsline {chapter}{Calculs niveau primaire}{19}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Exercice 1 (primaire) : Additions simples}{20}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Exercice 2 (primaire) : Soustractions}{21}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Exercice 3 (primaire) : Multiplications à 1 chiffre}{22}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Exercice 4 (primaire) : Multiplications à 2 chiffres par 11}{23}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Exercice 5 (primaire) : Divisions à 1 chiffre}{24}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Exercice 6 (primaire) : Divisions à 2 chiffres}{25}{subsection.2.1.6}%
+\contentsline {chapter}{\numberline {3}Niveau secondaire : collège}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Calculs niveau collège}{27}{section.3.1}%
+\contentsline {chapter}{Calculs niveau collège}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Exercice 7 (secondaire : collège) : carrés}{28}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Exercice 8 (secondaire : collège) : carrés avec des 1 et une calculatrice}{29}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Exercice 9 (secondaire : collège) : Un programme de calcul particulier}{30}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Exercice 10 (secondaire : collège) : Un programme de construction géométrique, Pythagore}{32}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Exercice 11 (secondaire : collège) : Un cible circulaire, probabilités}{33}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Exercice 12 (secondaire : collège) : carrés de Fibonacci}{35}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}Exercice 13 (secondaire : collège) : aire des carrés de Fibonacci}{36}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}Exercice 14 (secondaire : collège) : une cible avec des carrés de Fibonacci}{37}{subsection.3.1.8}%
+\contentsline {chapter}{\numberline {4}Niveau secondaire : lycée}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Calculs niveau lycée}{39}{section.4.1}%
+\contentsline {chapter}{Calculs niveau lycée}{39}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Exercice 15 (secondaire : lycée) : nombres triangulaires}{40}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Exercice 16 (secondaire : lycée) : divisions par 7}{41}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Exercice 17 (secondaire : lycée) : comment choisir le milieu d'une série statistique ?}{42}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Exercice 18 (secondaire : lycée) : comment contribuer efficacement à un projet collaboratif ?}{43}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Exercice 19 (secondaire : lycée) : une interprétation géométrique du paradoxe de Simpson}{44}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Exercice 20 (secondaire : lycée) : constructions et comparaisons de moyennes}{45}{subsection.4.1.6}%
+\contentsline {chapter}{\numberline {5}Solutions des exercices}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Solutions niveau primaire}{48}{section.5.1}%
+\contentsline {chapter}{Solutions niveau primaire}{48}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Solutions exercice 1 (primaire) : Additions}{49}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Solutions exercice 2 (primaire) : Soustractions}{50}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Solutions exercice 3 (primaire) : Multiplications à 1 chiffre}{51}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Solutions exercice 4 (primaire) : Multiplications à 2 chiffres par 11}{52}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Solutions exercice 5 (primaire) : Divisions à 1 chiffre}{53}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Solutions exercice 6 (primaire) : Divisions à 2 chiffres}{54}{subsection.5.1.6}%
+\contentsline {section}{\numberline {5.2}Solutions niveau secondaire : collège}{55}{section.5.2}%
+\contentsline {chapter}{Solutions niveau secondaire : collège}{55}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Solutions exercice 7 (secondaire : collège) : carrés}{56}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Solutions exercice 8 (secondaire : collège) : carrés avec des 1 et une calculatrice}{57}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Solutions exercice 9 (secondaire : collège) : Un programme de calcul particulier}{58}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Solutions exercice 10 (secondaire : collège) : Un programme de construction géométrique, Pythagore}{59}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Solutions exercice 11 (secondaire : collège) : Un cible circulaire, probabilités}{60}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Solutions exercice 12 (secondaire : collège) : Fibonacci}{62}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Solutions exercice 13 (secondaire : collège) : aire des carrés de Fibonacci}{64}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.8}Solutions exercice 14 (secondaire : collège) : aire des carrés de Fibonacci}{65}{subsection.5.2.8}%
+\contentsline {section}{\numberline {5.3}Solutions niveau secondaire : lycée}{66}{section.5.3}%
+\contentsline {chapter}{Solutions niveau secondaire : lycée}{66}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Solution exercice 15 (secondaire : lycée) : nombres triangulaires}{67}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Solution exercice 16 (secondaire : lycée) : divisions par 7}{71}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Solution exercice 17 (secondaire : lycée) : comment choisir le milieu d'une série statistique ?}{73}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Solution exercice 18 (secondaire : lycée) : comment contribuer efficacement à un projet collaboratif ?}{78}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Solution exercice 19 (secondaire : lycée) : une interprétation géométrique du paradoxe de Simpson}{81}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Solution exercice 20 (secondaire : lycée) : constructions et comparaisons de moyennes}{82}{subsection.5.3.6}%
+\contentsline {chapter}{\numberline {6}Et maintenant ?}{89}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Que faire une fois que vous avez fait tous les exercices ?}{89}{section.6.1}%
+\contentsline {chapter}{Que faire une fois que vous avez fait tous les exercices ?}{89}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Vous en voulez encore ?}{89}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}D'autres livres du même auteur}{90}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Pour allez plus loin}{91}{subsection.6.1.3}%
+\contentsline {chapter}{Annexe des URLs}{101}{appendix*.4}%
